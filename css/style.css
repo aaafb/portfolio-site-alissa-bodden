@@ -1,5 +1,5 @@
 /* 
-Colors used:
+COLORS:
 Off-white (bkgd): #fffef7
 Cream: #f7f6e8
 Pale yellow: #faf29f
@@ -7,8 +7,38 @@ Rich yellow: #fae63a
 Pale green: #78754d
 Rich green: #5c5b20
 Charcoal: #383835
+
+FONT WEIGHTS:
+Light: 300
+Regular: 400
+Bold: 700
 */
 
 body {
   background-color: #fffef7;
+  font-family: "Josefin+Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #383835;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+h2 {
+  font-family: "Josefin+Slab", serif;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.125em;
+  font-weight: 700;
 }
