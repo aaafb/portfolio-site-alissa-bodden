@@ -55,3 +55,18 @@ h3 {
 img {
   width: 100%;
 }
+
+a {
+  color: #461de6;
+}
+a:visited {
+  color: #311b80;
+}
+a:hover,
+a:focus {
+  color: #59581f;
+  text-decoration: none;
+}
+a:active {
+  color: #4a491a;
+}
