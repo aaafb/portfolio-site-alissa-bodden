@@ -35,6 +35,11 @@ body {
   color: #383835;
 }
 
+header {
+  background-color: #383835;
+  padding: 10px;
+}
+
 img {
   width: 100%;
 }
