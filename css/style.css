@@ -228,6 +228,26 @@ nav > ul > li > a:focus {
   background-color: #fae63a;
 }
 
+/* FOOTER */
+footer {
+  background-color: #f7f6e8;
+  text-align: center;
+  padding: 32px 0;
+  width: 100%;
+}
+#contact h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-size: 1.75em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+#contact p {
+  margin: 12px 12px 20px 12px;
+}
+
 /* HOME - HERO SECTION */
 #hero {
   background-color: #383835;
