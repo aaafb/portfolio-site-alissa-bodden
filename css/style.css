@@ -279,3 +279,22 @@ footer {
 }
 
 /* HOME - WORK SECTION */
+#work h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-size: 1.75em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 32px;
+}
+#work h3 {
+  font-family: "Josefin Slab", serif;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 8px;
+  margin-top: 12px;
+}
+#work p {
+  margin-top: 8px;
+}
