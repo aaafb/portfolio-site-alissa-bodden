@@ -28,7 +28,8 @@ General
 Typography
 Links and Buttons
 Layout
-Nav Bar
+Header/Nav Bar
+Footer
 Home - Hero Section
 Home - Work Section
 */
@@ -179,7 +180,7 @@ a:active {
   margin: 25px 0;
 }
 
-/* NAVIGATION BAR */
+/* HEADER/NAV BAR */
 
 .logo {
   max-width: 200px;
