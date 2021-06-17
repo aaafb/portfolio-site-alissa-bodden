@@ -45,6 +45,9 @@ body {
   line-height: 1.5;
   color: #383835;
 }
+main {
+  padding-top: 133.3px;
+}
 img {
   width: 100%;
 }
@@ -178,20 +181,27 @@ a:active {
 /* NAVIGATION BAR */
 
 .logo {
-  max-width: 250px;
+  max-width: 200px;
 }
 header {
   background-color: #383835;
   text-align: center;
   padding: 24px 0;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
+  box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
 }
 nav {
   display: inline-block;
   width: 100%;
+  padding-top: 24px;
 }
 nav > ul /* child combinator to select only unordered lists within the nav element */ {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 nav > ul > li {
   display: inline-block;
@@ -217,3 +227,14 @@ nav > ul > li > a:focus {
 }
 
 /* HERO SECTION */
+#hero {
+  background-color: #383835;
+  padding: 24px 0 32px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  color: #fffef7;
+  margin: 0;
+}
