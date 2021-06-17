@@ -29,7 +29,8 @@ Typography
 Links and Buttons
 Layout
 Nav Bar
-Hero Section
+Home - Hero Section
+Home - Work Section
 */
 
 /* GENERAL RULE */
@@ -226,7 +227,7 @@ nav > ul > li > a:focus {
   background-color: #fae63a;
 }
 
-/* HERO SECTION */
+/* HOME - HERO SECTION */
 #hero {
   background-color: #383835;
   padding: 32px 0 32px 0;
@@ -255,3 +256,5 @@ nav > ul > li > a:focus {
   margin: 0;
   padding: 0 16px;
 }
+
+/* HOME - WORK SECTION */
