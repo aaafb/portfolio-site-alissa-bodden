@@ -26,6 +26,10 @@ Bold: 700
 
 /* GENERAL RULE */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fffef7;
   font-family: "Josefin Sans", sans-serif;
