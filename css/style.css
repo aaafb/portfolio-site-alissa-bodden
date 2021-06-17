@@ -229,12 +229,29 @@ nav > ul > li > a:focus {
 /* HERO SECTION */
 #hero {
   background-color: #383835;
-  padding: 24px 0 32px 0;
+  padding: 32px 0 32px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 #hero h1 {
-  color: #fffef7;
+  color: #f7f6e8;
   margin: 0;
+}
+
+#hero-subhead p {
+  font-family: "Josefin Slab", serif;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #f7f6e8;
+  margin-block-start: 16px;
+  margin-block-end: 20px;
+}
+
+#hero-blurb p {
+  color: #f7f6e8;
+  margin: 0;
+  padding: 0 16px;
 }
