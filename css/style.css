@@ -104,10 +104,11 @@ a:active {
   color: #fffef7;
   font-weight: 400;
   text-decoration: none;
-  padding: 12px;
+  padding: 13px 24px 11px 24px;
   border-radius: 6px;
-  border-bottom: 2px solid #212121;
+  border-bottom: 3px solid #0f0f0f;
   transition: 0.2s opacity;
+  margin-bottom: 12px;
 }
 .button:visited {
   background-color: #383835;
