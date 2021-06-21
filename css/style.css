@@ -341,3 +341,6 @@ a:focus {
 }
 
 /* ABOUT PAGE */
+#about h2 {
+  text-align: center;
+}
