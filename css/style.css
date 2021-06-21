@@ -47,6 +47,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   color: #383835;
+  font-kerning: auto;
 }
 main {
   padding-top: 133.3px;
@@ -79,6 +80,12 @@ h2 {
 h3 {
   font-size: 1.125em;
   font-weight: 700;
+}
+.regular-weight {
+  font-weight: 400;
+}
+p {
+  letter-spacing: -0.15px;
 }
 
 /* LINKS AND BUTTONS */
