@@ -242,8 +242,9 @@ nav > ul > li > a:focus {
 footer {
   background-color: #f7f6e8;
   text-align: center;
-  padding: 32px 0;
+  padding: 32px 0 16px 0;
   width: 100%;
+  margin-top: 44px;
 }
 #contact h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -256,6 +257,31 @@ footer {
 }
 #contact p {
   margin: 12px 12px 20px 12px;
+}
+#email a {
+  margin-bottom: 32px;
+}
+
+#social ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#social li {
+  display: inline-block;
+}
+#social a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  padding: 24px;
+  margin: 24px 0;
+  color: #383835;
+  font-size: 1.33em;
+}
+#copyright p {
+  margin: 36px 0 8px 0;
 }
 
 /* HOME - HERO SECTION */
