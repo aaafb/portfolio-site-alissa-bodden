@@ -55,6 +55,9 @@ main {
 img {
   width: 100%;
 }
+.new-section img {
+  margin: 28px 0 8px 0;
+}
 
 /* TYPOGRAPHY */
 
@@ -77,6 +80,8 @@ h2 {
   font-size: 1.5em;
   font-weight: 400;
   text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 h3 {
   font-size: 1.125em;
@@ -88,6 +93,7 @@ h3 {
 }
 p {
   letter-spacing: -0.15px;
+  margin-top: 0.8em;
 }
 
 /* LINKS AND BUTTONS */
