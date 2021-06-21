@@ -342,10 +342,10 @@ footer {
 #social a:active,
 #social a:focus {
   padding: 4px;
-  margin: 24px 8px;
+  margin: 24px 8px 16px 8px;
   color: #383835;
   font-size: 1.33em;
 }
 #copyright p {
-  margin: 36px 0 8px 0;
+  margin: 32px 0 8px 0;
 }
