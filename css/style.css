@@ -343,6 +343,9 @@ a:focus {
 /* ABOUT PAGE */
 #about h2 {
   text-align: center;
+  margin-top: 32px;
+}
+
 #resume {
   text-align: center;
   width: 100%;
