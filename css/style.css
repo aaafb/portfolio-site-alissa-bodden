@@ -30,8 +30,9 @@ Links and Buttons
 Layout
 Header/Nav Bar
 Footer
-Home - Hero Section
-Home - Work Section
+Home Page - Hero Section
+Home Page - Work Section
+About Page
 */
 
 /* GENERAL RULE */
@@ -287,7 +288,7 @@ a:focus {
   margin: 36px 0 8px 0;
 }
 
-/* HOME - HERO SECTION */
+/* HOME PAGE - HERO SECTION */
 #hero {
   background-color: #383835;
   border-bottom: 6px solid #f7f6e8;
@@ -318,7 +319,7 @@ a:focus {
   padding: 0 16px;
 }
 
-/* HOME - WORK SECTION */
+/* HOME PAGE - WORK SECTION */
 #work h2 {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
@@ -338,3 +339,5 @@ a:focus {
 #work p {
   margin-top: 8px;
 }
+
+/* ABOUT PAGE */
