@@ -29,10 +29,10 @@ Typography
 Links and Buttons
 Layout
 Header/Nav Bar
-Footer
 Home Page - Hero Section
 Home Page - Work Section
 About Page
+Footer
 */
 
 /* GENERAL RULE */
@@ -242,52 +242,6 @@ nav > ul > li > a:focus {
   background-color: #fae63a;
 }
 
-/* FOOTER */
-footer {
-  background-color: #f7f6e8;
-  text-align: center;
-  padding: 32px 0 16px 0;
-  width: 100%;
-  margin-top: 44px;
-}
-#contact h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-style: normal;
-  font-size: 1.75em;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-#contact p {
-  margin: 12px 12px 20px 12px;
-}
-#email a {
-  margin-bottom: 32px;
-}
-
-#social ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-#social li {
-  display: inline-block;
-}
-#social a,
-a:visited,
-a:hover,
-a:active,
-a:focus {
-  padding: 24px;
-  margin: 24px 0;
-  color: #383835;
-  font-size: 1.33em;
-}
-#copyright p {
-  margin: 36px 0 8px 0;
-}
-
 /* HOME PAGE - HERO SECTION */
 #hero {
   background-color: #383835;
@@ -349,4 +303,49 @@ a:focus {
 #resume {
   text-align: center;
   width: 100%;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f7f6e8;
+  text-align: center;
+  padding: 16px 0;
+  width: 100%;
+  margin-top: 44px;
+}
+#contact h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-size: 1.75em;
+  font-weight: 700;
+  text-align: center;
+  margin: 12px 0;
+}
+#contact p {
+  margin: 12px 12px 20px 12px;
+}
+#email a {
+  margin-bottom: 32px;
+}
+
+#social ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#social li {
+  display: inline-block;
+}
+#social a,
+#social a:visited,
+#social a:hover,
+#social a:active,
+#social a:focus {
+  padding: 4px;
+  margin: 24px 8px;
+  color: #383835;
+  font-size: 1.33em;
+}
+#copyright p {
+  margin: 36px 0 8px 0;
 }
