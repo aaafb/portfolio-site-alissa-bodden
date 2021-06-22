@@ -355,7 +355,7 @@ footer {
 #social a:focus {
   padding: 4px;
   margin: 24px 8px 16px 8px;
-  color: #383835;
+  color: rgba(56, 56, 53, 0.9);
   font-size: 1.33em;
 }
 #copyright p {
