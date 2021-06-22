@@ -384,6 +384,29 @@ M devices - 640px and larger
     float: right;
     padding-top: 12px;
   }
+  main {
+    padding-top: 99px;
+  }
+  body {
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 8px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .button {
+    margin: 4px 0;
+  }
+  #work h3 {
+    margin-top: 0;
+  }
 }
 /* ==============================
 L devices - 1024px and larger
