@@ -473,6 +473,19 @@ L devices - 1024px and larger
   .col-lg-4 {
     width: 33.33%;
   }
+  .col-md-6 {
+    width: 100%;
+  }
+  /* headings */
+  #about h2 {
+    text-align: left;
+  }
+  /* turning skills and tools lists back into linear format */
+  div.multi-column-list {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
 }
 /* ==============================
 XL devices - 1440px and larger
