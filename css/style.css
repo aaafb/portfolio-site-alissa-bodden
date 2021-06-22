@@ -446,6 +446,13 @@ M devices - 768px and larger
   }
   body {
   /* hero */
+  #hero-subhead p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #hero-blurb p {
+    padding-left: 140px;
+    padding-right: 140px;
   }
   /* columns */
   .col-md-6 {
