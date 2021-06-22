@@ -432,22 +432,6 @@ S devices - 640px and larger
 M devices - 768px and larger
 ============================== */
 @media only screen and (min-width: 768px) {
-  /* header/nav bar */
-  header {
-    text-align: unset;
-  }
-  .logo {
-    padding-top: 8px;
-  }
-  nav {
-    width: auto;
-    float: right;
-    padding-top: 12px;
-  }
-  /* main content */
-  main {
-    padding-top: 92px;
-  }
   /* hero */
   #hero-subhead p {
     padding-left: 0;
@@ -462,22 +446,7 @@ M devices - 768px and larger
     width: 50%;
   }
   [class*="col-"] {
-    float: left;
     padding: 0 10px;
-  }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  /* buttons on home page */
-  #work .button {
-    margin: 4px 0;
-  }
-  /* headings on home and about pages */
-  #work h3,
-  #about h3 {
-    margin-top: 0;
   }
   /* columns within columns for list on about page */
   div.multi-column-list {
