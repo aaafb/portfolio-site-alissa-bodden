@@ -33,6 +33,7 @@ Home Page - Hero Section
 Home Page - Work Section
 About Page
 Footer
+Media Queries
 */
 
 /* GENERAL RULE */
@@ -365,4 +366,27 @@ footer {
 }
 #copyright p {
   margin: 32px 0 8px 0;
+}
+
+/* MEDIA QUERIES */
+
+/* ==============================
+M devices - 640px and larger
+============================== */
+@media only screen and (min-width: 640px) {
+}
+/* ==============================
+L devices - 1024px and larger
+============================== */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+XL devices - 1440px and larger
+============================== */
+@media only screen and (min-width: 1440px) {
+}
+/* ==============================
+XXL devices - 1920px and larger
+============================== */
+@media only screen and (min-width: 1440px) {
 }
