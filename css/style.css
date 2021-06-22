@@ -418,8 +418,9 @@ S devices - 640px and larger
   /* buttons on home page */
     margin: 4px 0;
   }
-  #work h3 {
   /* headings on work and about pages */
+  #work h3,
+  #about h3 {
     margin-top: 0;
   }
 }
@@ -471,8 +472,11 @@ M devices - 768px and larger
   /* buttons on home page */
     margin: 4px 0;
   }
-  #work h3 {
   /* headings on home and about pages */
+  #work h3,
+  #about h3 {
+    margin-top: 0;
+  }
   /* columns within columns for list on about page */
   div.multi-column-list {
     -moz-column-count: 2;
