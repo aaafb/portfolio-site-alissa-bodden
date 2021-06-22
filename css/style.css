@@ -86,7 +86,7 @@ h2 {
 h3 {
   font-size: 1.125em;
   font-weight: 700;
-  margin: 8px 0;
+  margin: 0.5em 0;
 }
 .regular-weight {
   font-weight: 400;
@@ -94,6 +94,9 @@ h3 {
 p {
   letter-spacing: -0.15px;
   margin: 0.7em 0;
+}
+ul {
+  margin-top: 0.6em;
 }
 
 /* LINKS AND BUTTONS */
@@ -312,7 +315,9 @@ nav > ul > li > a:focus {
 #about h2 {
   margin-top: 32px;
 }
-
+#about h3 {
+  margin-top: 1.2em;
+}
 #resume {
   text-align: center;
   width: 100%;
