@@ -127,7 +127,7 @@ a:active {
   border-radius: 6px;
   border-bottom: 3px solid #0f0f0f;
   transition: 0.2s opacity;
-  margin-bottom: 12px;
+  margin: 12px 0;
 }
 .button:visited {
   background-color: #383835;
