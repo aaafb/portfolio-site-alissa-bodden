@@ -467,7 +467,17 @@ M devices - 768px and larger
   #work h3 {
   /* headings on home and about pages */
   /* columns within columns for list on about page */
+  div.multi-column-list {
+    -moz-column-count: 2;
+    -moz-column-gap: 6px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 6px;
+    column-count: 2;
+    column-gap: 6px;
+  }
+  #about ul {
     margin-top: 0;
+    padding-inline-start: 24px;
   }
 }
 /* ==============================
