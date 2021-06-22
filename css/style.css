@@ -373,6 +373,7 @@ footer {
 S devices - 640px and larger
 ============================== */
 @media only screen and (min-width: 640px) {
+  /* header/nav bar */
   header {
     text-align: unset;
   }
@@ -384,9 +385,11 @@ S devices - 640px and larger
     float: right;
     padding-top: 12px;
   }
+  /* main content */
   main {
     padding-top: 92px;
   }
+  /* hero */
   #hero-subhead p {
     padding-left: 102px;
     padding-right: 102px;
@@ -395,6 +398,7 @@ S devices - 640px and larger
     padding-left: 140px;
     padding-right: 140px;
   }
+  /* columns */
   .col-sm-7 {
     width: 60%;
   }
@@ -411,9 +415,11 @@ S devices - 640px and larger
     display: table;
   }
   .button {
+  /* buttons on home page */
     margin: 4px 0;
   }
   #work h3 {
+  /* headings on work and about pages */
     margin-top: 0;
   }
 }
@@ -422,6 +428,7 @@ S devices - 640px and larger
 M devices - 768px and larger
 ============================== */
 @media only screen and (min-width: 768px) {
+  /* header/nav bar */
   header {
     text-align: unset;
   }
@@ -433,11 +440,14 @@ M devices - 768px and larger
     float: right;
     padding-top: 12px;
   }
+  /* main content */
   main {
     padding-top: 99px;
   }
   body {
+  /* hero */
   }
+  /* columns */
   .col-md-6 {
     width: 50%;
   }
@@ -451,9 +461,12 @@ M devices - 768px and larger
     display: table;
   }
   .button {
+  /* buttons on home page */
     margin: 4px 0;
   }
   #work h3 {
+  /* headings on home and about pages */
+  /* columns within columns for list on about page */
     margin-top: 0;
   }
 }
