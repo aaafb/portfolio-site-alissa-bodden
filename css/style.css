@@ -460,7 +460,7 @@ M devices - 768px and larger
   }
   [class*="col-"] {
     float: left;
-    padding: 0 8px;
+    padding: 0 10px;
   }
   .row::after {
     content: "";
