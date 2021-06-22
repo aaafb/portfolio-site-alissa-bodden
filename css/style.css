@@ -405,6 +405,9 @@ S devices - 640px and larger
   .col-sm-5 {
     width: 40%;
   }
+  .col-sm-6 {
+    width: 50%;
+  }
   [class*="col-"] {
     float: left;
     padding: 0 8px;
