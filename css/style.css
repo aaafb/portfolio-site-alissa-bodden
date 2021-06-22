@@ -373,6 +373,17 @@ footer {
 M devices - 640px and larger
 ============================== */
 @media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+  .logo {
+    padding-top: 8px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    padding-top: 12px;
+  }
 }
 /* ==============================
 L devices - 1024px and larger
