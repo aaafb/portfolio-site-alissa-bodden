@@ -386,6 +386,9 @@ S devices - 640px and larger
     padding-top: 12px;
   }
   /* main content */
+  .container {
+    padding: 0 24px;
+  }
   main {
     padding-top: 92px;
   }
@@ -432,6 +435,10 @@ S devices - 640px and larger
 M devices - 768px and larger
 ============================== */
 @media only screen and (min-width: 768px) {
+  /* page padding */
+  .container {
+    padding: 0 40px;
+  }
   /* hero */
   #hero-subhead p {
     padding-left: 0;
@@ -469,6 +476,10 @@ M devices - 768px and larger
 L devices - 1024px and larger
 ============================== */
 @media only screen and (min-width: 1024px) {
+  /* page padding */
+  .container {
+    padding: 0 80px;
+  }
   /* general type size */
   body {
     font-size: 18px;
@@ -499,6 +510,10 @@ L devices - 1024px and larger
 XL devices - 1440px and larger
 ============================== */
 @media only screen and (min-width: 1440px) {
+  /* page padding */
+  .container {
+    padding: 0 148px;
+  }
 }
 /* ==============================
 XXL devices - 1920px and larger
