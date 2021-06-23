@@ -475,6 +475,13 @@ M devices - 768px and larger
   main #work h3 {
     margin-top: 0.2em;
   }
+  /* buttons */
+  .button {
+    margin: 16px 0;
+  }
+  #work .button {
+    margin: 12px 0;
+  }
 }
 /* ==============================
 L devices - 1024px and larger
