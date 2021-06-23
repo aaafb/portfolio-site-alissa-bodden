@@ -470,6 +470,8 @@ M devices - 768px and larger
     margin-top: 0;
     padding-inline-start: 32px;
   }
+  main #work h3 {
+    margin-top: 0.2em;
   }
 }
 /* ==============================
@@ -499,11 +501,18 @@ L devices - 1024px and larger
   #about main h2 {
     text-align: left;
   }
+  main #work h2 {
+    margin-top: 44px;
+    margin-bottom: 32px;
+  }
   /* turning skills and tools lists back into linear format */
   div.multi-column-list {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
+  }
+  #skills-tools h3 {
+    margin-bottom: 0.2em;
   }
 }
 /* ==============================
