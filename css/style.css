@@ -519,6 +519,10 @@ L devices - 1024px and larger
     -webkit-column-count: 1;
     column-count: 1;
   }
+  /* spacing on home page */
+  #work div.row {
+    margin: 40px 0;
+  }
   #skills-tools h3 {
     margin-bottom: 0.2em;
   }
