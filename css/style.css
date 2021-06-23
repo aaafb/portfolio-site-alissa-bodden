@@ -458,6 +458,7 @@ M devices - 768px and larger
   [class*="col-"] {
     padding: 0 10px;
   }
+  /* About page */
   div.multi-column-list {
     -moz-column-count: 2;
     -moz-column-gap: 6px;
@@ -470,6 +471,7 @@ M devices - 768px and larger
     margin-top: 0;
     padding-inline-start: 32px;
   }
+  /* Home page */
   main #work h3 {
     margin-top: 0.2em;
   }
