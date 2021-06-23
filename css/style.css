@@ -457,7 +457,7 @@ M devices - 768px and larger
     column-count: 2;
     column-gap: 6px;
   }
-  #about ul {
+  #about main ul {
     margin-top: 0;
     padding-inline-start: 24px;
   }
@@ -477,7 +477,7 @@ L devices - 1024px and larger
     width: 100%;
   }
   /* headings */
-  #about h2 {
+  #about main h2 {
     text-align: left;
   }
   /* turning skills and tools lists back into linear format */
