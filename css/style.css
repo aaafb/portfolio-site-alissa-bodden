@@ -448,6 +448,9 @@ M devices - 768px and larger
   [class*="col-"] {
     padding: 0 10px;
   }
+  #skills-tools {
+    width: 100%;
+  }
   /* columns within columns for list on about page */
   div.multi-column-list {
     -moz-column-count: 2;
