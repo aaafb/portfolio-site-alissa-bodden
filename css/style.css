@@ -489,7 +489,9 @@ L devices - 1024px and larger
 @media only screen and (min-width: 1024px) {
   /* page padding */
   .container {
-    padding: 0 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   /* general type size */
   body {
@@ -544,15 +546,6 @@ L devices - 1024px and larger
 }
 /* ==============================
 XL devices - 1440px and larger
-============================== */
-@media only screen and (min-width: 1440px) {
-  /* page padding */
-  .container {
-    padding: 0 148px;
-  }
-}
-/* ==============================
-XXL devices - 1920px and larger
 ============================== */
 @media only screen and (min-width: 1440px) {
 }
