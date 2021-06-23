@@ -50,12 +50,14 @@ body {
   color: #383835;
   font-kerning: auto;
 }
+/* top padding on main element accomodates for fixed nav bar */
 main {
   padding-top: 133.3px;
 }
 img {
   width: 100%;
 }
+/* spacing between sections on project pages */
 .new-section img {
   margin: 28px 0 8px 0;
 }
