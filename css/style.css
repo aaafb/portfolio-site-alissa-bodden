@@ -469,6 +469,10 @@ M devices - 768px and larger
 L devices - 1024px and larger
 ============================== */
 @media only screen and (min-width: 1024px) {
+  /* general type size */
+  body {
+    font-size: 18px;
+  }
   /* columns */
   .col-lg-8 {
     width: 66.66%;
