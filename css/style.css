@@ -466,9 +466,10 @@ M devices - 768px and larger
     column-count: 2;
     column-gap: 6px;
   }
-  #about main ul {
+  .multi-column-list ul {
     margin-top: 0;
-    padding-inline-start: 24px;
+    padding-inline-start: 32px;
+  }
   }
 }
 /* ==============================
