@@ -523,8 +523,18 @@ L devices - 1024px and larger
   #work div.row {
     margin: 40px 0;
   }
+  /* spacing on about page */
+  #skills-tools div.row {
+    margin: 0.6em 0;
+  }
   #skills-tools h3 {
     margin-bottom: 0.2em;
+  }
+  div#skills-tools {
+    padding-left: 100px;
+  }
+  .multi-column-list ul {
+    margin-bottom: 1.4em;
   }
 }
 /* ==============================
