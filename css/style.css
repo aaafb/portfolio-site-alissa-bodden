@@ -251,11 +251,7 @@ nav > ul > li > a:focus {
   color: #f7f6e8;
   margin: 0;
 }
-#hero-subhead p {
-  font-family: "Josefin Slab", serif;
-  font-style: italic;
-  font-size: 1.5em;
-  font-weight: 400;
+#hero h2 {
   color: #f7f6e8;
   margin: 0.6em 0 0.75em;
 }
@@ -351,7 +347,7 @@ S devices - 640px and larger
     padding-top: 92px;
   }
   /* hero */
-  #hero-subhead p {
+  #hero h2 {
     padding-left: 102px;
     padding-right: 102px;
   }
@@ -401,7 +397,7 @@ M devices - 768px and larger
     padding: 0 40px;
   }
   /* hero */
-  #hero-subhead p {
+  #hero h2 {
     padding-left: 0;
     padding-right: 0;
   }
