@@ -36,8 +36,7 @@ Footer
 Media Queries
 */
 
-/* GENERAL RULE */
-
+/* GENERAL RULES */
 * {
   box-sizing: border-box;
 }
@@ -50,12 +49,19 @@ body {
   color: #383835;
   font-kerning: auto;
 }
+img {
+  width: 100%;
+}
+
+/* LAYOUT & SPACING */
 /* top padding on main element accomodates for fixed nav bar */
 main {
   padding-top: 133.3px;
 }
-img {
-  width: 100%;
+/* general page margins*/
+.container {
+  margin: 0 16px;
+}
 }
 /* spacing between sections on project pages */
 .new-section img {
@@ -63,7 +69,6 @@ img {
 }
 
 /* TYPOGRAPHY */
-
 h1,
 h2,
 h3,
@@ -103,7 +108,6 @@ ul {
 }
 
 /* LINKS AND BUTTONS */
-
 a {
   color: #461de6;
   padding: 0;
@@ -115,7 +119,6 @@ a:hover {
   color: #59581f;
   text-decoration: none;
 }
-
 a:active {
   color: #4a491a;
 }
@@ -205,18 +208,11 @@ a:focus {
   border: 4px solid #fae63a;
   padding: 10px 20px 8px;
 }
-
-/* LAYOUT */
-
-.container {
-  padding: 0 15px;
-}
 .row {
   margin: 25px 0;
 }
 
 /* HEADER/NAV BAR */
-
 .logo {
   max-width: 200px;
 }
@@ -264,7 +260,7 @@ nav > ul > li > a:focus {
   background-color: #fae63a;
 }
 
-/* HOME PAGE - HERO SECTION */
+/* HOME PAGE */
 #hero {
   background-color: #383835;
   border-bottom: 6px solid #f7f6e8;
@@ -273,12 +269,10 @@ nav > ul > li > a:focus {
   width: 100%;
   text-align: center;
 }
-
 #hero h1 {
   color: #f7f6e8;
   margin: 0;
 }
-
 #hero-subhead p {
   font-family: "Josefin Slab", serif;
   font-style: italic;
@@ -288,14 +282,11 @@ nav > ul > li > a:focus {
   margin-block-start: 16px;
   margin-block-end: 20px;
 }
-
 #hero-blurb p {
   color: #f7f6e8;
   margin: 0;
   padding: 0 16px;
 }
-
-/* HOME PAGE - WORK SECTION */
 #work h2 {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
@@ -347,7 +338,6 @@ footer {
 #email a {
   margin-bottom: 32px;
 }
-
 #social ul {
   list-style-type: none;
   padding: 0;
@@ -376,7 +366,7 @@ footer {
 S devices - 640px and larger
 ============================== */
 @media only screen and (min-width: 640px) {
-  /* header/nav bar */
+  /* HEADER/NAV BAR */
   header {
     text-align: unset;
   }
