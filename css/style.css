@@ -261,8 +261,11 @@ nav > ul > li > a:focus {
   color: #f7f6e8;
   font-size: 1em;
   font-weight: 300;
-  margin: 0;
-  padding: 0 1em;
+  line-height: 1.55;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width: 310px;
 }
 #work h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -355,8 +358,7 @@ S devices - 640px and larger
     max-width: 580px;
   }
   #hero h3 {
-    padding-left: 140px;
-    padding-right: 140px;
+    max-width: 387px;
   }
   /* columns */
   .col-sm-7 {
@@ -408,8 +410,7 @@ M devices - 768px and larger
     max-width: fit-content;
   }
   #hero h3 {
-    padding-left: 140px;
-    padding-right: 140px;
+    max-width: 415px;
   }
   /* columns */
   .col-md-6 {
@@ -478,6 +479,9 @@ L devices - 1024px and larger
   main #work h2 {
     margin-top: 44px;
     margin-bottom: 32px;
+  }
+  #hero h3 {
+    max-width: 440px;
   }
   /* turning skills and tools lists back into linear format */
   div.multi-column-list {
