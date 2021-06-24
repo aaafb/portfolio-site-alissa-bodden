@@ -98,15 +98,15 @@ h3 {
   font-weight: 700;
   margin: 0.5em 0;
 }
-.regular-weight {
-  font-weight: 400;
-}
 p {
   letter-spacing: -0.15px;
   margin: 0.7em 0;
 }
 ul {
   margin-top: 0.6em;
+}
+.regular-weight {
+  font-weight: 400;
 }
 
 /* LINKS AND BUTTONS */
