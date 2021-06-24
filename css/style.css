@@ -398,6 +398,10 @@ M devices - 768px and larger
   .container {
     padding: 0 40px;
   }
+  /* general type size */
+  body {
+    font-size: 17px;
+  }
   /* hero */
   #hero h2 {
     padding-left: 0;
