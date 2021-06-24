@@ -82,7 +82,7 @@ h1 {
   font-size: 1.75em;
   font-weight: 700;
   text-align: center;
-  margin-top: 32px;
+  margin: 1.3em 0 0.8em;
 }
 h2 {
   font-family: "Josefin Slab", serif;
@@ -139,7 +139,7 @@ a:focus {
   border-radius: 6px;
   border-bottom: 3px solid #0f0f0f;
   transition: 0.2s opacity;
-  margin: 12px 0;
+  margin: 0.5em 0;
 }
 .button:visited {
   background-color: #383835;
@@ -264,7 +264,7 @@ nav > ul > li > a:focus {
 #hero {
   background-color: #383835;
   border-bottom: 6px solid #f7f6e8;
-  padding: 32px 0 36px 0;
+  padding: 2em 0 2.25em 0;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -279,13 +279,12 @@ nav > ul > li > a:focus {
   font-size: 1.5em;
   font-weight: 400;
   color: #f7f6e8;
-  margin-block-start: 16px;
-  margin-block-end: 20px;
+  margin: 0.6em 0 0.75em;
 }
 #hero-blurb p {
   color: #f7f6e8;
   margin: 0;
-  padding: 0 16px;
+  padding: 0 1em;
 }
 #work h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -299,10 +298,10 @@ nav > ul > li > a:focus {
   font-style: italic;
   font-size: 1.5em;
   font-weight: 400;
-  margin-bottom: 8px;
+  margin-bottom: 0.2em;
 }
 #work p {
-  margin-top: 8px;
+  margin-top: 0.4em;
 }
 
 /* ABOUT PAGE */
@@ -321,9 +320,9 @@ nav > ul > li > a:focus {
 footer {
   background-color: #f7f6e8;
   text-align: center;
-  padding: 24px 12px 16px;
+  padding: 2.25em 1.5em 0.25em;
   width: 100%;
-  margin-top: 44px;
+  margin-top: 2.8em;
 }
 #contact h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -333,10 +332,10 @@ footer {
   margin: 12px 0;
 }
 #contact p {
-  margin: 12px 12px 20px 12px;
-}
 #email a {
   margin-bottom: 32px;
+  margin-top: 0.75em;
+  margin-bottom: 1.25em;
 }
 #social ul {
   list-style-type: none;
@@ -352,7 +351,7 @@ footer {
 #social a:active,
 #social a:focus {
   padding: 4px;
-  margin: 24px 8px 16px 8px;
+  margin: 1.5em 0.5em 1em;
   color: rgba(56, 56, 53, 0.9);
   font-size: 1.33em;
 }
