@@ -459,7 +459,7 @@ L devices - 1024px and larger
   }
   /* columns */
   [class*="col-"] {
-    padding: 0 12px;
+    padding: 0 14px;
   }
   .col-lg-8 {
     width: 66.66%;
