@@ -62,10 +62,12 @@ main {
 .container {
   margin: 0 16px;
 }
+/* spacing between blocks of content */
+.image {
+  margin-bottom: 1em;
 }
-/* spacing between sections on project pages */
-.new-section img {
-  margin: 28px 0 8px 0;
+.text-content {
+  margin-bottom: 2.5em;
 }
 
 /* TYPOGRAPHY */
@@ -208,8 +210,6 @@ a:focus {
   border: 4px solid #fae63a;
   padding: 10px 20px 8px;
 }
-.row {
-  margin: 25px 0;
 }
 
 /* HEADER/NAV BAR */
