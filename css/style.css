@@ -103,6 +103,7 @@ p {
   margin: 0.7em 0;
 }
 ul {
+  padding-left: 2em;
   margin-top: 0.6em;
 }
 .regular-weight {
@@ -426,7 +427,6 @@ M devices - 768px and larger
   }
   .multi-column-list ul {
     margin-top: 0;
-    padding-inline-start: 32px;
   }
   /* Home page */
   main #work h3 {
