@@ -23,14 +23,13 @@ Semibold: 600
 Bold: 700 
 */
 
-/* Tablet of Contents:
+/* Table of Contents:
 General
+Layout & Spacing
 Typography
 Links and Buttons
-Layout
 Header/Nav Bar
-Home Page - Hero Section
-Home Page - Work Section
+Home Page
 About Page
 Footer
 Media Queries
@@ -334,33 +333,13 @@ footer {
 S devices - 640px and larger
 ============================== */
 @media only screen and (min-width: 640px) {
-  /* HEADER/NAV BAR */
-  header {
-    text-align: unset;
-  }
-  .logo {
-    padding-top: 8px;
-  }
-  nav {
-    width: auto;
-    float: right;
-    padding-top: 12px;
-  }
-  /* MAIN CONTENT */
+  /* LAYOUT & SPACING */
   .container {
     padding: 0 1em;
   }
   main {
     padding-top: 92px;
   }
-  /* HERO HEADINGS */
-  #hero h2 {
-    max-width: 580px;
-  }
-  #hero h3 {
-    max-width: 387px;
-  }
-  /* COLUMNS */
   .col-sm-7 {
     width: 58.33%;
   }
@@ -379,25 +358,44 @@ S devices - 640px and larger
     clear: both;
     display: table;
   }
-  #skills-tools {
-    width: 100%;
+  /* HEADER/NAV BAR */
+  header {
+    text-align: unset;
   }
-  /* buttons on home page */
+  .logo {
+    padding-top: 8px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    padding-top: 12px;
+  }
+  /* HOME PAGE */
+  #hero h2 {
+    max-width: 580px;
+  }
+  #hero h3 {
+    max-width: 387px;
+  }
+  #work h3 {
+    margin-top: 0;
+  }
   #work .button {
     margin: 4px 0;
   }
-  /* headings on work and about pages */
-  #work h3,
-  #about h3 {
-    margin-top: 0;
-  }
-  /* HOME PAGE SPACING */
-  .text-content,
-  .image {
+  #work .text-content,
+  #work .image {
     margin-bottom: 0;
   }
   .project-block {
     margin-bottom: 2.4em;
+  }
+  /* ABOUT PAGE */
+  #skills-tools {
+    width: 100%;
+  }
+  #about h3 {
+    margin-top: 0;
   }
 }
 
@@ -405,29 +403,41 @@ S devices - 640px and larger
 M devices - 768px and larger
 ============================== */
 @media only screen and (min-width: 768px) {
-  /* page padding */
+  /* LAYOUT & SPACING */
   .container {
     padding: 0 1.2em;
   }
-  /* general type size */
-  body {
-    font-size: 17px;
-  }
-  /* HERO HEADINGS */
-  #hero h2 {
-    max-width: fit-content;
-  }
-  #hero h3 {
-    max-width: 415px;
-  }
-  /* columns */
   .col-md-6 {
     width: 50%;
   }
   [class*="col-"] {
     padding: 0 0.65em;
   }
-  /* About page */
+  .button {
+    margin: 16px 0;
+  }
+  /* TYPOGRAPHY */
+  body {
+    font-size: 17px;
+  }
+  /* HOME PAGE */
+  #hero h2 {
+    max-width: fit-content;
+  }
+  #hero h3 {
+    max-width: 415px;
+  }
+  main #work h3 {
+    margin-top: 0.2em;
+  }
+  #work .button {
+    margin: 12px 0;
+  }
+  /* ABOUT PAGE */
+  .multi-column-list ul {
+    margin-top: 0;
+  }
+  /* turning skills and tools list into 4-column layout */
   div.multi-column-list {
     -moz-column-count: 2;
     -moz-column-gap: 6px;
@@ -436,37 +446,18 @@ M devices - 768px and larger
     column-count: 2;
     column-gap: 6px;
   }
-  .multi-column-list ul {
-    margin-top: 0;
-  }
-  /* Home page */
-  main #work h3 {
-    margin-top: 0.2em;
-  }
-  /* buttons */
-  .button {
-    margin: 16px 0;
-  }
-  #work .button {
-    margin: 12px 0;
-  }
 }
 /* ==============================
 L devices - 1024px and larger
 ============================== */
 @media only screen and (min-width: 1024px) {
-  /* page padding */
+  /* LAYOUT & SPACING */
   .container {
     max-width: 1200px;
     padding: 0 1.7em;
     margin-left: auto;
     margin-right: auto;
   }
-  /* general type size */
-  body {
-    font-size: 18px;
-  }
-  /* columns */
   [class*="col-"] {
     padding: 0 0.8em;
   }
@@ -476,23 +467,17 @@ L devices - 1024px and larger
   .col-lg-5 {
     width: 42%;
   }
-
-  .col-lg-4,
-  #skills-tools {
+  .col-lg-4 {
     width: 33%;
   }
-
   .col-lg-8 {
     width: 67%;
   }
-
-  #about .col-md-6 {
-    width: 100%;
+  /* TYPOGRAPHY */
+  body {
+    font-size: 18px;
   }
-  /* headings */
-  #about main h2 {
-    text-align: left;
-  }
+  /* HOME PAGE */
   main #work h2 {
     margin-top: 1.5em;
     margin-bottom: 0.9em;
@@ -500,13 +485,16 @@ L devices - 1024px and larger
   #hero h3 {
     max-width: 440px;
   }
-  /* turning skills and tools lists back into linear format */
-  div.multi-column-list {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
+  /* ABOUT PAGE */
+  #about .col-md-6 {
+    width: 100%;
   }
-  /* spacing on about page */
+  #about main h2 {
+    text-align: left;
+  }
+  #skills-tools {
+    width: 33%;
+  }
   #skills-tools div.row {
     margin: 0.6em 0;
   }
@@ -518,6 +506,12 @@ L devices - 1024px and larger
   }
   .multi-column-list ul {
     margin-bottom: 1.4em;
+  }
+  /* turning skills and tools lists back into linear format */
+  div.multi-column-list {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
   }
 }
 /* ==============================
