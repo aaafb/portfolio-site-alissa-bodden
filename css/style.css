@@ -547,6 +547,9 @@ L devices - 1024px and larger
   .multi-column-list ul {
     margin-bottom: 1.4em;
   }
+  #resume {
+    text-align: left;
+  }
   /* turning skills and tools lists back into linear format */
   div.multi-column-list {
     -moz-column-count: 1;
