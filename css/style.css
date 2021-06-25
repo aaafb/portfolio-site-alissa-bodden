@@ -557,8 +557,3 @@ L devices - 1024px and larger
     column-count: 1;
   }
 }
-/* ==============================
-XL devices - 1440px and larger
-============================== */
-@media only screen and (min-width: 1440px) {
-}
