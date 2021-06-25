@@ -506,10 +506,6 @@ L devices - 1024px and larger
     -webkit-column-count: 1;
     column-count: 1;
   }
-  /* spacing on home page */
-  #work div.row {
-    margin: 40px 0;
-  }
   /* spacing on about page */
   #skills-tools div.row {
     margin: 0.6em 0;
