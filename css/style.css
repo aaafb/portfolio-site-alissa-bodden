@@ -32,6 +32,7 @@ Header/Nav Bar
 Home Page
 About Page
 Footer
+Animation
 Media Queries
 */
 
@@ -338,6 +339,24 @@ footer {
   margin: 1.5em 0.5em 1em;
   color: rgba(56, 56, 53, 0.9);
   font-size: 1.33em;
+}
+
+/* ANIMATIONS */
+#dog-waiting {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes head-pop {
+  from {
+    transform: translate(0, 350px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+#dog {
+  animation: 2s head-pop infinite alternate ease;
 }
 
 /* MEDIA QUERIES */
