@@ -364,7 +364,7 @@ S devices - 640px and larger
   }
   [class*="col-"] {
     float: left;
-    padding: 0 0.5em;
+    padding: 0 0.65em;
   }
   .row::after {
     content: "";
@@ -411,7 +411,6 @@ S devices - 640px and larger
     margin-top: 0;
   }
 }
-
 /* ==============================
 M devices - 768px and larger
 ============================== */
