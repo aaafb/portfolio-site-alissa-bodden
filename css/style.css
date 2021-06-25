@@ -470,12 +470,20 @@ L devices - 1024px and larger
   [class*="col-"] {
     padding: 0 0.8em;
   }
-  .col-lg-8 {
-    width: 66.66%;
+  .col-lg-7 {
+    width: 58%;
   }
+  .col-lg-5 {
+    width: 42%;
+  }
+
   .col-lg-4,
   #skills-tools {
-    width: 33.33%;
+    width: 33%;
+  }
+
+  .col-lg-8 {
+    width: 67%;
   }
 
   #about .col-md-6 {
