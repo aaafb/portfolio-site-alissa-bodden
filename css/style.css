@@ -346,21 +346,21 @@ S devices - 640px and larger
     float: right;
     padding-top: 12px;
   }
-  /* main content */
+  /* MAIN CONTENT */
   .container {
     padding: 0 1.1em;
   }
   main {
     padding-top: 92px;
   }
-  /* hero */
+  /* HERO HEADINGS */
   #hero h2 {
     max-width: 580px;
   }
   #hero h3 {
     max-width: 387px;
   }
-  /* columns */
+  /* COLUMNS */
   .col-sm-7 {
     width: 58.33%;
   }
@@ -391,6 +391,7 @@ S devices - 640px and larger
   #about h3 {
     margin-top: 0;
   }
+  /* HOME PAGE SPACING */
 }
 
 /* ==============================
@@ -405,7 +406,7 @@ M devices - 768px and larger
   body {
     font-size: 17px;
   }
-  /* hero */
+  /* HERO HEADINGS */
   #hero h2 {
     max-width: fit-content;
   }
