@@ -348,7 +348,7 @@ S devices - 640px and larger
   }
   /* main content */
   .container {
-    padding: 0 24px;
+    padding: 0 1.1em;
   }
   main {
     padding-top: 92px;
@@ -399,7 +399,7 @@ M devices - 768px and larger
 @media only screen and (min-width: 768px) {
   /* page padding */
   .container {
-    padding: 0 40px;
+    padding: 0 1.2em;
   }
   /* general type size */
   body {
@@ -450,6 +450,7 @@ L devices - 1024px and larger
   /* page padding */
   .container {
     max-width: 1200px;
+    padding: 0 1.3em;
     margin-left: auto;
     margin-right: auto;
   }
