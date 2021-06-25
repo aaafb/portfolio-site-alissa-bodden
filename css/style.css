@@ -136,10 +136,10 @@ a:focus {
   background-color: #383835;
   padding: 10px 20px 8px;
   border-radius: 6px;
-  border-bottom: 3px solid #0f0f0f;
+  border-bottom: 3px solid #212121;
   margin: 0.5em 0;
   display: inline-block;
-  transition: 0.2s background-color;
+  transition: 0.2s background-color font-weight;
 }
 .button:visited {
   background-color: #383835;
@@ -165,7 +165,7 @@ a:focus {
   color: #383835;
   border: 2px solid #383835;
   border-bottom: 4px solid #212121;
-  transition: 0.2s opacity;
+  transition: 0.2s background-color color font-weight;
 }
 .button.secondary:visited {
   background-color: transparent;
@@ -177,7 +177,9 @@ a:focus {
   background-color: #59581f;
   color: #fffef7;
   font-weight: 600;
+  padding: 12px 22px 9px;
   border: none;
+  border-bottom: 3px solid #212121;
 }
 .button.secondary:active {
   background-color: #4a491a;
