@@ -129,16 +129,16 @@ a:focus {
 }
 
 .button {
-  display: inline-block;
-  background-color: #383835;
   color: #fffef7;
   font-weight: 400;
   text-decoration: none;
+  background-color: #383835;
   padding: 10px 20px 8px;
   border-radius: 6px;
   border-bottom: 3px solid #0f0f0f;
-  transition: 0.2s opacity;
   margin: 0.5em 0;
+  display: inline-block;
+  transition: 0.2s background-color;
 }
 .button:visited {
   background-color: #383835;
