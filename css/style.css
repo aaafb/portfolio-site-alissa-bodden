@@ -392,6 +392,13 @@ S devices - 640px and larger
     margin-top: 0;
   }
   /* HOME PAGE SPACING */
+  .text-content,
+  .image {
+    margin-bottom: 0;
+  }
+  .project-block {
+    margin-bottom: 2.4em;
+  }
 }
 
 /* ==============================
