@@ -32,6 +32,7 @@ Header/Nav Bar
 Home Page
 About Page
 Footer
+Main Heading Highlight Styling
 Animation
 Media Queries
 */
@@ -215,6 +216,7 @@ header {
   text-align: center;
   padding: 24px 0;
   position: fixed;
+  z-index: 2;
   width: 100%;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
   -moz-box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
@@ -341,6 +343,37 @@ footer {
   margin: 1.5em 0.5em 1em;
   color: rgba(56, 56, 53, 0.9);
   font-size: 1.33em;
+}
+
+/* MAIN HEADING HIGHLIGHT STYLING */
+.title-wrapper {
+  position: relative;
+  display: block;
+}
+.title {
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title h2 {
+  margin-bottom: 0.9em;
+}
+.highlight {
+  position: absolute;
+  background: #faf29f;
+  width: 100%;
+  height: 38%;
+  bottom: 0.15em;
+  left: 0;
+  z-index: -1;
+  transition: 400ms;
+}
+#hero .highlight {
+  background: #78754d;
 }
 
 /* ANIMATIONS */
