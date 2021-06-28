@@ -391,7 +391,7 @@ footer {
   }
 }
 #dog {
-  animation: 2s head-pop infinite alternate ease;
+  animation: 1s head-pop infinite alternate ease;
 }
 
 /* MEDIA QUERIES */
