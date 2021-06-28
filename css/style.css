@@ -323,8 +323,8 @@ footer {
   margin: 0;
 }
 #contact p {
-  margin-top: 0.75em;
-  margin-bottom: 1.25em;
+  max-width: 380px;
+  margin: 0.75em auto 1.25em;
 }
 #social ul {
   list-style-type: none;
@@ -512,6 +512,10 @@ M devices - 768px and larger
     column-count: 2;
     column-gap: 6px;
   }
+  /* FOOTER */
+  #contact p {
+    max-width: 412px;
+  }
 }
 /* ==============================
 L devices - 1024px and larger
@@ -588,5 +592,9 @@ L devices - 1024px and larger
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
+  }
+  /* FOOTER */
+  #contact p {
+    max-width: 432px;
   }
 }
