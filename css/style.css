@@ -41,6 +41,11 @@ Media Queries
 * {
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fffef7;
   font-family: "Josefin Sans", sans-serif;
@@ -240,16 +245,13 @@ nav > ul > li {
   display: inline-block;
 }
 nav > ul > li > a {
-  padding: 0 20px;
+  padding: 10px 20px;
   font-weight: 600;
   text-decoration: none;
   color: #f7f6e8;
 }
 nav > ul > li > a:visited {
   color: #fffef7;
-}
-nav > ul > li > a:hover {
-  text-decoration: underline;
 }
 nav > ul > li > a:active {
   color: rgba(255, 254, 247, 0.7);
@@ -601,4 +603,38 @@ L devices - 1024px and larger
   #contact p {
     max-width: 432px;
   }
+}
+
+nav a {
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+nav.borderXwidth a:before,
+nav.borderXwidth a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: "";
+  background: #fff;
+  transition: all 0.3s;
+}
+
+nav.borderXwidth a:before {
+  left: 0px;
+  top: 0px;
+}
+
+nav.borderXwidth a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+nav.borderXwidth a:hover:before,
+nav.borderXwidth a:hover:after {
+  opacity: 1;
+  width: 100%;
 }
