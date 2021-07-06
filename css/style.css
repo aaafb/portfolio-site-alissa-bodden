@@ -143,7 +143,6 @@ a:focus {
   transition: 0.2s background-color font-weight;
 }
 .button:visited {
-  background-color: #383835;
   color: #fffef7;
   font-weight: 400;
   text-decoration: none;
@@ -205,6 +204,11 @@ a:focus {
 }
 .image-link:focus {
   background-color: transparent;
+}
+
+.coming-soon {
+  background-color: gray;
+  pointer-events: none;
 }
 
 /* HEADER/NAV BAR */
