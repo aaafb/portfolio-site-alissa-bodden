@@ -400,8 +400,45 @@ footer {
   animation: 1s head-pop infinite alternate ease;
 }
 
+/* EMBEDDED PROTOTYPES */
+.prototype-embed {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  padding-top: 216.48%;
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* MEDIA QUERIES */
 
+/* ==============================
+XS devices - 422px and larger
+============================== */
+@media only screen and (min-width: 422px) {
+  /* EMBEDDED PROTOTYPES */
+
+  .prototype-embed {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 812px;
+    padding-top: 0;
+  }
+  .responsive-iframe {
+    display: block;
+    top: auto;
+    left: auto;
+    width: 375px;
+    height: 812px;
+  }
+}
 /* ==============================
 S devices - 640px and larger
 ============================== */
