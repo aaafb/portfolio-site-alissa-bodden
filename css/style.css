@@ -460,12 +460,18 @@ XS devices - 422px and larger
     max-width: 378px;
   }
   /* EMBEDDED PROTOTYPES */
+  .iframe-gparent {
+    display: flex;
+    margin-bottom: 1em;
+  }
   .prototype-embed {
     display: block;
+    position: relative;
     overflow: auto;
-    width: 100%;
+    width: 375px;
     height: 812px;
     padding-top: 0;
+    margin: auto;
   }
   .responsive-iframe {
     display: block;
