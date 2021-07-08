@@ -233,6 +233,7 @@ a:focus {
 .image-link {
   font-size: 0;
   line-height: 0;
+  display: inline;
 }
 .image-link a:visited {
   background-color: transparent;
@@ -258,7 +259,6 @@ a:focus {
 }
 header {
   background-color: #383835;
-  padding: 20px 0;
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -266,7 +266,12 @@ header {
   -moz-box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
   box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
 }
-
+.navtoggle {
+  padding: 22px 0 16px;
+}
+.navtoggle.responsive {
+  padding: 22px 0 6px;
+}
 nav > ul /* child combinator to select only unordered lists within the nav element */ {
   list-style-type: none;
   padding: 0;
@@ -296,13 +301,22 @@ nav > ul > li > a:focus {
 .navtoggle.responsive {
   position: relative;
 }
+.navtoggle.responsive nav {
+  padding-top: 16px;
+}
+.navtoggle.responsive li:not(:last-child) {
+  display: block;
+  padding: 12px 0 10px;
+  border-top: 1px solid rgba(247, 246, 232, 0.3);
+}
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 22px;
   padding: 0;
   font-size: 18px;
 }
+
 .hamburger a:visited,
 .hamburger a:hover,
 .hamburger a:active,
@@ -328,7 +342,7 @@ nav > ul > li > a:focus {
 #hero h2 {
   color: #f7f6e8;
   margin: 0.8em auto 0.6em;
-  max-width: 380px;
+  max-width: 270px;
 }
 #hero h3 {
   color: #f7f6e8;
@@ -438,11 +452,14 @@ footer {
 /* MEDIA QUERIES */
 
 /* ==============================
-XS devices - 422px and larger (specifically for embedded prototype)
+XS devices - 422px and larger
 ============================== */
 @media only screen and (min-width: 422px) {
+  /* HOME PAGE */
+  #hero h2 {
+    max-width: 378px;
+  }
   /* EMBEDDED PROTOTYPES */
-
   .prototype-embed {
     display: block;
     overflow: auto;
@@ -467,7 +484,7 @@ S devices - 640px and larger
     padding: 0 1em;
   }
   main {
-    padding-top: 92px;
+    padding-top: 87px;
   }
   .col-sm-7 {
     width: 58.33%;
@@ -502,6 +519,9 @@ S devices - 640px and larger
   }
   nav > ul > li {
     display: inline-block;
+  }
+  .navtoggle {
+    padding: 22px 0 20px;
   }
   .navtoggle li:not(:last-child) /* REVERSES hiding nav list elements except for last child */ {
     display: inline-block;
@@ -574,6 +594,9 @@ M devices - 768px and larger
   /* LAYOUT & SPACING */
   .container {
     padding: 0 1.2em;
+  }
+  main {
+    padding-top: 82px;
   }
   .col-md-6 {
     width: 50%;
