@@ -27,13 +27,15 @@ Bold: 700
 General
 Layout & Spacing
 Typography
+  Main heading highlight styling
 Links and Buttons
 Header/Nav Bar
+  Nav button hover animation
 Home Page
 About Page
 Footer
-Main Heading Highlight Styling
 Animation
+Embedded Prototypes
 Media Queries
 */
 
@@ -114,6 +116,36 @@ ul {
 }
 .regular-weight {
   font-weight: 400;
+}
+/* main heading highlight styling */
+.title-wrapper {
+  position: relative;
+  display: block;
+}
+.title {
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title h2 {
+  margin-bottom: 0.9em;
+}
+.highlight {
+  position: absolute;
+  background: #faf29f;
+  width: 100%;
+  height: 38%;
+  bottom: 0.15em;
+  left: 0;
+  z-index: -1;
+  transition: 400ms;
+}
+#hero .highlight {
+  background: #78754d;
 }
 
 /* LINKS AND BUTTONS */
@@ -260,6 +292,36 @@ nav > ul > li > a:focus {
   color: #383835;
   background-color: #fae63a;
 }
+/* nav button hover animation */
+nav a {
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+nav.borderXwidth a:before,
+nav.borderXwidth a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: "";
+  background: #fff;
+  transition: all 0.3s;
+}
+nav.borderXwidth a:before {
+  left: 0px;
+  top: 0px;
+}
+nav.borderXwidth a:after {
+  right: 0px;
+  bottom: 0px;
+}
+nav.borderXwidth a:hover:before,
+nav.borderXwidth a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
 
 /* HOME PAGE */
 #hero {
@@ -348,37 +410,6 @@ footer {
   margin: 1.5em 0.5em 1em;
   color: rgba(56, 56, 53, 0.9);
   font-size: 1.33em;
-}
-
-/* MAIN HEADING HIGHLIGHT STYLING */
-.title-wrapper {
-  position: relative;
-  display: block;
-}
-.title {
-  position: relative;
-  width: fit-content;
-  z-index: 1;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.title h2 {
-  margin-bottom: 0.9em;
-}
-.highlight {
-  position: absolute;
-  background: #faf29f;
-  width: 100%;
-  height: 38%;
-  bottom: 0.15em;
-  left: 0;
-  z-index: -1;
-  transition: 400ms;
-}
-#hero .highlight {
-  background: #78754d;
 }
 
 /* ANIMATIONS */
@@ -642,38 +673,4 @@ L devices - 1024px and larger
   #contact p {
     max-width: 432px;
   }
-}
-
-nav a {
-  text-decoration: none;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-nav.borderXwidth a:before,
-nav.borderXwidth a:after {
-  position: absolute;
-  opacity: 0;
-  width: 0%;
-  height: 2px;
-  content: "";
-  background: #fff;
-  transition: all 0.3s;
-}
-
-nav.borderXwidth a:before {
-  left: 0px;
-  top: 0px;
-}
-
-nav.borderXwidth a:after {
-  right: 0px;
-  bottom: 0px;
-}
-
-nav.borderXwidth a:hover:before,
-nav.borderXwidth a:hover:after {
-  opacity: 1;
-  width: 100%;
 }
