@@ -64,7 +64,7 @@ img {
 /* LAYOUT & SPACING */
 /* top padding on main element accomodates for fixed nav bar */
 main {
-  padding-top: 133.3px;
+  padding-top: 63px;
 }
 /* general page margins*/
 .container {
@@ -230,16 +230,20 @@ a:focus {
   border: 4px solid #fae63a;
 }
 
-.image-link:visited {
+.image-link {
+  font-size: 0;
+  line-height: 0;
+}
+.image-link a:visited {
   background-color: transparent;
 }
-.image-link:hover {
+.image-link a:hover {
   background-color: transparent;
 }
-.image-link:active {
+.image-link a:active {
   background-color: transparent;
 }
-.image-link:focus {
+.image-link a:focus {
   background-color: transparent;
 }
 
@@ -250,11 +254,11 @@ a:focus {
 
 /* HEADER/NAV BAR */
 .logo {
-  max-width: 150px;
+  max-width: 160px;
 }
 header {
   background-color: #383835;
-  padding: 24px 0;
+  padding: 20px 0;
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -262,18 +266,11 @@ header {
   -moz-box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
   box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
 }
-nav {
-  display: inline-block;
-  width: 100%;
-  padding-top: 24px;
-}
+
 nav > ul /* child combinator to select only unordered lists within the nav element */ {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-nav > ul > li {
-  display: inline-block;
 }
 nav > ul > li > a {
   padding: 10px 20px;
@@ -291,35 +288,28 @@ nav > ul > li > a:focus {
   color: #383835;
   background-color: #fae63a;
 }
-/* nav button hover animation */
-nav a {
-  text-decoration: none;
+/* mobile nav hamburger menu icon */
+.navtoggle li:not(:last-child) /* hides nav list elements except for last child */ {
+  display: none;
+}
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
-  z-index: 0;
-  cursor: pointer;
 }
-nav.borderXwidth a:before,
-nav.borderXwidth a:after {
+.navtoggle li .icon {
   position: absolute;
-  opacity: 0;
-  width: 0%;
-  height: 2px;
-  content: "";
-  background: #fff;
-  transition: all 0.3s;
+  right: 0;
+  top: 0;
+  padding: 0;
+  font-size: 18px;
 }
-nav.borderXwidth a:before {
-  left: 0px;
-  top: 0px;
-}
-nav.borderXwidth a:after {
-  right: 0px;
-  bottom: 0px;
-}
-nav.borderXwidth a:hover:before,
-nav.borderXwidth a:hover:after {
-  opacity: 1;
-  width: 100%;
+.hamburger a:visited,
+.hamburger a:hover,
+.hamburger a:active,
+.hamburger a:focus {
+  color: #f7f6e8;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 /* HOME PAGE */
@@ -448,7 +438,7 @@ footer {
 /* MEDIA QUERIES */
 
 /* ==============================
-XS devices - 422px and larger
+XS devices - 422px and larger (specifically for embedded prototype)
 ============================== */
 @media only screen and (min-width: 422px) {
   /* EMBEDDED PROTOTYPES */
@@ -509,6 +499,45 @@ S devices - 640px and larger
     width: auto;
     float: right;
     padding-top: 12px;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) /* REVERSES hiding nav list elements except for last child */ {
+    display: inline-block;
+  }
+  .navtoggle li:last-child /* hides hamburger icon */ {
+    display: none;
+  }
+  /* nav button hover animation */
+  nav a {
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+  }
+  nav.borderXwidth a:before,
+  nav.borderXwidth a:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: "";
+    background: #fff;
+    transition: all 0.3s;
+  }
+  nav.borderXwidth a:before {
+    left: 0px;
+    top: 0px;
+  }
+  nav.borderXwidth a:after {
+    right: 0px;
+    bottom: 0px;
+  }
+  nav.borderXwidth a:hover:before,
+  nav.borderXwidth a:hover:after {
+    opacity: 1;
+    width: 100%;
   }
   /* HOME PAGE */
   #hero h2 {
