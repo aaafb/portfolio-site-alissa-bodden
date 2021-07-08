@@ -250,11 +250,10 @@ a:focus {
 
 /* HEADER/NAV BAR */
 .logo {
-  max-width: 200px;
+  max-width: 150px;
 }
 header {
   background-color: #383835;
-  text-align: center;
   padding: 24px 0;
   position: fixed;
   z-index: 2;
@@ -503,6 +502,7 @@ S devices - 640px and larger
     text-align: unset;
   }
   .logo {
+    max-width: 200px;
     padding-top: 8px;
   }
   nav {
