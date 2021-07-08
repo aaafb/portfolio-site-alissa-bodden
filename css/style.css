@@ -276,8 +276,7 @@ nav > ul > li > a:focus {
 }
 #hero h2 {
   color: #f7f6e8;
-  margin: 0.6em auto 0.75em;
-  padding: 0;
+  margin: 0.8em auto 0.6em;
   max-width: 380px;
 }
 #hero h3 {
@@ -288,7 +287,7 @@ nav > ul > li > a:focus {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  max-width: 310px;
+  max-width: 300px;
 }
 #work h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -482,10 +481,10 @@ S devices - 640px and larger
   }
   /* HOME PAGE */
   #hero h2 {
-    max-width: 580px;
+    max-width: 450px;
   }
   #hero h3 {
-    max-width: 387px;
+    max-width: 430px;
   }
   #work h3 {
     margin-top: 0;
@@ -531,10 +530,10 @@ M devices - 768px and larger
   }
   /* HOME PAGE */
   #hero h2 {
-    max-width: fit-content;
+    max-width: 500px;
   }
   #hero h3 {
-    max-width: 415px;
+    max-width: 450px;
   }
   main #work h3 {
     margin-top: 0.2em;
@@ -600,7 +599,10 @@ L devices - 1024px and larger
     margin-bottom: 0.9em;
   }
   #hero h3 {
-    max-width: 440px;
+    max-width: 480px;
+  }
+  #hero h2 {
+    max-width: fit-content;
   }
   #hero h1 {
     margin: 0;
