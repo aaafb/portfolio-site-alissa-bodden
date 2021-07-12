@@ -381,6 +381,14 @@ nav > ul > li > a:focus {
   width: 100%;
 }
 
+/* PROJECT PAGES */
+.case-study {
+  text-align: center;
+}
+.case-study .button {
+  margin: 0 0 0.6em;
+}
+
 /* FOOTER */
 footer {
   background-color: #f7f6e8;
