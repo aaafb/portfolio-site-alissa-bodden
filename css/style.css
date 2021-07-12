@@ -43,11 +43,9 @@ Media Queries
 * {
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background-color: #fffef7;
   font-family: "Josefin Sans", sans-serif;
@@ -549,7 +547,8 @@ S devices - 640px and larger
   .navtoggle li:last-child /* hides hamburger icon */ {
     display: none;
   }
-  /* nav button hover animation */
+  /* nav button hover animation (turned off via comment currently) */
+  /*
   nav a {
     text-decoration: none;
     position: relative;
@@ -579,6 +578,8 @@ S devices - 640px and larger
     opacity: 1;
     width: 100%;
   }
+  */
+
   /* HOME PAGE */
   #hero h2 {
     max-width: 450px;
