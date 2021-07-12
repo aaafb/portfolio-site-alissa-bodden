@@ -378,7 +378,9 @@ nav > ul > li > a:focus {
 /* ABOUT PAGE */
 #resume {
   text-align: center;
-  width: 100%;
+}
+#resume .button {
+  margin: 1.75em 0 0.75em;
 }
 
 /* PROJECT PAGES */
