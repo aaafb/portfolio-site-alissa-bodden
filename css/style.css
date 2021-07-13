@@ -381,7 +381,8 @@ nav > ul > li > a:focus {
 #more {
   display: none;
 }
-#readMore {
+#readMore,
+#readLess {
   color: #461de6;
   text-decoration: underline;
   font-size: 1em;
@@ -391,18 +392,22 @@ nav > ul > li > a:focus {
   border: none;
 }
 
-#readMore:visited {
+#readMore:visited,
+#readLess:visited {
   color: #311b80;
 }
-#readMore:hover {
+#readMore:hover,
+#readLess:hover {
   color: #59581f;
   text-decoration: none;
   cursor: pointer;
 }
-#readMore:active {
+#readMore:active,
+#readLess:active {
   color: #4a491a;
 }
-#readMore:focus {
+#readMore:focus,
+#readLess:focus {
   background-color: #fae63a;
   color: #383835;
 }

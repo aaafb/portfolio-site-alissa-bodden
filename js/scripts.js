@@ -15,16 +15,21 @@ function menuToggle() {
 }
 
 function toggleExpandText() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("readMore");
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more"; 
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less"; 
-        moreText.style.display = "inline";
-    }
+	var dots = document.getElementById('dots')
+	var moreText = document.getElementById('more')
+	var btnTextMore = document.getElementById('readMore')
+	var btnTextLess = document.getElementById('readLess')
+	if (dots.style.display === 'none') {
+		dots.style.display = 'inline'
+		btnTextMore.innerHTML = 'read more'
+		btnTextMore.style.display = 'inline'
+		moreText.style.display = 'none'
+		btnTextLess.style.display = 'none'
+	} else {
+		dots.style.display = 'none'
+		btnTextLess.innerHTML = 'read less'
+		btnTextLess.style.display = 'inline'
+		moreText.style.display = 'inline'
+		btnTextMore.style.display = 'none'
+	}
 }
