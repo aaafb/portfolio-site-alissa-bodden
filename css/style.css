@@ -378,6 +378,34 @@ nav > ul > li > a:focus {
 }
 
 /* ABOUT PAGE */
+#more {
+  display: none;
+}
+#readMore {
+  color: #461de6;
+  text-decoration: underline;
+  font-size: 1em;
+  font-weight: 300;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+#readMore:visited {
+  color: #311b80;
+}
+#readMore:hover {
+  color: #59581f;
+  text-decoration: none;
+  cursor: pointer;
+}
+#readMore:active {
+  color: #4a491a;
+}
+#readMore:focus {
+  background-color: #fae63a;
+  color: #383835;
+}
 #resume {
   text-align: center;
 }
