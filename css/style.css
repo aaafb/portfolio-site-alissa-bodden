@@ -281,12 +281,16 @@ nav > ul /* child combinator to select only unordered lists within the nav eleme
 }
 nav > ul > li > a {
   padding: 10px 20px;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   color: #f7f6e8;
 }
 nav > ul > li > a:visited {
   color: #fffef7;
+}
+nav a:hover {
+  color: #fffef7;
+  text-decoration: underline;
 }
 nav > ul > li > a:active {
   color: rgba(255, 254, 247, 0.7);
