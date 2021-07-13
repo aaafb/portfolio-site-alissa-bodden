@@ -420,6 +420,16 @@ nav > ul > li > a:focus {
 .case-study .button {
   margin: 0 0 0.6em;
 }
+.more-projects {
+  width: 100%;
+  margin-top: 2.25em;
+}
+.next-proj {
+  text-align: right;
+}
+.empty {
+  visibility: hidden;
+}
 
 /* FOOTER */
 footer {
@@ -549,6 +559,12 @@ S devices - 640px and larger
     float: left;
     padding: 0 0.65em;
   }
+  .prev-proj {
+    padding: 0;
+  }
+  .next-proj {
+    padding: 0;
+  }
   .row::after {
     content: "";
     clear: both;
@@ -657,6 +673,12 @@ M devices - 768px and larger
   [class*="col-"] {
     padding: 0 0.65em;
   }
+  .prev-proj {
+    padding: 0;
+  }
+  .next-proj {
+    padding: 0;
+  }
   .button {
     margin: 16px 0;
   }
@@ -708,6 +730,12 @@ L devices - 1024px and larger
   }
   [class*="col-"] {
     padding: 0 0.8em;
+  }
+  .prev-proj {
+    padding: 0;
+  }
+  .next-proj {
+    padding: 0;
   }
   .col-lg-7 {
     width: 58%;
