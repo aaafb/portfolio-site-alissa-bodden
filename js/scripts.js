@@ -1,6 +1,12 @@
+
 function menuToggle() {
     var x = document.getElementById("myNavtoggle");
-    if (x.className === "navtoggle") {
+
+    var windowWidth = window.innerWidth;
+
+    console.log("what's the window width: ", windowWidth)
+
+    if (x.className === "navtoggle" && windowWidth <= 640) {
         x.className += " responsive";
     } else {
         x.className = "navtoggle";
@@ -8,7 +14,7 @@ function menuToggle() {
     
 }
 
-function expandText() {
+function toggleExpandText() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("readMore");
