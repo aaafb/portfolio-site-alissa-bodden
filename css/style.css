@@ -175,7 +175,7 @@ a:focus {
   border-bottom: 3px solid #212121;
   margin: 0.5em 0;
   display: inline-block;
-  transition: 0.2s background-color font-weight;
+  transition: 0.2s all;
 }
 .button:visited {
   color: #fffef7;
@@ -204,7 +204,7 @@ a:focus {
   color: #383835;
   border: 2px solid #383835;
   border-bottom: 4px solid #212121;
-  transition: 0.2s background-color color font-weight;
+  transition: unset;
 }
 .button.secondary:visited {
   background-color: transparent;
