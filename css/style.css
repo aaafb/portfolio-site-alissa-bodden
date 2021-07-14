@@ -476,12 +476,12 @@ footer {
 }
 #contact p {
   max-width: 380px;
-  margin: 0.75em auto 1.25em;
+  margin: 0.75em auto 1em;
 }
 #social ul {
   list-style-type: none;
   padding: 0;
-  margin: 1.4em 0 1.75em;
+  margin: 1.4em 0;
 }
 #social li {
   display: inline-block;
