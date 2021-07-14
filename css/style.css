@@ -385,7 +385,7 @@ nav > ul > li > a:focus {
   font-weight: 400;
   margin-bottom: 0.2em;
 }
-#work p {
+.text-content p {
   margin-top: 0.4em;
 }
 p.tags {
