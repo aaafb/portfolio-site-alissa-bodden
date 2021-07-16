@@ -397,6 +397,11 @@ p.tags {
 }
 
 /* ABOUT PAGE */
+/* div.profile-photo {
+  max-width: 900px;
+  margin: 0 auto;
+} */
+
 #more {
   display: none;
 }
