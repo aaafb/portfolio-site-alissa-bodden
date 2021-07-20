@@ -286,28 +286,31 @@ header {
 .navtoggle.responsive {
   padding: 22px 0 6px;
 }
-nav > ul /* child combinator to select only unordered lists within the nav element */ {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-nav > ul > li > a {
-  padding: 10px 20px;
+nav a {
+  padding: 10px 1em;
   font-weight: 400;
   text-decoration: none;
   color: #f7f6e8;
 }
-nav > ul > li > a:visited {
+a#contact-link {
+  padding-right: 0;
+}
+nav a:visited {
   color: #fffef7;
 }
 nav a:hover {
   color: #fffef7;
   text-decoration: underline;
 }
-nav > ul > li > a:active {
+nav a:active {
   color: rgba(255, 254, 247, 0.7);
 }
-nav > ul > li > a:focus {
+nav a:focus {
   color: #383835;
   background-color: #fae63a;
 }
@@ -397,10 +400,10 @@ p.tags {
 }
 
 /* ABOUT PAGE */
-/* div.profile-photo {
-  max-width: 900px;
+div.profile-photo {
+  max-width: 700px;
   margin: 0 auto;
-} */
+}
 
 #more {
   display: none;
@@ -742,6 +745,11 @@ M devices - 768px and larger
   /* TYPOGRAPHY */
   body {
     font-size: 17px;
+  }
+  /* HEADER/NAV BAR */
+  nav a {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
   }
   /* HOME PAGE */
   #hero h2 {
