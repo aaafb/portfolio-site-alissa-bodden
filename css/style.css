@@ -20,7 +20,7 @@ Rich purple: #461de6
 Light: 300
 Regular: 400
 Semibold: 600
-Bold: 700 
+Bold: 700
 */
 
 /* Table of Contents:
@@ -43,9 +43,11 @@ Media Queries
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #fffef7;
   font-family: "Josefin Sans", sans-serif;
@@ -55,23 +57,28 @@ body {
   color: #383835;
   font-kerning: auto;
 }
+
 img {
   width: 100%;
 }
 
 /* LAYOUT & SPACING */
+
 /* top padding on main element accomodates for fixed nav bar */
 main {
   padding-top: 63px;
 }
-/* general page margins*/
+
+/* general page margins */
 .container {
   margin: 0 16px;
 }
+
 /* spacing between blocks of content */
 .image {
   margin-bottom: 1em;
 }
+
 .text-content {
   margin-bottom: 2.5em;
 }
@@ -84,12 +91,14 @@ h4 {
   line-height: 1.4;
   display: block;
 }
+
 h1 {
   font-size: 1.75em;
   font-weight: 700;
   text-align: center;
   margin: 1.3em 0 0.8em;
 }
+
 h2 {
   font-family: "Josefin Slab", serif;
   font-style: italic;
@@ -99,27 +108,33 @@ h2 {
   margin-top: 1.3em;
   margin-bottom: 0.5em;
 }
+
 h3 {
   font-size: 1.125em;
   font-weight: 700;
   margin: 0.5em 0;
 }
+
 p {
   letter-spacing: -0.15px;
   margin: 0.7em 0;
 }
+
 ul {
   padding-left: 2em;
   margin-top: 0.6em;
 }
+
 .regular-weight {
   font-weight: 400;
 }
+
 /* main heading highlight styling */
 .title-wrapper {
   position: relative;
   display: block;
 }
+
 .title {
   position: relative;
   width: fit-content;
@@ -129,9 +144,11 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+
 .title h2 {
   margin-bottom: 0.9em;
 }
+
 .highlight {
   position: absolute;
   background: #faf29f;
@@ -142,6 +159,7 @@ ul {
   z-index: -1;
   transition: 400ms;
 }
+
 #hero .highlight {
   background: #78754d;
 }
@@ -150,16 +168,20 @@ ul {
 a {
   color: #461de6;
 }
+
 a:visited {
   color: #311b80;
 }
+
 a:hover {
   color: #59581f;
   text-decoration: none;
 }
+
 a:active {
   color: #4a491a;
 }
+
 a:focus {
   background-color: #fae63a;
   color: #383835;
@@ -177,22 +199,24 @@ a:focus {
   display: inline-block;
   transition: 0.2s all;
 }
+
 .button:visited {
   color: #fffef7;
   font-weight: 400;
   text-decoration: none;
   padding: 10px 20px 8px;
 }
+
 .button:hover {
   color: #fffef7;
   background-color: #59581f;
-  /* font-weight: 600; */
 }
+
 .button:active {
   color: #fffef7;
   background-color: #4a491a;
-  /* font-weight: 600; */
 }
+
 .button:focus {
   color: #fffef7;
   background-color: #383835;
@@ -206,26 +230,28 @@ a:focus {
   border-bottom: 4px solid #212121;
   transition: unset;
 }
+
 .button.secondary:visited {
   background-color: transparent;
   color: #383835;
   border: 2px solid #383835;
   border-bottom: 4px solid #212121;
 }
+
 .button.secondary:hover {
   background-color: #59581f;
   color: #fffef7;
-  /* font-weight: 600; */
   padding: 12px 22px 9px;
   border: none;
   border-bottom: 3px solid #212121;
 }
+
 .button.secondary:active {
   background-color: #4a491a;
   color: #fffef7;
-  /* font-weight: 600; */
   border: none;
 }
+
 .button.secondary:focus {
   background-color: #383835;
   color: #fffef7;
@@ -239,9 +265,9 @@ a:focus {
   font-weight: 400;
   text-decoration: none;
 }
+
 .more-projects a:hover {
   text-decoration: underline;
-  /* color: #59581f; */
 }
 
 .image-link {
@@ -249,15 +275,19 @@ a:focus {
   line-height: 0;
   display: inline;
 }
+
 .image-link a:visited {
   background-color: transparent;
 }
+
 .image-link a:hover {
   background-color: transparent;
 }
+
 .image-link a:active {
   background-color: transparent;
 }
+
 .image-link a:focus {
   background-color: transparent;
 }
@@ -271,65 +301,80 @@ a:focus {
 .logo {
   max-width: 160px;
 }
+
 header {
   background-color: #383835;
   position: fixed;
   z-index: 2;
   width: 100%;
-  -webkit-box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
-  -moz-box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
-  box-shadow: 0px 3px 8px 0px rgba(15, 15, 15, 0.4);
+  -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
+  -moz-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
 }
+
 .navtoggle {
   padding: 22px 0 16px;
 }
+
 .navtoggle.responsive {
   padding: 22px 0 6px;
 }
+
 nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 nav a {
   padding: 10px 1em;
   font-weight: 400;
   text-decoration: none;
   color: #f7f6e8;
 }
+
 a#contact-link {
   padding-right: 0;
 }
+
 nav a:visited {
   color: #fffef7;
 }
+
 nav a:hover {
   color: #fffef7;
   text-decoration: underline;
 }
+
 nav a:active {
   color: rgba(255, 254, 247, 0.7);
 }
+
 nav a:focus {
   color: #383835;
   background-color: #fae63a;
 }
+
 /* mobile nav hamburger menu icon */
 .navtoggle li:not(:last-child) /* hides nav list elements except for last child */ {
   display: none;
 }
+
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle.responsive nav {
   padding-top: 16px;
 }
+
 .navtoggle.responsive li:not(:last-child) {
   display: block;
   padding: 12px 0 10px;
   border-top: 1px solid rgba(247, 246, 232, 0.3);
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -356,15 +401,18 @@ nav a:focus {
   width: 100%;
   text-align: center;
 }
+
 #hero h1 {
   color: #f7f6e8;
   margin: 0;
 }
+
 #hero h2 {
   color: #f7f6e8;
   margin: 0.8em auto 0.6em;
   max-width: 270px;
 }
+
 #hero h3 {
   color: #f7f6e8;
   font-size: 1em;
@@ -375,12 +423,14 @@ nav a:focus {
   padding: 0;
   max-width: 300px;
 }
+
 #work h2 {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-size: 1.75em;
   font-weight: 700;
 }
+
 #work h3 {
   font-family: "Josefin Slab", serif;
   font-style: italic;
@@ -388,9 +438,11 @@ nav a:focus {
   font-weight: 400;
   margin-bottom: 0.2em;
 }
+
 .text-content p {
   margin-top: 0.4em;
 }
+
 p.tags {
   text-transform: uppercase;
   font-size: 0.75em;
@@ -408,6 +460,7 @@ div.profile-photo {
 #more {
   display: none;
 }
+
 #readMore,
 #readLess {
   color: #461de6;
@@ -423,24 +476,29 @@ div.profile-photo {
 #readLess:visited {
   color: #311b80;
 }
+
 #readMore:hover,
 #readLess:hover {
   color: #59581f;
   text-decoration: none;
   cursor: pointer;
 }
+
 #readMore:active,
 #readLess:active {
   color: #4a491a;
 }
+
 #readMore:focus,
 #readLess:focus {
   background-color: #fae63a;
   color: #383835;
 }
+
 #resume {
   text-align: center;
 }
+
 #resume .button {
   margin: 1.75em 0 0.75em;
 }
@@ -449,20 +507,25 @@ div.profile-photo {
 .case-study {
   text-align: center;
 }
+
 .case-study .button {
   margin: 0 0 0.6em;
 }
+
 .more-projects {
   width: 100%;
   margin-top: 2.25em;
 }
+
 .next-proj {
   text-align: right;
   margin: 8px 0 0;
 }
+
 .prev-proj {
   margin: 0 0 8px;
 }
+
 .empty {
   visibility: hidden;
 }
@@ -475,6 +538,7 @@ footer {
   width: 100%;
   margin-top: 2.8em;
 }
+
 #contact h2 {
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
@@ -482,18 +546,22 @@ footer {
   font-weight: 700;
   margin: 0;
 }
+
 #contact p {
   max-width: 380px;
   margin: 0.75em auto 1em;
 }
+
 #social ul {
   list-style-type: none;
   padding: 0;
   margin: 1.4em 0;
 }
+
 #social li {
   display: inline-block;
 }
+
 #social a,
 #social a:visited,
 #social a:hover,
@@ -511,14 +579,17 @@ footer {
   max-width: 100%;
   height: auto;
 }
+
 @keyframes head-pop {
   from {
     transform: translate(0, 350px);
   }
+
   to {
-    transform: translate(0, 0px);
+    transform: translate(0, 0);
   }
 }
+
 #dog {
   animation: 1s head-pop infinite alternate ease;
 }
@@ -527,6 +598,7 @@ footer {
 .iframe-gparent {
   margin-bottom: 1.5em;
 }
+
 .prototype-embed {
   position: relative;
   overflow: hidden;
@@ -534,6 +606,7 @@ footer {
   width: 100%;
   padding-top: 198.84%;
 }
+
 .responsive-iframe {
   position: absolute;
   top: 0;
@@ -557,18 +630,22 @@ XS devices - 422px and larger
   .prev-proj {
     margin: 0;
   }
+
   .col-xs-6 {
     width: 50%;
   }
+
   [class*="col-"] {
     float: left;
   }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
 }
+
 /* ==============================
 XS devices - 480px and larger
 ============================== */
@@ -577,6 +654,7 @@ XS devices - 480px and larger
   .iframe-gparent {
     display: flex;
   }
+
   .prototype-embed {
     display: block;
     position: relative;
@@ -586,6 +664,7 @@ XS devices - 480px and larger
     padding-top: 0;
     margin: auto;
   }
+
   .responsive-iframe {
     display: block;
     top: auto;
@@ -594,6 +673,7 @@ XS devices - 480px and larger
     height: 861px;
   }
 }
+
 /* ==============================
 S devices - 640px and larger
 ============================== */
@@ -602,28 +682,36 @@ S devices - 640px and larger
   .container {
     padding: 0 1em;
   }
+
   main {
     padding-top: 87px;
   }
+
   .col-sm-7 {
     width: 58.33%;
   }
+
   .col-sm-5 {
     width: 41.66%;
   }
+
   .col-sm-6 {
     width: 50%;
   }
+
   [class*="col-"] {
     float: left;
     padding: 0 0.65em;
   }
+
   .prev-proj {
     padding: 0;
   }
+
   .next-proj {
     padding: 0;
   }
+
   .row::after {
     content: "";
     clear: both;
@@ -634,28 +722,36 @@ S devices - 640px and larger
   header {
     text-align: unset;
   }
+
   .logo {
     max-width: 200px;
     padding-top: 8px;
   }
+
   nav {
     width: auto;
     float: right;
     padding-top: 12px;
   }
+
   nav > ul > li {
     display: inline-block;
   }
+
   .navtoggle {
     padding: 22px 0 20px;
   }
+
   .navtoggle li:not(:last-child) /* REVERSES hiding nav list elements except for last child */ {
     display: inline-block;
   }
+
   .navtoggle li:last-child /* hides hamburger icon */ {
     display: none;
   }
+
   /* nav button hover animation (turned off via comment currently) */
+
   /*
   nav a {
     text-decoration: none;
@@ -692,30 +788,38 @@ S devices - 640px and larger
   #hero h2 {
     max-width: 450px;
   }
+
   #hero h3 {
     max-width: 430px;
   }
+
   #work h3 {
     margin-top: 0;
   }
+
   #work .button {
     margin: 4px 0;
   }
+
   #work .text-content,
   #work .image {
     margin-bottom: 0;
   }
+
   .project-block {
     margin-bottom: 2.4em;
   }
+
   /* ABOUT PAGE */
   #skills-tools {
     width: 100%;
   }
+
   #about h3 {
     margin-top: 0;
   }
 }
+
 /* ==============================
 M devices - 768px and larger
 ============================== */
@@ -724,50 +828,64 @@ M devices - 768px and larger
   .container {
     padding: 0 1.2em;
   }
+
   main {
     padding-top: 82px;
   }
+
   .col-md-6 {
     width: 50%;
   }
+
   [class*="col-"] {
     padding: 0 0.65em;
   }
+
   .prev-proj {
     padding: 0;
   }
+
   .next-proj {
     padding: 0;
   }
+
   .button {
     margin: 16px 0;
   }
+
   /* TYPOGRAPHY */
   body {
     font-size: 17px;
   }
+
   /* HEADER/NAV BAR */
   nav a {
     padding-left: 1.2em;
     padding-right: 1.2em;
   }
+
   /* HOME PAGE */
   #hero h2 {
     max-width: 500px;
   }
+
   #hero h3 {
     max-width: 450px;
   }
+
   main #work h3 {
     margin-top: 0.2em;
   }
+
   #work .button {
     margin: 12px 0;
   }
+
   /* ABOUT PAGE */
   .multi-column-list ul {
     margin-top: 0;
   }
+
   /* turning skills and tools list into 4-column layout */
   div.multi-column-list {
     -moz-column-count: 2;
@@ -777,11 +895,13 @@ M devices - 768px and larger
     column-count: 2;
     column-gap: 6px;
   }
+
   /* FOOTER */
   #contact p {
     max-width: 412px;
   }
 }
+
 /* ==============================
 L devices - 1024px and larger
 ============================== */
@@ -793,80 +913,103 @@ L devices - 1024px and larger
     margin-left: auto;
     margin-right: auto;
   }
+
   [class*="col-"] {
     padding: 0 0.8em;
   }
+
   .prev-proj {
     padding: 0;
   }
+
   .next-proj {
     padding: 0;
   }
+
   .col-lg-7 {
     width: 58%;
   }
+
   .col-lg-5 {
     width: 42%;
   }
+
   .col-lg-4 {
     width: 33%;
   }
+
   .col-lg-8 {
     width: 67%;
   }
+
   /* TYPOGRAPHY */
   body {
     font-size: 18px;
   }
+
   h1 {
     margin-top: 1.5em;
     margin-bottom: 0.9em;
   }
+
   /* HOME PAGE */
   main #work h2 {
     margin-top: 1.5em;
     margin-bottom: 0.9em;
   }
+
   #hero h3 {
     max-width: 480px;
   }
+
   #hero h2 {
     max-width: fit-content;
   }
+
   #hero h1 {
     margin: 0;
   }
+
   /* ABOUT PAGE */
   #about .col-md-6 {
     width: 100%;
   }
+
   #about main h2 {
     text-align: left;
   }
+
   #skills-tools {
     width: 33%;
   }
+
   #skills-tools div.row {
     margin: 0.6em 0;
   }
+
   #skills-tools h3 {
     margin-bottom: 0.2em;
   }
+
   div#skills-tools {
     padding-left: 100px;
   }
+
   .multi-column-list ul {
     margin-bottom: 1.4em;
   }
+
   #resume {
     text-align: left;
   }
+
   /* turning skills and tools lists back into linear format */
   div.multi-column-list {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
   }
+
   /* FOOTER */
   #contact p {
     max-width: 432px;

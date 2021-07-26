@@ -33,3 +33,4 @@ function toggleExpandText() {
 		btnTextMore.style.display = 'none'
 	}
 }
+
