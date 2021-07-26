@@ -615,6 +615,10 @@ footer {
   height: 100%;
 }
 
+iframe {
+  border: 0;
+}
+
 /* MEDIA QUERIES */
 
 /* ==============================
