@@ -189,6 +189,7 @@ a:focus {
 }
 
 .copy-click {
+  position: relative;
   cursor: copy;
   transition: background-color calc(var(--duration) * 2) var(--ease);
 }

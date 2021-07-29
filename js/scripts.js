@@ -36,8 +36,9 @@ function toggleExpandText() {
 }
 
 // COPY EMAIL ADDRESS
-// grab all elements with the copy-click class
+// grab all elements with the copy-click class; links var contains an array
 const links = document.querySelectorAll('.copy-click');
+
 // assign class names to object properties so they can be added to HTML elements dynamically, at least in part to apply CSS at specific states/times
 const cls = {
   copied: 'is-copied',
@@ -47,8 +48,9 @@ const cls = {
 const copyToClipboard = str => {
 // create an input element in the HTML DOM (??) with the reference name "el"
 const el = document.createElement('input');
-  // ___ ? ___ : ___ is a shortform if/else statement...
-  str.dataset.copyString ? el.value = str.dataset.copyString : el.value = str.text;
+  // ___ ? ___ : ___ is a shortform if/else statement...; copyString is part of DOM elements
+  // accomodating elements that do or don't have a dataset
+  el.value = str.dataset.copyString ? str.dataset.copyString : str.text;
   // assign properties to the new input element
   el.setAttribute('readonly', '');
   el.style.position = 'absolute';
@@ -64,17 +66,25 @@ const el = document.createElement('input');
 };
 
 const clickInteraction = e => {
+  // prevent link from refreshing page like usual links
   e.preventDefault();
+  // e.target refers to e = event; target = current element
   copyToClipboard(e.target);
   e.target.classList.add(cls.copied);
   setTimeout(() => e.target.classList.remove(cls.copied), 1000);
   setTimeout(() => e.target.classList.remove(cls.hover), 700);
 };
 
+// Array.from() turns content into an array
 Array.from(links).forEach(link => {
   link.addEventListener('click', e => clickInteraction(e));
+  // adds enter key functionality
   link.addEventListener('keypress', e => {
-    if (e.keyCode === 13) clickInteraction(e);
+    
+    if (e.keyCode === 13) {
+      console.log(e)
+      clickInteraction(e);
+    } 
   });
   link.addEventListener('mouseover', e => e.target.classList.add(cls.hover));
   link.addEventListener('mouseleave', e => {
