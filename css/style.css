@@ -363,7 +363,6 @@ a:focus {
 
 header {
   background-color: #383835;
-  /* position: fixed; */
   z-index: 2;
   width: 100%;
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
@@ -758,10 +757,6 @@ S devices - 640px and larger
     padding: 0 1em;
   }
 
-  main {
-    /* padding-top: 87px; */
-  }
-
   .sticky + #main-content {
     padding-top: 87px;
   }
@@ -906,10 +901,6 @@ M devices - 768px and larger
   /* LAYOUT & SPACING */
   .container {
     padding: 0 1.2em;
-  }
-
-  main {
-    /* padding-top: 82px; */
   }
 
   .col-md-6 {
