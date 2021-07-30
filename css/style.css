@@ -66,7 +66,8 @@ img {
 
 /* top padding on main element accomodates for fixed nav bar */
 main {
-  padding-top: 63px;
+  /* padding-top: 63px; */
+  z-index: 0;
 }
 
 /* general page margins */
@@ -344,6 +345,17 @@ a:focus {
   pointer-events: none;
 }
 
+/* SKIP LINK */
+#skip {
+  background-color: #78754d;
+  text-align: center;
+  padding: 0.75em 0;
+}
+
+#skip-link {
+  color: #fffef7;
+}
+
 /* HEADER/NAV BAR */
 .logo {
   max-width: 160px;
@@ -351,12 +363,24 @@ a:focus {
 
 header {
   background-color: #383835;
-  position: fixed;
+  /* position: fixed; */
   z-index: 2;
   width: 100%;
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
   -moz-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
   box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + #main-content {
+  padding-top: 70px;
 }
 
 .navtoggle {
@@ -735,6 +759,10 @@ S devices - 640px and larger
   }
 
   main {
+    /* padding-top: 87px; */
+  }
+
+  .sticky + #main-content {
     padding-top: 87px;
   }
 
@@ -881,7 +909,7 @@ M devices - 768px and larger
   }
 
   main {
-    padding-top: 82px;
+    /* padding-top: 82px; */
   }
 
   .col-md-6 {
@@ -963,6 +991,10 @@ L devices - 1024px and larger
     padding: 0 1.7em;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .sticky + #main-content {
+    padding-top: 88px;
   }
 
   [class*="col-"] {
