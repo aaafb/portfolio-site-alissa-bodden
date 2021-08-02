@@ -449,6 +449,10 @@ nav a:focus {
   font-size: 18px;
 }
 
+.hamburger img {
+  max-width: 16px;
+}
+
 .hamburger a:visited,
 .hamburger a:hover,
 .hamburger a:active,
