@@ -126,14 +126,21 @@
             </div>
             <!-- RIGHT COLUMN (TEXT AND BUTTON) -->
             <div class="text-content col-sm-6 col-md-6 col-lg-5">
-              <h3>Drizzle</h3>
+              <h3 id="dz-head">Drizzle</h3>
               <p class="tags">Accessibility • prototype • redesign</p>
-              <p>
+              <p id="dz-desc">
                 A responsive web app I created to be the ultimate source for
                 sauce recipes. I also did an accessibility-focused redesign
                 after initially completing the project.
               </p>
-              <a href="drizzle.html" class="button">View Project</a>
+              <a
+                href="drizzle.html"
+                class="button"
+                id="dz-link"
+                aria-labelledby="dz-link dz-head"
+                aria-describedby="dz-desc"
+                >View Project</a
+              >
             </div>
           </div>
           <!-- PROJECT SECTION: SPACE -->
@@ -155,14 +162,19 @@
             </div>
             <!-- RIGHT COLUMN (TEXT AND BUTTON) -->
             <div class="text-content col-sm-6 col-md-6 col-lg-5">
-              <h3>Space</h3>
+              <h3 id="sp-head">Space</h3>
               <p class="tags">E-commerce • responsive • brand guidelines</p>
-              <p>
+              <p id="sp-desc">
                 A responsive web app for a minimal furniture store. I designed
                 it from start to finish, from concept and branding through UX
                 and UI design.
               </p>
-              <a href="space.html" class="button" data-text="View Project"
+              <a
+                href="space.html"
+                class="button"
+                id="sp-link"
+                aria-labelledby="sp-link sp-head"
+                aria-describedby="sp-desc"
                 >View Project</a
               >
             </div>
@@ -186,14 +198,21 @@
             </div>
             <!-- RIGHT COLUMN (TEXT AND BUTTON) -->
             <div class="text-content col-sm-6 col-md-6 col-lg-5">
-              <h3>Hidden Gems</h3>
+              <h3 id="hg-head">Hidden Gems</h3>
               <p class="tags">Native apps • location-based • search & filter</p>
-              <p>
+              <p id="hg-desc">
                 A set of native apps (iOS and Android) that I designed as a
                 shop-local search platform to help consumers find local shops
                 and restaurants.
               </p>
-              <a href="hidden-gems.html" class="button">View Project</a>
+              <a
+                href="hidden-gems.html"
+                class="button"
+                id="hg-link"
+                aria-labelledby="hg-link hg-head"
+                aria-describedby="hg-desc"
+                >View Project</a
+              >
             </div>
           </div>
           <!-- PROJECT SECTION: ANIMATION -->
@@ -203,8 +222,8 @@
               <svg
                 id="dog-waiting"
                 role="img"
-                aria-label="SVG illustration of a dog jumping that I animated using CSS."
-                aria-describedby="Gray window frame with green curtains, seen from the perspective of someone looking in from outside. Dog is jumping up and down to get a view of what's outside the window."
+                aria-labelledby="ca-head"
+                aria-describedby="ca-desc"
                 xmlns="http://www.w3.org/2000/svg"
                 viewbox="0 0 2521.84 2611.38"
               >
@@ -664,8 +683,26 @@
             </div>
             <!-- RIGHT COLUMN (TEXT AND BUTTON) -->
             <div class="text-content col-sm-6 col-md-6 col-lg-5">
-              <h3>CSS Animation</h3>
-              <p>Description TBD.</p>
+              <h3 id="ca-head">CSS Animation</h3>
+              <p>
+                <span id="ca-desc">
+                  A CSS animation of a dog jumping up and down at a window,
+                  excitedly waiting for its human to come home.</span
+                >
+                I love dogs, so when I was looking for an illustration to
+                animate, this was an easy choice. Illustration by
+                <a
+                  href="https://www.instagram.com/bogdanmagenta/"
+                  target="_blank"
+                  >Bogdan Magenta</a
+                >
+                from
+                <a
+                  href="https://icons8.com/illustrations/illustration/rush"
+                  target="_blank"
+                  >Icons8</a
+                >.
+              </p>
             </div>
           </div>
         </div>
