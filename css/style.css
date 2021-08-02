@@ -615,17 +615,17 @@ footer {
 
 #contact p {
   max-width: 380px;
-  margin: 0.75em auto 1em;
+  margin: 0.75em auto;
 }
 
 #social ul {
   list-style-type: none;
   padding: 0;
-  margin: 1.4em 0;
+  margin: 1.2em 0 0.4em;
 }
 
 #social li {
-  display: inline-block;
+  display: inline;
 }
 
 #social a,
@@ -633,10 +633,17 @@ footer {
 #social a:hover,
 #social a:active,
 #social a:focus {
+  text-decoration: none;
+  color: transparent;
+  line-height: 0%;
+}
+
+#social img {
+  max-height: 32px;
+  width: auto;
+  opacity: 0.8;
   padding: 4px;
-  margin: 1.5em 0.5em 1em;
-  color: rgba(56, 56, 53, 0.9);
-  font-size: 1.33em;
+  margin: 0 0.5em;
 }
 
 /* ANIMATIONS */
