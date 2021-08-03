@@ -432,7 +432,7 @@ nav a:focus {
 }
 
 /* mobile nav hamburger menu icon */
-.navtoggle li:not(:last-child) /* hides nav list elements except for last child */ {
+.navtoggle li:not(:first-child) /* hides nav list elements except for last child */ {
   display: none;
 }
 
@@ -445,7 +445,7 @@ nav a:focus {
   padding-top: 16px;
 }
 
-.navtoggle.responsive li:not(:last-child) {
+.navtoggle.responsive li:not(:first-child) {
   display: block;
   padding: 12px 0 10px;
   border-top: 1px solid rgba(247, 246, 232, 0.3);
@@ -833,11 +833,11 @@ S devices - 640px and larger
     padding: 22px 0 20px;
   }
 
-  .navtoggle li:not(:last-child) /* REVERSES hiding nav list elements except for last child */ {
+  .navtoggle li:not(:first-child) /* REVERSES hiding nav list elements except for last child */ {
     display: inline-block;
   }
 
-  .navtoggle li:last-child /* hides hamburger icon */ {
+  .navtoggle li:first-child /* hides hamburger icon */ {
     display: none;
   }
 
