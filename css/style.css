@@ -637,7 +637,9 @@ footer {
 #social ul {
   list-style-type: none;
   padding: 0;
-  margin: 1.2em 0 0.4em;
+  font-size: 0em;
+  line-height: 0;
+  margin: 18px 0;
 }
 
 #social li {
@@ -655,11 +657,11 @@ footer {
 }
 
 #social img {
-  max-height: 32px;
+  height: 48px;
   width: auto;
   opacity: 0.8;
-  padding: 4px;
-  margin: 0 0.5em;
+  padding: 12px;
+  margin: 0 4px;
 }
 
 /* ANIMATIONS */
