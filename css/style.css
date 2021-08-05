@@ -634,6 +634,10 @@ footer {
   margin: 0.75em auto;
 }
 
+#contact .title-wrapper {
+  margin-bottom: 22px;
+}
+
 #social ul {
   list-style-type: none;
   padding: 0;
