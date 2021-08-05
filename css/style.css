@@ -363,6 +363,12 @@ a:focus {
   padding: 14px 0;
 }
 
+#skip-link:focus {
+  background-color: #fae63a;
+  color: #383835;
+  font-weight: 600;
+}
+
 /* HEADER/NAV BAR */
 .logo {
   max-width: 160px;
