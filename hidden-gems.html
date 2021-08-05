@@ -93,7 +93,7 @@
       <div>
         <div class="container">
           <!-- COVER IMAGE -->
-          <div class="image">
+          <div class="image cover">
             <picture>
               <source
                 srcset="img/hidden-gems/hidden-gems-1overview-1x.jpg"
@@ -123,21 +123,9 @@
             </p>
           </div>
           <div>
-            <h2>My Process</h2>
             <!-- SECTION: RESEARCH -->
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/hidden-gems/hidden-gems-2research-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/hidden-gems/hidden-gems-2research-2x.png"
-                  alt="Screenshots from Yelp and FourSquare apps layered on top of text from UI analysis document."
-                />
-              </picture>
-            </div>
             <div class="text-content">
+              <h2>My Process</h2>
               <h3>Research</h3>
               <p>
                 Before diving in to creating my app, I did research into
@@ -169,8 +157,33 @@
                 >
               </p>
             </div>
-            <!-- SECTION: IDEATION -->
             <div class="image">
+              <picture>
+                <source
+                  srcset="img/hidden-gems/hidden-gems-2research-1x.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/hidden-gems/hidden-gems-2research-2x.png"
+                  alt="Screenshots from Yelp and FourSquare apps layered on top of text from UI analysis document."
+                />
+              </picture>
+            </div>
+            <!-- SECTION: IDEATION -->
+            <div class="text-content">
+              <h3>Ideation</h3>
+              <p>
+                In the beginning UX phase, I created a project proposal in which
+                I defined my projected users, listed the essential features and
+                user stories, and created user flows and a user flow diagram.
+                <a href="files/hidden-gems-project-proposal.pdf" target="_blank"
+                  >View the project proposal<span class="visually-hidden">
+                    PDF</span
+                  >.</a
+                >
+              </p>
+            </div>
+            <div class="image internal">
               <picture>
                 <source
                   srcset="
@@ -185,17 +198,12 @@
               </picture>
             </div>
             <div class="text-content">
-              <h3>Ideation</h3>
               <p>
-                In the beginning UX phase, I created a project proposal in which
-                I defined my projected users, listed the essential features and
-                user stories, and created user flows and a user flow diagram.
-                <a href="files/hidden-gems-project-proposal.pdf" target="_blank"
-                  >View the project proposal<span class="visually-hidden">
-                    PDF</span
-                  >.</a
-                >
+                I extracted the list of screens I needed to create from my user
+                flows, and then started sketching some low-fidelity wireframes.
               </p>
+            </div>
+            <div class="image">
               <picture>
                 <source
                   srcset="img/hidden-gems/hidden-gems-3ideation-sketches-1x.png"
@@ -206,12 +214,19 @@
                   alt="Sketches of home, search, search results, filters, and business listing screens."
                 />
               </picture>
-              <p>
-                I extracted the list of screens I needed to create from my user
-                flows, and then started sketching some low-fidelity wireframes.
-              </p>
             </div>
             <!-- SECTION: WIREFRAME -->
+            <div class="text-content">
+              <h3>Wireframe</h3>
+              <p>
+                After creating low-fidelity wireframes, it was time to iterate!
+                I added detail as I moved the screens into the mid-fidelity
+                stage, and then I used them to create a prototype. I requested
+                feedback on the prototype and made improvements based on the
+                input I received. It took several more rounds of polishing and
+                tweaking before I had the final screens.
+              </p>
+            </div>
             <div class="image">
               <picture>
                 <source
@@ -224,30 +239,7 @@
                 />
               </picture>
             </div>
-            <div class="text-content">
-              <h3>Wireframe</h3>
-              <p>
-                After creating low-fidelity wireframes, it was time to iterate!
-                I added detail as I moved the screens into the mid-fidelity
-                stage, and then I used them to create a prototype. I requested
-                feedback on the prototype and made improvements based on the
-                input I received. It took several more rounds of polishing and
-                tweaking before I had the final screens.
-              </p>
-            </div>
             <!-- SECTION: VISUAL LANGUAGE -->
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/hidden-gems/hidden-gems-5visual-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/hidden-gems/hidden-gems-5visual-2x.png"
-                  alt="Hidden Gems logo, icon set and color palette."
-                />
-              </picture>
-            </div>
             <div class="text-content">
               <h3>Visual Language</h3>
               <p>
@@ -260,19 +252,19 @@
                 sharper edges.
               </p>
             </div>
-            <!-- SECTION: DESIGN -->
             <div class="image">
               <picture>
                 <source
-                  srcset="img/hidden-gems/hidden-gems-6design-1x.png"
+                  srcset="img/hidden-gems/hidden-gems-5visual-1x.png"
                   media="(max-width:767px)"
                 />
                 <img
-                  src="img/hidden-gems/hidden-gems-6design-2x.png"
-                  alt="Various final screens from Hidden Gems app."
+                  src="img/hidden-gems/hidden-gems-5visual-2x.png"
+                  alt="Hidden Gems logo, icon set and color palette."
                 />
               </picture>
             </div>
+            <!-- SECTION: DESIGN -->
             <div class="text-content">
               <h3>Design</h3>
               <p>
@@ -284,36 +276,35 @@
                 based on function and content:
               </p>
               <p>
-                <span class="regular-weight">Onboarding:</span> These screens
-                give users a brief introduction to the app, plus an opportunity
-                to turn on location services and create an account if they want.
+                <strong>Onboarding:</strong> These screens give users a brief
+                introduction to the app, plus an opportunity to turn on location
+                services and create an account if they want.
               </p>
               <p>
-                <span class="regular-weight">Search:</span> Since searching is
-                the primary function of the app, the home screen doubles as the
-                search screen. There are multiple places a user can tap to
-                create a search - the search bar, the category cards underneath,
-                or the image and search suggestion at the top.
+                <strong>Search:</strong> Since searching is the primary function
+                of the app, the home screen doubles as the search screen. There
+                are multiple places a user can tap to create a search - the
+                search bar, the category cards underneath, or the image and
+                search suggestion at the top.
               </p>
               <p>
-                <span class="regular-weight">Business listing:</span> The
-                business listing screen displays photos, reviews, and basic
-                information about the business. Users can save the listing to an
-                existing folder or create a new folder by tapping the bookmark
-                icon or the floating action button (Android only).
+                <strong>Business listing:</strong> The business listing screen
+                displays photos, reviews, and basic information about the
+                business. Users can save the listing to an existing folder or
+                create a new folder by tapping the bookmark icon or the floating
+                action button (Android only).
               </p>
               <p>
-                <span class="regular-weight">Saved Places:</span> Users can save
-                places to folders so they can find them easily later. The app
-                comes with two default folders: Favorites and Places to Try.
-                Users can create custom folders here as well.
+                <strong>Saved Places:</strong> Users can save places to folders
+                so they can find them easily later. The app comes with two
+                default folders: Favorites and Places to Try. Users can create
+                custom folders here as well.
               </p>
               <p>
-                <span class="regular-weight">Account:</span> Since users don’t
-                need to sign up to use the app, there is a version of the
-                account screen for guest users and a version for logged-in
-                users. The guest version gently encourages users to create an
-                account.
+                <strong>Account:</strong> Since users don’t need to sign up to
+                use the app, there is a version of the account screen for guest
+                users and a version for logged-in users. The guest version
+                gently encourages users to create an account.
               </p>
               <p>
                 I also created several empty state screens for when a search
@@ -328,19 +319,19 @@
                 >
               </p>
             </div>
-            <!-- SECTION: MOCKUPS -->
             <div class="image">
               <picture>
                 <source
-                  srcset="img/hidden-gems/hidden-gems-7mockup-onboarding-1x.png"
+                  srcset="img/hidden-gems/hidden-gems-6design-1x.png"
                   media="(max-width:767px)"
                 />
                 <img
-                  src="img/hidden-gems/hidden-gems-7mockup-onboarding-2x.png"
-                  alt="Mockup of iPhones showing onboarding screens."
+                  src="img/hidden-gems/hidden-gems-6design-2x.png"
+                  alt="Various final screens from Hidden Gems app."
                 />
               </picture>
             </div>
+            <!-- SECTION: MOCKUPS -->
             <div class="text-content">
               <h3>Mockups</h3>
               <p>
@@ -358,6 +349,18 @@
                 >
               </p>
             </div>
+            <div class="image last">
+              <picture>
+                <source
+                  srcset="img/hidden-gems/hidden-gems-7mockup-onboarding-1x.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/hidden-gems/hidden-gems-7mockup-onboarding-2x.png"
+                  alt="Mockup of iPhones showing onboarding screens."
+                />
+              </picture>
+            </div>
             <!-- BUTTON: VIEW CASE STUDY -->
             <div class="case-study">
               <a
@@ -369,15 +372,18 @@
                 ></a
               >
             </div>
-            <h2>Conclusion</h2>
-            <p>
-              Designing my first native app was an exciting challenge. My main
-              goal for this project was to follow the OS guidelines and still
-              bring my vision to life as much as possible. I achieved this by
-              experimenting, running through numerous rounds of feedback and
-              iterations, and pushing myself to take my designs right up to the
-              edge of the acceptable standards in each OS’s guidelines.
-            </p>
+            <!-- SECTION: CONCLUSION -->
+            <div class="text-content">
+              <h2>Conclusion</h2>
+              <p>
+                Designing my first native app was an exciting challenge. My main
+                goal for this project was to follow the OS guidelines and still
+                bring my vision to life as much as possible. I achieved this by
+                experimenting, running through numerous rounds of feedback and
+                iterations, and pushing myself to take my designs right up to
+                the edge of the acceptable standards in each OS’s guidelines.
+              </p>
+            </div>
           </div>
         </div>
       </div>
