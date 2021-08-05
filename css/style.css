@@ -71,7 +71,7 @@ main {
 
 /* general page margins */
 .container {
-  margin: 0 16px;
+  margin: 0 1.25em;
 }
 
 /* spacing between blocks of content */
@@ -813,14 +813,14 @@ S devices - 640px and larger
 @media only screen and (min-width: 640px) {
   /* LAYOUT & SPACING */
   .container {
-    padding: 0 1em;
+    margin: 0 1.5em;
   }
 
   .sticky + #main-content {
     padding-top: 87px;
   }
 
-  .col-sm-7 {
+  /* .col-sm-7 {
     width: 58.33%;
   }
 
@@ -830,10 +830,10 @@ S devices - 640px and larger
 
   .col-sm-6 {
     width: 50%;
-  }
+  } */
 
   [class*="col-"] {
-    float: left;
+    float: none;
     padding: 0 0.65em;
   }
 
@@ -926,9 +926,9 @@ S devices - 640px and larger
     max-width: 430px;
   }
 
-  #work h3 {
+  /* #work h3 {
     margin-top: 0;
-  }
+  } */
 
   #work .button {
     margin: 4px 0;
@@ -959,7 +959,7 @@ M devices - 768px and larger
 @media only screen and (min-width: 768px) {
   /* LAYOUT & SPACING */
   .container {
-    padding: 0 1.2em;
+    margin: 0 1.75em;
   }
 
   .col-md-6 {
@@ -1043,7 +1043,7 @@ L devices - 1024px and larger
   /* LAYOUT & SPACING */
   .container {
     max-width: 1200px;
-    padding: 0 1.7em;
+    padding: 0 1.75em;
     margin-left: auto;
     margin-right: auto;
   }
