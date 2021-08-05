@@ -65,8 +65,8 @@ img {
 
 /* top padding on main element accomodates for fixed nav bar */
 main {
-  /* padding-top: 63px; */
-  z-index: 0;
+  z-index: -1;
+  position: relative;
 }
 
 /* general page margins */
@@ -390,7 +390,7 @@ a:focus {
 
 header {
   background-color: #383835;
-  z-index: 2;
+  z-index: 9999;
   width: 100%;
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
   -moz-box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
