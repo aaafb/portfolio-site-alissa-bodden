@@ -549,6 +549,10 @@ nav a:focus {
   margin-bottom: 3em;
 }
 
+#work .text-content.last {
+  margin-bottom: 0;
+}
+
 .text-content p {
   margin-top: 0.4em;
 }
