@@ -454,14 +454,15 @@ nav a:focus {
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
-  top: 22px;
+  right: -14px;
+  top: 10px;
+  line-height: 0em;
   padding: 0;
-  font-size: 18px;
 }
 
 .hamburger img {
-  max-width: 16px;
+  max-width: 44px;
+  padding: 14px;
 }
 
 .hamburger a:visited,
