@@ -764,6 +764,10 @@ XS devices - 422px and larger
     float: left;
   }
 
+  #animation {
+    float: none;
+  }
+
   .row::after {
     content: "";
     clear: both;
@@ -960,6 +964,11 @@ M devices - 768px and larger
 
   [class*="col-"] {
     padding: 0 0.65em;
+    float: left;
+  }
+
+  #animation {
+    float: left;
   }
 
   .prev-proj {
