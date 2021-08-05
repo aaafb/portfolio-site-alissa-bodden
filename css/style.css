@@ -354,11 +354,13 @@ a:focus {
 #skip {
   background-color: #78754d;
   text-align: center;
-  padding: 0.5em 0;
+  height: 44px;
+  padding: 10px 0;
 }
 
 #skip-link {
   color: #fffef7;
+  padding: 14px 0;
 }
 
 /* HEADER/NAV BAR */
