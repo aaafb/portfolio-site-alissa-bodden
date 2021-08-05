@@ -76,11 +76,25 @@ main {
 
 /* spacing between blocks of content */
 .image {
-  margin-bottom: 1em;
+  max-width: 900px;
+  margin: 0 auto 3.5em;
+}
+
+.image.cover {
+  margin-bottom: 2em;
+}
+
+.image.internal {
+  margin: 0 auto 1em;
+}
+
+.image.last {
+  margin-bottom: 0;
 }
 
 .text-content {
-  margin-bottom: 2.5em;
+  max-width: 900px;
+  margin: 0 auto 1.5em;
 }
 
 /* TYPOGRAPHY */
@@ -527,6 +541,14 @@ nav a:focus {
   margin-bottom: 0.2em;
 }
 
+#work .image {
+  margin-bottom: 0;
+}
+
+#work .text-content {
+  margin-bottom: 3em;
+}
+
 .text-content p {
   margin-top: 0.4em;
 }
@@ -594,15 +616,12 @@ div.profile-photo {
 /* PROJECT PAGES */
 .case-study {
   text-align: center;
-}
-
-.case-study .button {
-  margin: 0 0 0.6em;
+  margin: 2em 0;
 }
 
 .more-projects {
   width: 100%;
-  margin-top: 2.25em;
+  margin-top: 4em;
 }
 
 .next-proj {
