@@ -667,7 +667,8 @@ footer {
 /* ANIMATIONS */
 #dog-waiting {
   width: 100%;
-  max-width: 100%;
+  max-width: 632px;
+  margin: 0 auto;
   height: auto;
 }
 
