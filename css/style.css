@@ -65,7 +65,6 @@ img {
 
 /* top padding on main element accomodates for fixed nav bar */
 main {
-  z-index: -1;
   position: relative;
 }
 
@@ -364,7 +363,7 @@ a:focus {
   width: 1px;
 }
 
-/* SKIP LINK */
+/* skip link */
 #skip {
   background-color: #78754d;
   text-align: center;
@@ -397,9 +396,14 @@ header {
   box-shadow: 0 3px 8px 0 rgba(15, 15, 15, 0.4);
 }
 
+#myHeader {
+  position: relative;
+  z-index: 9999;
+}
+
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   width: 100%;
 }
