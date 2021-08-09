@@ -382,6 +382,45 @@ a:focus {
   font-weight: 600;
 }
 
+/* pause button for animation */
+#pause {
+  width: 100%;
+}
+
+#pauseBtn {
+  color: #fffef7;
+  background-color: #59581f;
+  padding: 10px 12px 6px;
+  border-radius: 6px;
+  border: none;
+  border-bottom: 3px solid #212121;
+  margin: 0.5em 0;
+  display: inline-block;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+
+#pauseBtn:visited {
+  color: #fffef7;
+  background-color: #59581f;
+}
+
+#pauseBtn:hover {
+  color: #fffef7;
+  background-color: #383835;
+}
+
+#pauseBtn:active {
+  color: #fffef7;
+  background-color: #383835;
+}
+
+#pauseBtn:focus {
+  color: #fffef7;
+  background-color: #383835;
+  border: 4px solid #fae63a;
+}
+
 /* HEADER/NAV BAR */
 .logo {
   max-width: 160px;
@@ -719,8 +758,13 @@ footer {
   }
 }
 
-#dog {
+.dog-animate {
   animation: 1s head-pop infinite alternate ease;
+}
+
+.paused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 /* EMBEDDED PROTOTYPES */

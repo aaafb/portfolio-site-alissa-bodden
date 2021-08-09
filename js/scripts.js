@@ -112,3 +112,17 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
+// PAUSE BUTTON FOR CSS ANIMATION
+var button = document.getElementById("pauseBtn"),
+doggy = document.getElementById("dog");
+
+function togglePausePlay() {
+  doggy.classList.toggle("paused");
+  if (button.innerHTML === "Play") {
+    button.innerHTML = "Pause";
+  } else {
+    button.innerHTML = "Play"
+  }
+}
