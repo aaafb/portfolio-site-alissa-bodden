@@ -765,7 +765,7 @@ XS devices - 422px and larger
   }
 
   [class*="col-"] {
-    float: left;
+    float: none;
   }
 
   #animation {
@@ -804,6 +804,11 @@ XS devices - 480px and larger
     left: auto;
     width: 433px;
     height: 861px;
+  }
+
+  #skills-tools [class*="col-"] {
+    float: left;
+    width: 50%;
   }
 }
 
