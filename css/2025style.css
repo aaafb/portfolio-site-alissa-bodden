@@ -41,6 +41,7 @@ html {
     --color-neutral-600: #86896C;
     --color-neutral-300: #C5C7B8;
     --color-neutral-200: #E3E4DD;
+    --color-neutral-150: #F1F1EE;
     --color-neutral-100: #FDFDFA;
 
     --color-green-900: #707D00;
@@ -87,7 +88,6 @@ body {
     background-position: 50%;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    margin-bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    margin-top: var(--space-1);
+    margin: var(--space-1) 0 0;
     font: var(--text-heading-1);
     letter-spacing: 0.05rem;
 }
@@ -407,22 +407,26 @@ h5.with-green600-icon.bulb::before {
 
 /* Skip link */
 
-#skip {
+/* #skip {
     height: 2rem;
-    padding-top: 0.4rem;
+    padding-top: 0.3rem;
     padding-bottom: 0.6rem;
     text-align: center;
-    background-color: var(--color-neutral-200);
+    background-color: var(--color-neutral-150);
   }
-  
+
+.skip-link {
+    color: var(--color-neutral-1000);
+}  
+    
 #skip-link {
     color: var(--color-neutral-1000);
-}
-  
+}  
+    
 #skip-link:focus {
     font-weight: 700;
     background-color: var(--color-green-300);
-}
+} */
 
 /* Nav Bar */
 
