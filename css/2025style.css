@@ -7,9 +7,6 @@
     --font-headings: 'DM Sans', sans-serif;
     --font-body: 'Source Serif 4', serif;
 
-    /* Font size for calculating rem */
-    font-size: 20px;
-
     /* Text variables */
     --text-heading-1: 700 2.4rem/1.4 var(--font-headings);
     --text-heading-2: 700 2.4rem/1.4 var(--font-headings);
