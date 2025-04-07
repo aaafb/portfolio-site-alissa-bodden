@@ -2,6 +2,11 @@
    VARIABLES & GLOBAL SETTINGS
    ================================= */
 
+html {
+    /* Font size for calculating rem */
+    font-size: 125%;
+}
+
  :root {
     /* Typography */
     --font-headings: 'DM Sans', sans-serif;
@@ -58,7 +63,6 @@
 
 body {
     font-family: "Source Serif 4", serif;
-    font-size: 20px;
     background-color: var(--color-neutral-100);
 }
 
@@ -486,9 +490,6 @@ h5.with-green600-icon.bulb::before {
    ================================= */
 
 @media screen and (max-width: 575px) {
-    /* :root {
-        font-size: 17px;
-    }  */
 
     .navbar {
         flex-direction: column;
@@ -521,8 +522,8 @@ h5.with-green600-icon.bulb::before {
 }
 
 @media screen and (max-width: 460px) {
-    :root {
-        font-size: 16px;
+    html {
+        font-size: 100%;
     }
 
     p.visually-h2 {
