@@ -478,12 +478,6 @@ h5.with-green600-icon.bulb::before {
     padding: 0 2rem;
 }
 
-.home-name {
-    padding-top: 0.4rem;
-    padding-bottom: 0.6rem;
-    color: var(--color-green-900)
-}
-
 
 /* =================================
    MEDIA QUERIES
