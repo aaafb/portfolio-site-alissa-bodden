@@ -3,12 +3,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Josefin+Slab:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/2025style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -25,441 +26,394 @@
       src="https://kit.fontawesome.com/8f23e52dfd.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/footer.js"></script>
     <meta charset="utf-8" />
     <title>
-      Drizzle - Responsive Web App - Alissa Bodden UI/UX Designer Raleigh, NC
+      Drizzle Accessible Recipe App - Alissa Bodden UI/UX Designer Raleigh, NC
     </title>
   </head>
 
-  <body id="drizzle">
-    <div id="skip">
-      <a href="#main-content" id="skip-link">Skip to Main Content</a>
-    </div>
-    <header id="myHeader">
-      <div class="container">
-        <div class="navtoggle" id="myNavtoggle">
-          <div class="image-link">
-            <a href="index.html">
-              <img
-                src="img/alissa-bodden-logo.svg"
-                alt="Alissa Bodden Home"
-                class="logo"
-              />
-            </a>
-          </div>
-          <nav class="borderXwidth">
-            <ul>
-              <li class="hamburger">
-                <a
-                  href="javascript:void(0);"
-                  class="icon"
-                  onclick="menuToggle()"
-                >
-                  <img src="img/menu-icon.svg" alt="Menu" />
-                </a>
-              </li>
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <a href="files/alissa-bodden-resume.pdf" target="_blank"
-                  >Resume<span class="visually-hidden"> PDF</span></a
-                >
-              </li>
-              <li>
-                <a href="#contact" id="contact-link" onclick="menuToggle()"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo">
+            <a href="index.html"
+            ><img src="img/logo.svg" alt="Alissa Bodden Home" /><span
+              >Alissa Bodden</span
+            ></a
+          >
         </div>
-      </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="files/alissa-bodden-resume-2025.pdf" target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
+
     <main id="main-content">
-      <!-- HEADING -->
-      <div>
-        <div class="container">
-          <div class="title-wrapper">
-            <div class="title">
-              <h1>
-                Drizzle
-                <span class="highlight"></span>
-              </h1>
+      <!-- section: intro/overview -->
+      <section class="project-section">
+        <div class="project-body image-container">
+            <img
+              src="img/home/drizzle/drizzle-hero-image-3200w.jpg 3200w"
+              srcset="
+              img/home/drizzle/drizzle-hero-image-400w.jpg   400w,
+              img/home/drizzle/drizzle-hero-image-800w.jpg   800w,
+              img/home/drizzle/drizzle-hero-image-1080w.jpg 1080w,
+              img/home/drizzle/drizzle-hero-image-1600w.jpg 1600w,
+              img/home/drizzle/drizzle-hero-image-2000w.jpg 2000w,
+              img/home/drizzle/drizzle-hero-image-2600w.jpg 2600w,
+              img/home/drizzle/drizzle-hero-image-3200w.jpg 3200w
+              "
+              sizes="(max-width: 479px) 88vw, (max-width: 1120px) 88vw, (max-width: 1825px) 88vw, 1606px"
+              alt="Three different device sizes displaying the home screen of the Drizzle web app project"
+              loading="lazy"
+            />
+          </div>
+        <div class="text-container">
+          <h1>
+            Drizzle: Designing a Specialized Recipe App with Accessibility at
+            its Core
+          </h1>
+          <p class="below-h1">
+            Drizzle is a conceptual recipe product I created as a student. The
+            brief was pretty broad; the primary direction was to create some
+            kind of recipe product. I decided to narrow my focus down to a niche
+            category: sauce.
+          </p>
+          <!-- details: role, team, timeline -->
+          <div class="group-h5-blocks">
+            <div class="h5-block">
+              <h2 class="visually-h5">My Role</h2>
+              <p>UI/UX Designer & Researcher</p>
+            </div>
+            <div class="h5-block">
+              <h2 class="visually-h5">Timeline</h2>
+              <p>October - December 2020; April - May 2021</p>
             </div>
           </div>
         </div>
-      </div>
-      <!-- MAIN CONTENT -->
-      <div>
-        <div class="container">
-          <!-- COVER IMAGE -->
-          <div class="image cover">
-            <picture>
-              <source
-                srcset="img/drizzle/drizzle-1overview-1x.jpg"
-                media="(max-width:767px)"
-              />
-              <img
-                src="img/drizzle/drizzle-1overview-2x.jpg"
-                alt="Mockup of 3 iPhones showing recipe screen and success state screens from Drizzle web app."
-              />
-            </picture>
-          </div>
-          <!-- OVERVIEW TEXT -->
-          <div class="text-content">
-            <h2>Overview</h2>
-            <p>
-              Drizzle is a conceptual recipe product I created for a course
-              project. The brief was pretty broad; the primary direction was to
-              create some kind of recipe product. I decided to narrow my focus
-              down to a niche category: sauce. Interpreting the brief in this
-              way allowed me to create a more unique product.
-            </p>
-            <p>
-              I was the UX/UI designer for this project. During the UX phase, I
-              did market research and user interviews, created user personas,
-              mapped out user flows and diagrams, sketched low-fidelity
-              wireframes, and conducted user testing. During the UI phase, I
-              built a mood board, developed screen designs from low-fidelity
-              sketches to high-fidelity wireframes, and created a style guide. I
-              then translated the mobile designs into various screen sizes to
-              make the product responsive and created mockups with the final
-              screens. I worked on the project from October through December
-              2020, and completed the redesign from mid-April through mid-May
-              2021.
-            </p>
-          </div>
-          <div>
-            <!-- SECTION: RESEARCH -->
-            <div class="text-content">
-              <h2>My Process</h2>
-              <h3>Research</h3>
-              <p>
-                I interviewed several potential users during the UX research
-                stage. I used the information from these interviews to create
-                user personas that helped guide my design decisions.
-              </p>
+      </section>
+
+      <!-- section: table of contents -->
+      <section class="project-section">
+        <div class="text-container">
+          <h2 class="h2-heading with-icon">Table of Contents</h2>
+          <div class="group-h5-blocks">
+            <div class="h5-block">
+              <a href="#user-personas" class="table-of-contents-link with-icon"
+                >User Personas & Flows</a
+              >
+              <!-- <p>
+                Users found the app overwhelming and impersonal, and the app had
+                outgrown its navigation system
+              </p> -->
             </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/drizzle/drizzle-2research-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/drizzle/drizzle-2research-2x.png"
-                  alt="Two user personas layered on top of each other."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: IDEATION -->
-            <div class="text-content">
-              <h3>Ideation</h3>
-              <p>
-                Before I began developing screen layouts, I established the
-                various paths that a user may take when trying to accomplish
-                their goals within the app. I did a task analysis and then
-                mapped out the user flows.
-              </p>
-            </div>
-            <div class="image internal">
-              <picture>
-                <source
-                  srcset="img/drizzle/drizzle-3ideation-userflows-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/drizzle/drizzle-3ideation-userflows-2x.png"
-                  alt="Two user flows showing paths for using a filtered search and saving recipes to folders."
-                />
-              </picture>
-            </div>
-            <div class="text-content">
-              <p>
-                During the early sketching phase, I used the Crazy 8s rapid
-                sketching method to get a bunch of ideas down on paper before
-                refining them later.
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/drizzle/drizzle-3ideation-sketches-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/drizzle/drizzle-3ideation-sketches-2x.png"
-                  alt="Numerous rough early sketches."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: WIREFRAME -->
-            <div class="text-content">
-              <h3>Wireframe</h3>
-              <p>
-                After creating many rough sketches, I chose the strongest layout
-                for each screen and then refined it. I turned the polished
-                sketches into a rapid prototype and conducted a round of early
-                user testing. I used the feedback from testing to improve the UX
-                structure and flow as I turned my sketches into low-fidelity
-                digital wireframes.
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/drizzle/drizzle-4wireframes-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/drizzle/drizzle-4wireframes-2x.png"
-                  alt="Progression of several screens from sketch to low-fidelity wireframe."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: STYLE GUIDE -->
-            <div class="text-content">
-              <h3>Style Guide</h3>
-              <p>
-                I created a UI style guide for Drizzle to help me maintain
-                consistency across all screens and breakpoints.
-                <a href="files/drizzle-style-guide.pdf" target="_blank"
-                  >View the full style guide document<span
-                    class="visually-hidden"
-                  >
-                    PDF</span
-                  >.</a
-                >
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/drizzle/drizzle-5styleguide-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/drizzle/drizzle-5styleguide-2x.png"
-                  alt="UI Elements page of style guide layered on top of several other pages from the document."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: DESIGN -->
-            <div class="text-content">
-              <h3>Design</h3>
-              <p>
-                With my style guide in hand, I applied UI styling to all of the
-                screens. This was an iterative process; I took each screen
-                through a number of changes, prompted by feedback from peers and
-                my mentor, as I developed the final designs.
-                <a
-                  href="https://xd.adobe.com/view/1545cd6e-c23f-4b52-b3e7-ee1c43e287c9-4016/"
-                  target="_blank"
-                  >View all of the screens.<span class="visually-hidden">
-                    (opens in new tab)</span
-                  ></a
-                >
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/drizzle/drizzle-6design-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/drizzle/drizzle-6design-2x.png"
-                  alt="Mockup of phone, tablet and laptop showing home screen."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: REDESIGN -->
-            <div class="text-content">
-              <h3>Accessibility Redesign</h3>
-              <p>
-                I created Drizzle before I knew anything about inclusive design.
-                As I prepared my portfolio, I went back to Drizzle and realized
-                that the color contrast needed some work. I tried to tweak the
-                colors a bit, but it was not enough. I was initially reluctant
-                to make significant changes to the colors, but I felt like it
-                was essential to bring it up to code, so to speak.
-              </p>
-              <p>
-                Looking at Drizzle with fresh eyes and a few more projects under
-                my belt, I saw several opportunities to improve the product’s
-                UI. I increased the margins, gutters, and general spacing and
-                made other changes to refine the layout.
-                <a
-                  href="https://xd.adobe.com/view/362a7a3d-3eb5-4ac6-9c45-94a0b0191242-6379/"
-                  target="_blank"
-                  >View the breakdown of the changes I made during the
-                  redesign.<span class="visually-hidden">
-                    (opens in new tab)</span
-                  ></a
-                >
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/drizzle/drizzle-7redesign-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/drizzle/drizzle-7redesign-2x.png"
-                  alt="Original mobile home screen design and redesigned screen side by side."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: MOCKUPS -->
-            <div class="text-content">
-              <h3>Mockups</h3>
-              <p>
-                After finalizing the screens, I created device mockups to show
-                my designs in their natural habitat.
-                <a href="files/drizzle-mockups.pdf" target="_blank"
-                  >View all of the mockups<span class="visually-hidden">
-                    PDF</span
-                  >.</a
-                >
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/drizzle/drizzle-8mockups-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/drizzle/drizzle-8mockups-2x.png"
-                  alt="Mockup of iPhones showing Home, recipe, login, and search screens."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: PROTOTYPE -->
-            <div class="text-content">
-              <h3>Prototype</h3>
-              <p>
-                I created an interactive prototype of the app that you can click
-                through above.
-                <a
-                  href="https://xd.adobe.com/view/dd9b4be8-a2d1-491e-8979-bc919be084e6-88c8/"
-                  target="_blank"
-                  >View the prototype in a new tab.</a
-                >
-              </p>
-            </div>
-            <div class="iframe-gparent">
-              <div class="prototype-embed">
-                <iframe
-                  title="Interactive mobile prototype of Drizzle web app"
-                  class="responsive-iframe"
-                  src="https://xd.adobe.com/embed/7535aa9c-f086-454b-b661-5d3fbadc93cb-2066/"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <!-- BUTTON: VIEW CASE STUDY -->
-            <div class="case-study">
+            <div class="h5-block">
               <a
-                href="https://www.behance.net/gallery/119675371/Drizzle-Sauce-Recipe-Web-App-UIUX-Case-Study"
+                href="#sketching-wireframing"
+                class="table-of-contents-link with-icon"
+                >Sketching & Wireframing</a
+              >
+              <!-- <p>
+                I designed a cleaner, more personalized experience that users
+                love, and created a robust, intuitive navigation system
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a href="#style-guide" class="table-of-contents-link with-icon"
+                >Style Guide</a
+              >
+              <!-- <p>
+                Potential concepts I explored, like circular progress bars and a
+                'For You' tab, and why they didn't work
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a href="#initial-design" class="table-of-contents-link with-icon"
+                >Initial Design</a
+              >
+              <!-- <p>
+                How I iterated on key design elements in response to user
+                testing
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a href="#redesign" class="table-of-contents-link with-icon"
+                >Redesign & Accessibility Improvements</a
+              >
+              <!-- <p>
+                Data from surveys and app analytics showed a 79% approval rate
+                for the new design, plus a 47% increase in users tapping on
+                Monthly Goals, and a 16% increase in users doing a recommended
+                workout from Home
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a href="#prototype" class="table-of-contents-link with-icon"
+                >Prototype</a
+              >
+              <!-- <p>
+                Refining the button bar and visual hierarchy based on user
+                feedback and app usage analytics
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a href="#takeaways" class="table-of-contents-link with-icon"
+                >Takeaways</a
+              >
+              <!-- <p>
+                Refining the button bar and visual hierarchy based on user
+                feedback and app usage analytics
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section: process -->
+      <section class="project-section">
+        <!-- subsection: user personas and flows -->
+        <div class="text-container">
+          <h2 class="h2-heading with-icon">Process</h2>
+          <h3 id="user-personas" class="first">Research & Planning</h3>
+          <h4>User Interviews & Personas</h4>
+          <p class="below-h3-h4">
+            I interviewed several potential users during the UX research stage.
+            I used the information from these interviews to create user personas
+            that helped guide my design decisions.
+          </p>
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-2research-2x.png"
+              srcset="
+                img/drizzle/drizzle-2research-1x.png  600w,
+                img/drizzle/drizzle-2research-2x.png 1200w
+              "
+              sizes="(max-width: 479px) 88vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Two user personas layered on top of each other. The top persona is for Harper, talking about how she likes to prep meals in advance"
+              loading="lazy"
+            />
+          </div>
+          <h4>User Flows</h4>
+          <p class="below-h3-h4">
+            Before I began developing screen layouts, I established the various
+            paths that a user may take when trying to accomplish their goals
+            within the app. I did a task analysis and then mapped out the user
+            flows.
+          </p>
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-3ideation-userflows-2x.png"
+              srcset="
+                img/drizzle/drizzle-3ideation-userflows-1x.png  600w,
+                img/drizzle/drizzle-3ideation-userflows-2x.png 1200w
+              "
+              sizes="(max-width: 479px) 88vw, (max-width: 1120px) 88vw, 1000px"
+              alt="User flows for two primary tasks: filtering search results, and saving recipes for later."
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- subsection: sketches and wireframes -->
+        <div class="text-container">
+          <h3 id="sketching-wireframing">From Rough Sketches to Wireframes</h3>
+          <h4>Sketches</h4>
+          <p class="below-h3-h4">
+            During the early sketching phase, I used the Crazy 8s rapid
+            sketching method to get a bunch of ideas down on paper before
+            refining them later.
+          </p>
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-3ideation-sketches-2x.png"
+              srcset="
+                img/drizzle/drizzle-3ideation-sketches-1x.png  600w,
+                img/drizzle/drizzle-3ideation-sketches-2x.png 1200w
+              "
+              sizes="(max-width: 479px) 88vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Numerous rough early sketches of the Drizzle app"
+              loading="lazy"
+            />
+          </div>
+          <h4>Wireframes</h4>
+          <div class="group-paragraphs below-h3-h4">
+            <p>
+              After creating many rough sketches, I chose the strongest layout
+              for each screen and then refined it. I turned the polished
+              sketches into a rapid prototype and did some early user testing.
+            </p>
+            <p>
+              I used insights from testing to improve the UX structure and flow
+              as I turned my sketches into low-fidelity digital wireframes.
+            </p>
+          </div>
+
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-4wireframes-2x.png"
+              srcset="
+                img/drizzle/drizzle-4wireframes-1x.png  600w,
+                img/drizzle/drizzle-4wireframes-2x.png 1200w
+              "
+              sizes="(max-width: 479px) 88vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Progression of several screens from sketch to low-fidelity wireframe"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- subsection: style guide -->
+        <div class="text-container">
+          <h3 id="testing-iteration">Going High Fidelity</h3>
+          <h4 id="style-guide">Style Guide</h4>
+          <p class="below-h3-h4">
+            I created a UI style guide for Drizzle to help me maintain
+            consistency across all screens and breakpoints.
+            <a href="files/drizzle-style-guide.pdf" target="_blank"
+              >View the full style guide document<span class="visually-hidden">
+                PDF</span
+              >.</a
+            >
+          </p>
+        </div>
+        <div class="project-body image-container">
+          <img
+            src="img/drizzle/drizzle-5styleguide-2x.png"
+            srcset="
+              img/drizzle/drizzle-5styleguide-1x.png  600w,
+              img/drizzle/drizzle-5styleguide-2x.png 1200w
+            "
+            sizes="(max-width: 479px) 88vw, (max-width: 1120px) 88vw, 1000px"
+            alt="UI Elements page of style guide layered on top of several other pages from the document"
+            loading="lazy"
+          />
+        </div>
+        <div class="text-container">
+          <h4 id="initial-design">My Initial Finished Design</h4>
+          <p class="below-h3-h4">
+            Using my style guide, I applied UI styling to all of the screens.
+            This was an iterative process; I took each screen through a number
+            of changes, prompted by feedback from peers and my mentor, as I
+            developed the final designs.
+            <a
+              href="https://xd.adobe.com/view/1545cd6e-c23f-4b52-b3e7-ee1c43e287c9-4016/"
+              target="_blank"
+              >View all of the screens.<span class="visually-hidden">
+                (opens in new tab)</span
+              ></a
+            >
+          </p>
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-6design-2x.png"
+              srcset="
+                img/drizzle/drizzle-6design-1x.png  600w,
+                img/drizzle/drizzle-6design-2x.png 1200w
+              "
+              sizes="(max-width: 479px) 88vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Mockup of phone, tablet and laptop showing home screen"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- section: redesign -->
+      <section class="project-section">
+        <div class="text-container">
+          <h2 id="redesign" class="h2-heading with-icon">Redesign</h2>
+          <h3>Improving Accessibility</h3>
+          <div class="group-paragraphs">
+            <p class="below-h3-h4">
+              I created Drizzle before I knew anything about inclusive design.
+              As I prepared my portfolio, I went back to Drizzle and realized
+              that the color contrast needed some work. I tried to tweak the
+              colors a bit, but it was not enough; the design needed extensive
+              changes.
+            </p>
+            <p>
+              Looking at Drizzle with fresh eyes and a few more projects under
+              my belt, I saw several opportunities to improve the product's UI.
+              I increased the margins, gutters, and general spacing and made
+              other changes to refine the layout.
+              <a
+                href="https://xd.adobe.com/view/362a7a3d-3eb5-4ac6-9c45-94a0b0191242-6379/"
                 target="_blank"
-                class="button"
-                >View Case Study<span class="visually-hidden">
+                >View the breakdown of the changes I made during the
+                redesign.<span class="visually-hidden">
                   (opens in new tab)</span
                 ></a
               >
-            </div>
-            <!-- SECTION: CONCLUSION -->
-            <div class="text-content">
-              <h2>Conclusion</h2>
-              <p>
-                My biggest takeaway from this project is that designing for
-                accessibility doesn’t mean disregarding the visual aesthetic. It
-                means opening my mind, seeing things differently, and being even
-                more creative when thinking about solving the problem. It also
-                means being willing to let go of my initial ideas of what the
-                “perfect UI” looks like. Before I started the redesign, I loved
-                my color palette, and the idea of changing it was a little
-                painful. Comparing the before and after, I can confidently say
-                that the updated UI is more visually engaging.
-              </p>
+            </p>
+          </div>
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-7redesign-2x.png"
+              srcset="
+                img/drizzle/drizzle-7redesign-1x.png  600w,
+                img/drizzle/drizzle-7redesign-2x.png 1200w
+              "
+              sizes="(max-width: 479px) 88vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Original mobile home screen design and redesigned screen side by side"
+              loading="lazy"
+            />
+          </div>
+          <h3 id="prototype">Prototype</h3>
+          <div class="iframe-gparent">
+            <div class="prototype-embed">
+              <iframe
+                title="Interactive mobile prototype of Drizzle web app"
+                class="responsive-iframe"
+                src="https://xd.adobe.com/embed/7535aa9c-f086-454b-b661-5d3fbadc93cb-2066/"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row more-projects">
-          <div class="prev-proj col-xs-6 col-sm-6 empty">N/A</div>
-          <div class="next-proj col-xs-6 col-sm-6">
-            <a href="space.html">Next Project: Space</a>
+          <h3 id="takeaways">Takeaways</h3>
+          <div class="group-paragraphs below-h3-h4">
+            <p>
+              My biggest takeaway from this project is that designing for
+              accessibility doesn't mean disregarding the visual aesthetic. It
+              means opening my mind, seeing things differently, and being even
+              more creative when thinking about solving the problem. It also
+              means being willing to let go of my initial ideas of what the
+              “perfect UI” looks like.
+            </p>
+            <p>
+              Before I started the redesign, I loved my color palette, and the
+              idea of changing it was a little painful. Comparing the before and
+              after, I can confidently say that the updated UI is more visually
+              engaging.
+            </p>
           </div>
-        </div>
-      </div>
+      </section>
     </main>
-    <footer id="contact">
-      <div class="container">
-        <!-- FOOTER TEXT AND BUTTON -->
-        <div class="title-wrapper">
-          <div class="title">
-            <h2>
-              Let's Talk
-              <span class="highlight"></span>
-            </h2>
-          </div>
-        </div>
-        <p>
-          I’d love to chat about inclusive design or discuss the value I could
-          bring to your team, so get in touch!
-        </p>
-        <p>
-          To shoot me an email, <span id="copy">click to copy </span>my email
-          address:
-          <a
-            href=""
-            id="email"
-            class="copy-click"
-            data-tooltip-text="Click to Copy"
-            data-tooltip-text-copied="Copied!"
-            aria-labelledby="copy email"
-            >alissabodden2@gmail.com</a
-          >
-        </p>
-      </div>
-      <div id="social">
-        <!-- SOCIAL LINKS -->
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/alissa-bodden/"
-              target="_blank"
-            >
-              <img
-                src="img/linkedin-icon.svg"
-                alt="LinkedIn profile (opens in new tab)"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.behance.net/alissabodden" target="_blank">
-              <img
-                src="img/behance-icon.svg"
-                alt="Behance profile (opens in new tab)"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div id="copyright">
-        <!-- COPYRIGHT -->
-        <p>Copyright Alissa Bodden 2021</p>
-      </div>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/scripts.js"></script>
+
+    <site-footer></site-footer>
+
+    <script>
+        // Hamburger menu functionality
+        document.addEventListener("DOMContentLoaded", function () {
+          const hamburger = document.querySelector(".hamburger");
+          const navLinks = document.querySelector(".nav-links");
+  
+          hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+          });
+        });
+      </script>
   </body>
 </html>

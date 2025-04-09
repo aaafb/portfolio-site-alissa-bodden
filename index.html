@@ -3,12 +3,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Josefin+Slab:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/2025style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -25,273 +26,130 @@
       src="https://kit.fontawesome.com/8f23e52dfd.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/footer.js"></script>
     <meta charset="utf-8" />
     <title>Alissa Bodden UI/UX Designer Raleigh, NC</title>
   </head>
 
-  <body id="home">
-    <div id="skip">
-      <a href="#main-content" id="skip-link">Skip to Main Content</a>
-    </div>
-    <header id="myHeader">
-      <div class="container">
-        <div class="navtoggle" id="myNavtoggle">
-          <div class="image-link">
-            <a href="index.html">
-              <img
-                src="img/alissa-bodden-logo.svg"
-                alt="Alissa Bodden Home"
-                class="logo"
-              />
-            </a>
-          </div>
-          <nav class="borderXwidth">
-            <ul>
-              <li class="hamburger">
-                <a
-                  href="javascript:void(0);"
-                  class="icon"
-                  onclick="menuToggle()"
-                >
-                  <img src="img/menu-icon.svg" alt="Menu" />
-                </a>
-              </li>
-              <li><a aria-current="page" href="index.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <a href="files/alissa-bodden-resume.pdf" target="_blank"
-                  >Resume<span class="visually-hidden"> PDF</span></a
-                >
-              </li>
-              <li>
-                <a href="#contact" id="contact-link" onclick="menuToggle()"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main id="main-content">
-      <div id="hero">
-        <!-- HERO SECTION -->
-        <div class="container">
-          <div class="title-wrapper">
-            <div class="title">
-              <h1>
-                Hi, I'm Alissa.
-                <span class="highlight"></span>
-              </h1>
-            </div>
-          </div>
-          <h2>
-            I'm a UI/UX designer committed to accessibility and inclusive
-            design.
-          </h2>
-          <h3>
-            Deeply empathetic and highly analytical, I'm skilled at solving
-            problems with beautiful, user-centric solutions.
-          </h3>
-        </div>
-      </div>
-      <!-- WORK SECTION -->
-      <div id="work">
-        <div class="container">
-          <div class="title-wrapper">
-            <div class="title">
-              <h2>
-                My Work
-                <span class="highlight"></span>
-              </h2>
-            </div>
-          </div>
-          <!-- PROJECT SECTION: DRIZZLE -->
-          <div class="row project-block">
-            <!-- LEFT COLUMN (IMAGE) -->
-            <div class="image col-sm-6 col-md-6 col-lg-7">
-              <a
-                href="drizzle.html"
-                aria-labelledby="dz-link dz-head"
-                aria-describedby="dz-desc"
-              >
-                <picture>
-                  <source
-                    srcset="img/home/drizzle/drizzle-cover-image-1x.jpg"
-                    media="(max-width:767px)"
-                  />
-                  <img
-                    src="img/home/drizzle/drizzle-cover-image-2x.jpg"
-                    alt="Mockup of 3 iPhones showing recipe screen and success state screens from Drizzle web app."
-                  />
-                </picture>
-              </a>
-            </div>
-            <!-- RIGHT COLUMN (TEXT AND BUTTON) -->
-            <div class="text-content col-sm-6 col-md-6 col-lg-5">
-              <h3 id="dz-head">Drizzle</h3>
-              <p class="tags">Accessibility • prototype • redesign</p>
-              <p id="dz-desc">
-                A responsive web app I created to be the ultimate source for
-                sauce recipes. I also did an accessibility-focused redesign
-                after initially completing the project.
-              </p>
-              <a
-                href="drizzle.html"
-                class="button"
-                id="dz-link"
-                aria-labelledby="dz-link dz-head"
-                aria-describedby="dz-desc"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <!-- PROJECT SECTION: SPACE -->
-          <div class="row project-block">
-            <!-- LEFT COLUMN (IMAGE) -->
-            <div class="image col-sm-6 col-md-6 col-lg-7">
-              <a
-                href="space.html"
-                aria-labelledby="sp-link sp-head"
-                aria-describedby="sp-desc"
-              >
-                <picture>
-                  <source
-                    srcset="img/home/space/space-cover-image-1x.jpg"
-                    media="(max-width:767px)"
-                  />
-                  <img
-                    src="img/home/space/space-cover-image-2x.jpg"
-                    alt="Mockup of various devices showing the product listing screen from Space web app."
-                  />
-                </picture>
-              </a>
-            </div>
-            <!-- RIGHT COLUMN (TEXT AND BUTTON) -->
-            <div class="text-content col-sm-6 col-md-6 col-lg-5">
-              <h3 id="sp-head">Space</h3>
-              <p class="tags">E-commerce • responsive • brand guidelines</p>
-              <p id="sp-desc">
-                A responsive web app for a minimal furniture store. I designed
-                it from start to finish, from concept and branding through UX
-                and UI design.
-              </p>
-              <a
-                href="space.html"
-                class="button"
-                id="sp-link"
-                aria-labelledby="sp-link sp-head"
-                aria-describedby="sp-desc"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <!-- PROJECT SECTION: HIDDEN GEMS -->
-          <div class="row project-block">
-            <!-- LEFT COLUMN (IMAGE) -->
-            <div class="image col-sm-6 col-md-6 col-lg-7">
-              <a
-                href="hidden-gems.html"
-                aria-labelledby="hg-link hg-head"
-                aria-describedby="hg-desc"
-              >
-                <picture>
-                  <source
-                    srcset="img/home/hidden-gems/hidden-gems-cover-image-1x.jpg"
-                    media="(max-width:767px)"
-                  />
-                  <img
-                    src="img/home/hidden-gems/hidden-gems-cover-image-2x.jpg"
-                    alt="Mockup of 5 iPhones showing home, search, folders, and listing screens from Hidden Gems app."
-                  />
-                </picture>
-              </a>
-            </div>
-            <!-- RIGHT COLUMN (TEXT AND BUTTON) -->
-            <div class="text-content col-sm-6 col-md-6 col-lg-5">
-              <h3 id="hg-head">Hidden Gems</h3>
-              <p class="tags">Native apps • location-based • search & filter</p>
-              <p id="hg-desc">
-                A set of native apps (iOS and Android) that I designed as a
-                shop-local search platform to help consumers find local shops
-                and restaurants.
-              </p>
-              <a
-                href="hidden-gems.html"
-                class="button"
-                id="hg-link"
-                aria-labelledby="hg-link hg-head"
-                aria-describedby="hg-desc"
-                >View Project</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer id="contact">
-      <div class="container">
-        <!-- FOOTER TEXT AND BUTTON -->
-        <div class="title-wrapper">
-          <div class="title">
-            <h2>
-              Let's Talk
-              <span class="highlight"></span>
-            </h2>
-          </div>
-        </div>
-        <p>
-          I’d love to chat about inclusive design or discuss the value I could
-          bring to your team, so get in touch!
-        </p>
-        <p>
-          To shoot me an email, <span id="copy">click to copy </span>my email
-          address:
-          <a
-            href=""
-            id="email"
-            class="copy-click"
-            data-tooltip-text="Click to Copy"
-            data-tooltip-text-copied="Copied!"
-            aria-labelledby="copy email"
-            >alissabodden2@gmail.com</a
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo.svg" alt="Alissa Bodden Home" /><span
+              >Alissa Bodden</span
+            ></a
           >
-        </p>
-      </div>
-      <div id="social">
-        <!-- SOCIAL LINKS -->
-        <ul>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+          <li><a class="current" href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/alissa-bodden/"
-              target="_blank"
+            <a href="files/alissa-bodden-resume-2025.pdf" target="_blank"
+              >Resume</a
             >
-              <img
-                src="img/linkedin-icon.svg"
-                alt="LinkedIn profile (opens in new tab)"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.behance.net/alissabodden" target="_blank">
-              <img
-                src="img/behance-icon.svg"
-                alt="Behance profile (opens in new tab)"
-              />
-            </a>
           </li>
         </ul>
-      </div>
-      <div id="copyright">
-        <!-- COPYRIGHT -->
-        <p>Copyright Alissa Bodden 2021</p>
-      </div>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/scripts.js"></script>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- HERO SECTION -->
+      <section class="home-hero">
+        <div class="text-container">
+          <h1 class="green900">Hi, I'm Alissa.</h1>
+          <p class="visually-h3 green1000">
+            I'm a UI/UX designer with 3+ years of experience shipping features &
+            shaping user experiences. I focus on understanding user and business
+            needs, and crafting solutions that drive results for both.
+          </p>
+        </div>
+      </section>
+      <section class="work">
+        <div class="home image-container">
+          <img
+            src="img/home/crossrope-home/cr-home-hero-image-3200w.png"
+            srcset="
+              img/home/crossrope-home/cr-home-hero-image-400w.png   400w,
+              img/home/crossrope-home/cr-home-hero-image-800w.png   800w,
+              img/home/crossrope-home/cr-home-hero-image-1080w.png 1080w,
+              img/home/crossrope-home/cr-home-hero-image-1600w.png 1600w,
+              img/home/crossrope-home/cr-home-hero-image-2000w.png 2000w,
+              img/home/crossrope-home/cr-home-hero-image-2600w.png 2600w,
+              img/home/crossrope-home/cr-home-hero-image-3200w.png 3200w
+            "
+            sizes="(max-width: 479px) 88vw, (max-width: 1120px) 88vw, 1000px"
+            alt="Three devices displaying various screens from the Crossrope app redesign project"
+            loading="lazy"
+          />
+        </div>
+        <div class="text-container home">
+          <h2 class="visually-h4 neutral1000">
+            Crossrope App Redesign: Creating a Personalized, Intuitive
+            Experience
+          </h2>
+          <p>
+            I redesigned Crossrope's home screen and navigation through
+            research-driven decisions and continuous improvement, transforming
+            an overwhelming interface into a clean, personalized experience. The
+            result: 79% user approval, 47% higher engagement with the goal
+            feature, and users who can finally find what they need.
+          </p>
+          <a class="button-primary" href="crossrope-home-reorg.html"
+            >Read the Case Study</a
+          >
+        </div>
+
+        <div class="home image-container">
+          <img
+            src="img/home/drizzle/drizzle-hero-image-3200w.jpg"
+            srcset="
+              img/home/drizzle/drizzle-hero-image-400w.jpg   400w,
+              img/home/drizzle/drizzle-hero-image-800w.jpg   800w,
+              img/home/drizzle/drizzle-hero-image-1080w.jpg 1080w,
+              img/home/drizzle/drizzle-hero-image-1600w.jpg 1600w,
+              img/home/drizzle/drizzle-hero-image-2000w.jpg 2000w,
+              img/home/drizzle/drizzle-hero-image-2600w.jpg 2600w,
+              img/home/drizzle/drizzle-hero-image-3200w.jpg 3200w
+            "
+            sizes="(max-width: 479px) 88vw, (max-width: 1120px) 88vw, 1000px"
+            alt="Three different device sizes displaying the home screen of the Drizzle web app project"
+            loading="lazy"
+          />
+        </div>
+        <div class="text-container home">
+          <h2 class="visually-h4 neutral1000">
+            Drizzle: Designing a Specialized Recipe App with Accessibility at
+            its Core
+          </h2>
+          <p>
+            A responsive web app I created to be the ultimate source for sauce
+            recipes. I also did an accessibility-focused redesign after
+            initially completing the project.
+          </p>
+          <a class="button-primary" href="drizzle.html">Read the Case Study</a>
+        </div>
+      </section>
+    </main>
+
+    <home-footer></home-footer>
+
+    <script>
+      // Hamburger menu functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("active");
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>
