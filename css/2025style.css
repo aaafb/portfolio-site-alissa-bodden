@@ -718,36 +718,6 @@ ul.footer-links {
    MEDIA QUERIES
    ================================= */
 
-/* @media screen and (max-width: 575px) {
-
-    .navbar {
-        flex-direction: column;
-        padding: 0 1rem;
-        margin-bottom: 1rem;
-    }
-    
-    .logo {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    .nav-links {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .nav-links li {
-        margin: 0 1rem;
-    }
-
-    .project-section {
-        padding: 0 1rem;
-    }
-} */
-
 @media screen and (max-width: 600px) {
     html {
         font-size: 100%;
