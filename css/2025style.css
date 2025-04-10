@@ -132,10 +132,6 @@ body {
    TYPOGRAPHY
    ================================= */
    
-h1, h2, h3, h4, h5 {
-    display: block;
-    text-align: left;
-}
 
 h1 {
     margin: var(--space-1) 0 0;
