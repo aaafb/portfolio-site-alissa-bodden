@@ -344,7 +344,7 @@ h5.w-green-icon.bulb::before {
 
 .h2-heading {
     padding-bottom: 0.6rem;
-    border-bottom: 8px solid var(--color-green-900);
+    border-bottom: 8px solid var(--color-green-1000);
 }
 
 .h2-heading.with-icon::before {
