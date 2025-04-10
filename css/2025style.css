@@ -406,6 +406,10 @@ h5.w-green-icon.bulb::before {
     background-color: var(--color-green-300);
 }
 
+.button-primary.jump-to-breakdown {
+    margin-top: 3rem;
+}
+
 /* Blocks & Groups */
 
 .group-paragraphs {
