@@ -179,6 +179,10 @@ h5 {
     font: var(--text-heading-5);
 }
 
+.subhead4 {
+    font: var(--text-subheading-4);
+}
+
 .visually-h1 {
     font: var(--text-heading-1);
     color: var(--color-green-1000);
