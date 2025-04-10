@@ -249,6 +249,26 @@ a {
     color: var(--color-green-900);
 }
 
+.key-highlights-link {
+    font: var(--text-heading-5);
+    color: var(--color-green-900);
+}
+
+.key-highlights-link.with-icon::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: .8rem;
+    height: .8rem;
+    margin-right: 0.2rem;
+    vertical-align: middle;
+    top: -0.08rem;
+    background-image: url("../img/flourish-hashtag-green900.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .semibold {
     font-weight: 600;
 }
