@@ -365,32 +365,25 @@ h5.w-green-icon.bulb::before {
     margin-bottom: 1.6rem;
 }
 
-.home-hero {
-    width: 100%;
-    background-color: var(--color-green-200);
+.home-about-hero .text-container {
+    max-width: 800px;
+    padding: 0 2rem;
+    margin: 3rem auto 0;
 }
 
-.home-hero .text-container {
-    max-width: 720px;
-    padding: 2.4rem 2rem 3.2rem;
-    margin: 2rem auto 0;
-}
-
-.home-hero h1 {
+.home-about-hero h1 {
     margin-top: 0;
 }
 
-.home-hero .visually-h3 {
+#home-hero-blurb {
     margin-top: 0.8rem;
 }
 
-.home.image-container img {
-    height: auto;
+.home.image-container {
     margin-top: var(--space-1);
 }
 
 .text-container.home {
-    max-width: 1080px;
     padding: 0 2rem;
     margin: 2rem auto 0;
 }
