@@ -120,6 +120,8 @@ body {
 }
 
 .image-container figcaption {
+    max-width: 1000px;
+    padding: 0 2rem;
     margin-top: var(--space-8);
     font-style: italic;
     color: var(--color-neutral-800);
