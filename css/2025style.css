@@ -528,6 +528,10 @@ h5.w-green-icon.bulb::before {
     margin-top: var(--space-5);
 }
 
+.below-h2 {
+    margin-top: var(--space-4);
+}
+
 .below-h3-h4 {
     margin-top: var(--space-6);
 }
