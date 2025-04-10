@@ -581,7 +581,7 @@ ol.core-principles {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1600px;
+    max-width: 800px;
     padding: var(--space-4) var(--space-4) 0;
     margin: 0 auto;
 }
