@@ -577,30 +577,8 @@ ul.footer-links {
     transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
-    color: var(--color-green-900);
 }
 
-.footer-links svg {
-    height: 1.2rem;
-    width: 1.2rem;
-}
-
-.footer-grid {
-    max-width: 880px;
-    display: flex;
-    flex-direction: row;
-    gap: 2.4rem;
-    margin: 0 auto;
-}
-
-.footer-grid img {
-    height: 10rem;
-}
-
-.footer-grid .footer-blurb {
-    margin-top: 0;
-}
 
 /* EMBEDDED PROTOTYPES */
 .iframe-gparent {
@@ -725,10 +703,6 @@ ul.footer-links {
 
     p.visually-h2 {
         font-size: 2rem;
-    }
-
-    .project-section {
-        padding: 0 1rem;
     }
 
     /* Show hamburger menu */
