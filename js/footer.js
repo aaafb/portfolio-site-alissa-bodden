@@ -1,7 +1,8 @@
 class FooterComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <footer id="footer" class="text-container">
+      <footer id="footer">
+      <div class="text-container">
     <!-- Clickable Logo -->
     <div class="logo">
       <a href="index.html"
@@ -71,6 +72,7 @@ class FooterComponent extends HTMLElement {
         </a>
       </li>
     </ul>
+    </div>
   </footer>
     `;
   }
