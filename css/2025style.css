@@ -640,17 +640,17 @@ ul.footer-links {
 .nav-links a {
     font: var(--text-heading-6);
     text-decoration: none;
-    color: var(--color-neutral-800);
+    color: var(--color-green-900);
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--color-green-900);
+    color: var(--color-green-1000);
 }
 
 .nav-links .current {
     text-decoration: underline;
-    color: var(--color-green-900);
+    color: var(--color-green-1000);
 }
 
 /* Hamburger Menu Styles */
