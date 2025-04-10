@@ -19,6 +19,7 @@ html {
     --text-heading-4: 700 1.4rem/1.4 var(--font-headings);
     --text-heading-5: 700 1rem/1.4 var(--font-headings);
     --text-heading-6: 700 0.8rem/1.4 var(--font-headings);
+    --text-subheading-4: 500 1.4rem/1.4 var(--font-headings);
     --text-body-1: 400 1rem/1.6 var(--font-body);
     --text-body-2: 400 0.8rem/1.6 var(--font-body);
     --text-navlinks: 700 20px/1.4 var(--font-headings);
@@ -46,12 +47,14 @@ html {
     --color-neutral-150: #F1F1EE;
     --color-neutral-100: #FDFDFA;
 
+    --color-green-1100: #3A4200;
     --color-green-1000: #495200;
-    --color-green-900: #707D00;
+    --color-green-900: #6E7A00;
     --color-green-800: #8D9D00;
     --color-green-600: #CDD800;
     --color-green-300: #F8FF72;
     --color-green-200: #FCFFC2;
+    --color-green-150: #FDFFD6;
 
     --color-red-900: #D33500;    
 }  
