@@ -640,7 +640,6 @@ ul.footer-links {
 .nav-links a {
     font: var(--text-heading-6);
     text-decoration: none;
-    color: var(--color-green-900);
     transition: color 0.3s ease;
 }
 
