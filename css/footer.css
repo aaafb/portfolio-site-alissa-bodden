@@ -1,0 +1,88 @@
+footer {
+    background-color: var(--color-green-1100);
+    text-align: left;
+    padding: var(--space-4) 0;
+    width: 100%;
+    margin-top: var(--space-1);
+}
+
+
+/* Clickable Logo */
+footer .logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font: var(--text-heading-4);
+    text-decoration: none;
+    color: var(--color-green-150);
+}
+
+footer .logo img {
+    height: 2rem;
+}
+
+
+/* Blurb */
+.footer-blurb {
+    margin-top: var(--space-6);
+    color: var(--color-green-150);
+}
+
+
+/* Links */
+ul.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+    margin-top: var(--space-5);
+    list-style: none;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font: var(--text-heading-6);
+    text-decoration: none;
+    color: var(--color-green-600);
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-green-300);
+}
+
+.footer-links svg {
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+
+    .footer-links a {
+        font: var(--text-heading-5);
+    }
+
+    .footer-links svg {
+        height: 1rem;
+        width: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    ul.footer-links {
+        flex-direction: column;
+        gap: 0.6rem;
+        list-style: none;
+        padding: 0;
+        margin-top: var(--space-5);
+    }
+
+}
