@@ -536,42 +536,12 @@ h5.w-green-icon.bulb::before {
     margin-top: var(--space-7);
 }
 
-/* FOOTER */
-footer {
-    background-color: var(--color-green-200);
-    text-align: left;
-    padding: var(--space-5) var(--space-4);
-    width: 100%;
-    margin-top: var(--space-1);
-  }
- 
-footer p {
-    color: var(--color-neutral-1000);
-  }
-
-
-.footer-blurb {
-    margin-top: var(--space-6);
+ol.core-principles {
+    padding-left: 1rem;
 }
 
-ul.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    list-style: none;
-    padding: 0;
-    margin-top: var(--space-6);
-}
-
-.footer-links a {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font: var(--text-heading-5);
-    text-decoration: none;
-    color: var(--color-neutral-1000);
-    transition: color 0.3s ease;
-}
+.core-principles li {
+    margin-top: 0.4rem;
 
 }
 
