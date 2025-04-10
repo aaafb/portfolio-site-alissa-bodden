@@ -135,7 +135,7 @@ body {
 h1, h2, h3, h4, h5 {
     display: block;
     text-align: left;
-    color: var(--color-neutral-1000);
+    color: var(--color-green-1000);
 }
 
 h1 {
@@ -152,7 +152,7 @@ h2 {
     margin-top: var(--space-1);
     font: var(--text-heading-2);
     letter-spacing: 0.05rem;
-    color: var(--color-green-900);
+    color: var(--color-green-1000);
 }
 
 h3 {
@@ -181,13 +181,13 @@ h5 {
 
 .visually-h1 {
     font: var(--text-heading-1);
-    color: var(--color-green-900);
+    color: var(--color-green-1000);
     letter-spacing: 0.05rem;
 }
 
 .visually-h2 {
     font: var(--text-heading-2);
-    color: var(--color-green-900);
+    color: var(--color-green-1000);
     letter-spacing: 0.05rem;
 }
 
@@ -205,19 +205,19 @@ h5 {
     margin-top: 0;
     font: var(--text-heading-5); 
     letter-spacing: 0rem;
-    color: var(--color-neutral-1000);
+    color: var(--color-green-1000);
 }
 
 .visually-h6 {
     font: var(--text-heading-6);
-    color: var(--color-neutral-1000);
+    color: var(--color-green-1000);
 }
 
 p {
     font: var(--text-body-1);
     margin: 0;
     letter-spacing: -0.15px;
-    color: var(--color-neutral-1000);
+    color: var(--color-green-1000);
 }
 
 ul {
@@ -227,7 +227,7 @@ ul {
 li {
     font: var(--text-body-1);
     letter-spacing: -0.15px;
-    color: var(--color-neutral-1000);
+    color: var(--color-green-1000);
 }
 
 a {
@@ -237,7 +237,7 @@ a {
 .body-secondary {
     font: var(--text-body-2);
     letter-spacing: -0.15px;
-    color: var(--color-neutral-1000);
+    color: var(--color-green-1000);
 }
 
 .table-of-contents-link {
