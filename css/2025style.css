@@ -117,7 +117,6 @@ body {
 .project-body.image-container img {
     height: auto;
     margin-top: var(--space-4);
-    /* margin: 2.4rem 2rem 0.6rem; */
 }
 
 .image-container figcaption {
@@ -158,8 +157,6 @@ h3 {
     margin-top: var(--space-2);
     font: var(--text-heading-3);
     letter-spacing: 0.05rem;
-    /* margin-top: 2rem;
-    margin-bottom: 1.2rem; */
 }
 
 h3.first {
@@ -170,8 +167,6 @@ h4 {
     margin-top: var(--space-3);
     font: var(--text-heading-4);
     letter-spacing: 0.03rem;
-    /* padding-bottom: 1.2rem; */
-    /* margin-top: 2.4rem; */
 }
 
 h5 {
@@ -607,10 +602,6 @@ ol.core-principles {
     list-style: none;
 }
 
-/* ul.nav-links {
-    padding-left: 0rem;
-} */
-
 .nav-links a {
     font: var(--text-heading-6);
     text-decoration: none;
@@ -641,7 +632,6 @@ ol.core-principles {
     width: 100%;
     background-color: var(--color-green-900);
     border-radius: 0px;
-    /* margin: 3px 0; */
     transition: all 0.3s ease;
 }
 
@@ -673,7 +663,6 @@ ol.core-principles {
     /* Show hamburger menu */
     .hamburger {
         display: flex;
-        /* margin-top: 1rem; */
         z-index: 2;
     }
 
@@ -681,7 +670,6 @@ ol.core-principles {
         flex-direction: row;
         padding: var(--space-4) var(--space-4) 0;
         position: relative;
-        /* align-items: flex-start; */
     }
 
     /* Hide the navigation links by default */
