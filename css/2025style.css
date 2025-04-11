@@ -127,13 +127,19 @@ body {
     color: var(--color-neutral-800);
 }
 
+ul {
+    padding-left: 2rem;
+}
+
 
 /* =================================
    TYPOGRAPHY
    ================================= */
-   
-h1 {
-    margin: var(--space-1) 0 0;
+
+/* Headings */
+
+h1, .visually-h1 {
+    margin-top: var(--space-1);
     font: var(--text-heading-1);
     letter-spacing: 0.05rem;
 }
@@ -142,13 +148,32 @@ h1.below-nav {
     margin-top: var(--space-4);
 }
 
-h2 {
+h2, .visually-h2 {
     margin-top: var(--space-1);
     font: var(--text-heading-2);
     letter-spacing: 0.04rem;
 }
 
-h3 {
+.h2-heading {
+    padding-bottom: 0.6rem;
+    border-bottom: 8px solid var(--color-green-1000);
+}
+
+.h2-heading.with-icon::before {
+    content: "";
+    display: inline-block;
+    position:relative;
+    top: -0.2rem;
+    vertical-align: middle;
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-right: 0.8rem;
+    background-image: url("../img/h2-block-image.png");
+    background-size: contain;
+    
+}
+
+h3, .visually-h3 {
     margin-top: var(--space-2);
     font: var(--text-heading-3);
     letter-spacing: 0.04rem;
@@ -158,144 +183,16 @@ h3.first {
     margin-top: var(--space-4);
 }
 
-h4 {
+h4, .visually-h4 {
     margin-top: var(--space-3);
     font: var(--text-heading-4);
     letter-spacing: 0.01rem;
 }
 
-h5 {
-    font: var(--text-heading-5);
-}
-
-.subhead4 {
-    font: var(--text-subheading-4);
-}
-
-.visually-h1 {
-    font: var(--text-heading-1);
-    letter-spacing: 0.05rem;
-}
-
-.visually-h2 {
-    font: var(--text-heading-2);
-    letter-spacing: 0.05rem;
-}
-
-.visually-h3 {
-    font: var(--text-heading-3);
-    letter-spacing: 0.05rem;
-}
-
-.visually-h4 {
-    font: var(--text-heading-4);
-    letter-spacing: 0.01rem;
-}
-
-.visually-h5 {
+h5, .visually-h5 {
     margin-top: 0;
     font: var(--text-heading-5); 
     letter-spacing: 0rem;
-}
-
-.visually-h6 {
-    font: var(--text-heading-6);
-}
-
-p {
-    font: var(--text-body-1);
-    margin: 0;
-    letter-spacing: -0.15px;
-}
-
-ul {
-    padding-left: 2rem;
-}
-
-li {
-    font: var(--text-body-1);
-    letter-spacing: -0.15px;
-}
-
-a {
-    color: var(--color-green-900);
-}
-
-.body-secondary {
-    font: var(--text-body-2);
-    letter-spacing: -0.15px;
-}
-
-.table-of-contents-link {
-    font: var(--text-heading-5);
-    color: var(--color-green-900);
-}
-
-.key-highlights-link {
-    font: var(--text-heading-5);
-    color: var(--color-green-900);
-}
-
-.key-highlights-link.with-icon::before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: .8rem;
-    height: .8rem;
-    margin-right: 0.2rem;
-    vertical-align: middle;
-    top: -0.08rem;
-    background-image: url("../img/flourish-hashtag-green900.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.semibold {
-    font-weight: 600;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.red900 {
-    color: var(--color-red-900);
-}
-
-.green1000 {
-    color: var(--color-green-1000);
-}
-
-.green900 {
-    color: var(--color-green-900);
-}
-
-.neutral1000 {
-    color: var(--color-neutral-1000);
-}
-
-.neutral600 {
-    color: var(--color-neutral-600);
-}
-
-/* =================================
-   COMPONENTS
-   ================================= */
-
-/* Heading Components */
-
-.table-of-contents-link.with-icon::before {
-    content: "";
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.4rem;
-    vertical-align: middle;
-    background-image: url("../img/flourish-hashtag-green900.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 h5.w-green-icon::before {
@@ -324,58 +221,115 @@ h5.w-green-icon.bulb::before {
     background-image: url("../img/flourish-lightbulb.png");
 }
 
-.h2-heading {
-    padding-bottom: 0.6rem;
-    border-bottom: 8px solid var(--color-green-1000);
+.visually-h6 {
+    font: var(--text-heading-6);
+    letter-spacing: 0;
 }
 
-.h2-heading.with-icon::before {
+.subhead4 {
+    font: var(--text-subheading-4);
+}
+
+/* Body Copy */
+
+p, li {
+    font: var(--text-body-1);
+    letter-spacing: -0.0075rem;
+}
+
+.body-secondary {
+    font: var(--text-body-2);
+    letter-spacing: -0.0075rem;
+}
+
+/* Links */
+
+a {
+    color: var(--color-green-900);
+}
+
+/* Font Style & Weight Classes */
+
+.semibold {
+    font-weight: 600;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+/* =================================
+   COLORS
+   ================================= */
+
+.red900 {
+    color: var(--color-red-900);
+}
+
+.green1000 {
+    color: var(--color-green-1000);
+}
+
+.green900 {
+    color: var(--color-green-900);
+}
+
+.neutral1000 {
+    color: var(--color-neutral-1000);
+}
+
+.neutral600 {
+    color: var(--color-neutral-600);
+}
+
+
+
+
+.table-of-contents-link {
+    font: var(--text-heading-5);
+    color: var(--color-green-900);
+}
+
+.key-highlights-link {
+    font: var(--text-heading-5);
+    color: var(--color-green-900);
+}
+
+.key-highlights-link.with-icon::before {
     content: "";
     display: inline-block;
-    position:relative;
-    top: -0.2rem;
+    position: relative;
+    width: .8rem;
+    height: .8rem;
+    margin-right: 0.2rem;
     vertical-align: middle;
-    width: 2.6rem;
-    height: 2.6rem;
-    margin-right: 0.8rem;
-    background-image: url("../img/h2-block-image.png");
+    top: -0.08rem;
+    background-image: url("../img/flourish-hashtag-green900.png");
     background-size: contain;
-    
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.project-page-title {
-    margin-bottom: 1.6rem;
-}
 
-.home-about-hero .text-container {
-    max-width: 800px;
-    padding: 0 2rem;
-    margin: 3rem auto 0;
-}
 
-.home-about-hero h1 {
-    margin-top: 0;
-}
+/* =================================
+   COMPONENTS
+   ================================= */
 
-#home-hero-blurb {
-    margin-top: 0.8rem;
-}
+/* Heading Components */
 
-.home.image-container {
-    margin-top: var(--space-1);
-}
-
-.text-container.home {
-    padding: 0 2rem;
-    margin: 2rem auto 0;
-}
-
-.text-container.home h2 {
-    margin: 0;
-}
-
-.text-container.home p {
-    margin-top: 1rem;
+.table-of-contents-link.with-icon::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+    background-image: url("../img/flourish-hashtag-green900.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .button-primary {
@@ -425,12 +379,6 @@ h5.w-green-icon.bulb::before {
     gap: var(--space-5);
 }
 
-.group-h5-blocks.about-page {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .h4-block .visually-h4 {
     margin-top: 0;
 }
@@ -446,10 +394,6 @@ h5.w-green-icon.bulb::before {
     flex-direction: column;
     margin-top: var(--space-4);
     gap: var(--space-5);
-}
-
-.about-personal h2 {
-    margin-top: 2.4rem;
 }
 
 .quote-block {
@@ -702,12 +646,6 @@ ol.core-principles {
         display: flex;
         flex-direction: column;
         margin-top: var(--space-4);
-        gap: var(--space-5);
-    }
-    
-    .group-h5-blocks.about-page {
-        display: flex;
-        flex-direction: column;
         gap: var(--space-5);
     }
 }
