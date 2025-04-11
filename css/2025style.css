@@ -242,6 +242,14 @@ p, li {
     letter-spacing: -0.0075rem;
 }
 
+/* Special Styles */
+
+.large-metric {
+    font: var(--text-heading-2);
+    letter-spacing: 0.04rem;
+    color: var(--color-green-900);
+}
+
 /* Links */
 
 a {
@@ -256,6 +264,50 @@ a {
 
 .italic {
     font-style: italic;
+}
+
+/* Icons from Google */
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 650,
+    'GRAD' 0,
+    'opsz' 24;
+    vertical-align: middle;
+    position: relative;
+  
+}
+
+.large-metric .material-symbols-outlined {
+    font-size: 2.4rem;
+    top: -0.3rem;
+}
+
+h4 .material-symbols-outlined {
+    font-size: 1.4rem;
+    top: -0.1rem;
+}
+
+
+/* =================================
+   SPACING for Elements Sitting Below A Header
+   ================================= */
+
+.below-h1 {
+    margin-top: var(--space-5);
+}
+
+.below-h2 {
+    margin-top: var(--space-4);
+}
+
+.below-h3-h4 {
+    margin-top: var(--space-6);
+}
+
+.below-h5 {
+    margin-top: var(--space-7);
 }
 
 
@@ -284,53 +336,11 @@ a {
 }
 
 
-
-
-.table-of-contents-link {
-    font: var(--text-heading-5);
-    color: var(--color-green-900);
-}
-
-.key-highlights-link {
-    font: var(--text-heading-5);
-    color: var(--color-green-900);
-}
-
-.key-highlights-link.with-icon::before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: .8rem;
-    height: .8rem;
-    margin-right: 0.2rem;
-    vertical-align: middle;
-    top: -0.08rem;
-    background-image: url("../img/flourish-hashtag-green900.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-
 /* =================================
    COMPONENTS
    ================================= */
 
-/* Heading Components */
-
-.table-of-contents-link.with-icon::before {
-    content: "";
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.4rem;
-    vertical-align: middle;
-    background-image: url("../img/flourish-hashtag-green900.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+/* Buttons & Links */
 
 .button-primary {
     background-color: var(--color-green-600);
@@ -354,6 +364,45 @@ a {
     margin-top: 3rem;
 }
 
+.table-of-contents-link {
+    font: var(--text-heading-5);
+    color: var(--color-green-900);
+}
+
+.table-of-contents-link.with-icon::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+    background-image: url("../img/flourish-hashtag-green900.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.key-highlights-link {
+    font: var(--text-heading-5);
+    color: var(--color-green-900);
+}
+
+.key-highlights-link.with-icon::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: .8rem;
+    height: .8rem;
+    margin-right: 0.2rem;
+    vertical-align: middle;
+    top: -0.08rem;
+    background-image: url("../img/flourish-hashtag-green900.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 /* Blocks & Groups */
 
 .group-paragraphs {
@@ -366,10 +415,6 @@ a {
     display: flex;
     flex-direction: column;
     gap: var(--space-8);
-}
-
-.h5-block.single {
-    margin-top: var(--space-6);
 }
 
 .group-h5-blocks {
@@ -429,7 +474,7 @@ a {
     display: flex;
     flex-direction: row;
     gap: 2%;
-    margin: 0 auto;
+    margin: var(--space-6) auto 0;
     width: 100%;
 }
 
@@ -452,22 +497,6 @@ a {
     max-width: 1000px;
     margin: var(--space-5) auto 0;
     background-color: var(--color-green-300);
-}
-
-.below-h1 {
-    margin-top: var(--space-5);
-}
-
-.below-h2 {
-    margin-top: var(--space-4);
-}
-
-.below-h3-h4 {
-    margin-top: var(--space-6);
-}
-
-.below-h5 {
-    margin-top: var(--space-7);
 }
 
 ol.core-principles {
