@@ -27,11 +27,11 @@ html {
 
     /* Spacing */
     --space-1: 4rem; /* 80pt */
-    --space-2: 3.6rem; /* 72pt */
+    --space-2: 3.2rem; /* 64pt */
     --space-3: 2.4rem; /* 48pt */
     --space-4: 2rem; /* 40pt */
     --space-5: 1.6rem; /* 32pt */
-    --space-6: 1.2rem; /* 24pt */
+    --space-6: 1rem; /* 20pt */
     --space-7: 0.8rem; /* 16pt */
     --space-8: 0.6rem; /* 12pt */
     --space-9: 0.4rem; /* 8pt */
