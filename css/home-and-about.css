@@ -1,0 +1,54 @@
+.home-about-hero .text-container {
+    max-width: 800px;
+    padding: 0 2rem;
+    margin: 3rem auto 0;
+}
+
+.home-about-hero h1 {
+    margin-top: 0;
+}
+
+#home-hero-blurb {
+    margin-top: 0.8rem;
+}
+
+.home.image-container {
+    margin-top: var(--space-1);
+}
+
+.text-container.home {
+    padding: 0 2rem;
+    margin: 2rem auto 0;
+}
+
+.text-container.home h2 {
+    margin: 0;
+}
+
+.text-container.home p {
+    margin-top: 1rem;
+}
+
+.about-personal h2 {
+    margin-top: 2.4rem;
+}
+
+.group-h5-blocks.about-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* =================================
+   MEDIA QUERIES
+   ================================= */
+
+   @media screen and (max-width: 600px) {
+    
+    .group-h5-blocks.about-page {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-5);
+    }
+}
