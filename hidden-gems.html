@@ -3,12 +3,20 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Josefin+Slab:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Arrow icons from Google -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward,arrow_upward"
+    />
+    <link rel="stylesheet" type="text/css" href="css/2025style.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link
       rel="icon"
       type="image/png"
@@ -25,440 +33,397 @@
       src="https://kit.fontawesome.com/8f23e52dfd.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/footer.js"></script>
     <meta charset="utf-8" />
     <title>
-      Hidden Gems - Native App - Alissa Bodden UI/UX Designer Raleigh, NC
+      Hidden Gems Native App - Alissa Bodden UI/UX Designer Raleigh, NC
     </title>
   </head>
 
-  <body id="hidden-gems">
-    <div id="skip">
-      <a href="#main-content" id="skip-link">Skip to Main Content</a>
-    </div>
-    <header id="myHeader">
-      <div class="container">
-        <div class="navtoggle" id="myNavtoggle">
-          <div class="image-link">
-            <a href="index.html">
-              <img
-                src="img/alissa-bodden-logo.svg"
-                alt="Alissa Bodden Home"
-                class="logo"
-              />
-            </a>
-          </div>
-          <nav class="borderXwidth">
-            <ul>
-              <li class="hamburger">
-                <a
-                  href="javascript:void(0);"
-                  class="icon"
-                  onclick="menuToggle()"
-                >
-                  <img src="img/menu-icon.svg" alt="Menu" />
-                </a>
-              </li>
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <a href="files/alissa-bodden-resume.pdf" target="_blank"
-                  >Resume<span class="visually-hidden"> PDF</span></a
-                >
-              </li>
-              <li>
-                <a href="#contact" id="contact-link" onclick="menuToggle()"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main id="main-content">
-      <!-- HEADING -->
-      <div>
-        <div class="container">
-          <div class="title-wrapper">
-            <div class="title">
-              <h1>
-                Hidden Gems
-                <span class="highlight"></span>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- MAIN CONTENT -->
-      <div>
-        <div class="container">
-          <!-- COVER IMAGE -->
-          <div class="image cover">
-            <picture>
-              <source
-                srcset="img/hidden-gems/hidden-gems-1overview-1x.jpg"
-                media="(max-width:767px)"
-              />
-              <img
-                src="img/hidden-gems/hidden-gems-1overview-2x.jpg"
-                alt="Mockup of 5 iPhones showing home, search, folders, and listing screens from Hidden Gems app."
-              />
-            </picture>
-          </div>
-          <!-- OVERVIEW TEXT -->
-          <div class="text-content">
-            <h2>Overview</h2>
-            <p>
-              Hidden Gems is a conceptual app that I created for a course
-              project focused on native apps. This project was my first foray
-              into Google’s Material Design guidelines and Apple’s Human
-              Interface Design guidelines. My goal for this project was to work
-              within each set of rules and still execute my vision.
-            </p>
-            <p>
-              I was the UI/UX designer for this project, so I did everything
-              from the initial concept and visual identity to user flows,
-              wireframes, final screen layouts, prototyping, and mockups. I
-              worked on the project from January through mid-March 2021.
-            </p>
-          </div>
-          <div>
-            <!-- SECTION: RESEARCH -->
-            <div class="text-content">
-              <h2>My Process</h2>
-              <h3>Research</h3>
-              <p>
-                Before diving in to creating my app, I did research into
-                existing apps for finding local businesses. Though there are a
-                few apps that offer users a way to find local businesses, I
-                couldn’t find any that did exactly what I saw my app doing that
-                have gained much traction in the market.
-                <a
-                  href="files/hidden-gems-existing-app-analysis.pdf"
-                  target="_blank"
-                  >View my analysis of the existing apps<span
-                    class="visually-hidden"
-                  >
-                    PDF</span
-                  >.</a
-                >
-              </p>
-              <p>
-                Separately, I did some UI research and analysis to observe the
-                patterns and functionality in successful directory apps. I
-                analyzed two main apps: Yelp and FourSquare. My intention for
-                Hidden Gems is that it would function very similarly to these
-                apps, so I got a lot of valuable information from analyzing
-                them.
-                <a href="files/hidden-gems-ui-analysis.pdf" target="_blank"
-                  >View my UI research analysis<span class="visually-hidden">
-                    PDF</span
-                  >.</a
-                >
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/hidden-gems/hidden-gems-2research-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/hidden-gems/hidden-gems-2research-2x.png"
-                  alt="Screenshots from Yelp and FourSquare apps layered on top of text from UI analysis document."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: IDEATION -->
-            <div class="text-content">
-              <h3>Ideation</h3>
-              <p>
-                In the beginning UX phase, I created a project proposal in which
-                I defined my projected users, listed the essential features and
-                user stories, and created user flows and a user flow diagram.
-                <a href="files/hidden-gems-project-proposal.pdf" target="_blank"
-                  >View the project proposal<span class="visually-hidden">
-                    PDF</span
-                  >.</a
-                >
-              </p>
-            </div>
-            <div class="image internal">
-              <picture>
-                <source
-                  srcset="
-                    img/hidden-gems/hidden-gems-3ideation-userflows-1x.png
-                  "
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/hidden-gems/hidden-gems-3ideation-userflows-2x.png"
-                  alt="Two user flows showing paths for using a filtered search and creating folders to save places in."
-                />
-              </picture>
-            </div>
-            <div class="text-content">
-              <p>
-                I extracted the list of screens I needed to create from my user
-                flows, and then started sketching some low-fidelity wireframes.
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/hidden-gems/hidden-gems-3ideation-sketches-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/hidden-gems/hidden-gems-3ideation-sketches-2x.png"
-                  alt="Sketches of home, search, search results, filters, and business listing screens."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: WIREFRAME -->
-            <div class="text-content">
-              <h3>Wireframe</h3>
-              <p>
-                After creating low-fidelity wireframes, it was time to iterate!
-                I added detail as I moved the screens into the mid-fidelity
-                stage, and then I used them to create a prototype. I requested
-                feedback on the prototype and made improvements based on the
-                input I received. It took several more rounds of polishing and
-                tweaking before I had the final screens.
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/hidden-gems/hidden-gems-4wireframes-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/hidden-gems/hidden-gems-4wireframes-2x.png"
-                  alt="Progression of home and business listing wireframes from low to high-fidelity."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: VISUAL LANGUAGE -->
-            <div class="text-content">
-              <h3>Visual Language</h3>
-              <p>
-                Building on the idea of an opulent gem, the visual style for
-                Hidden Gems is angular and sleek with a minimal color scheme.
-                The mix of bright, almost neon, turquoise with mid-range teals
-                and deep emerald greens communicates luxury without being
-                unapproachable. For the icon set, I used Material Design icons
-                as a base and customized them to have thinner strokes and
-                sharper edges.
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/hidden-gems/hidden-gems-5visual-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/hidden-gems/hidden-gems-5visual-2x.png"
-                  alt="Hidden Gems logo, icon set and color palette."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: DESIGN -->
-            <div class="text-content">
-              <h3>Design</h3>
-              <p>
-                I created about 30 screens for each operating system. Though not
-                always immediately obvious, there are meaningful differences
-                between the screens for iOS and Android. This required me to
-                essentially design the app twice, which was a great exercise in
-                patience! The screens can be broken into several main categories
-                based on function and content:
-              </p>
-              <p>
-                <strong>Onboarding:</strong> These screens give users a brief
-                introduction to the app, plus an opportunity to turn on location
-                services and create an account if they want.
-              </p>
-              <p>
-                <strong>Search:</strong> Since searching is the primary function
-                of the app, the home screen doubles as the search screen. There
-                are multiple places a user can tap to create a search - the
-                search bar, the category cards underneath, or the image and
-                search suggestion at the top.
-              </p>
-              <p>
-                <strong>Business listing:</strong> The business listing screen
-                displays photos, reviews, and basic information about the
-                business. Users can save the listing to an existing folder or
-                create a new folder by tapping the bookmark icon or the floating
-                action button (Android only).
-              </p>
-              <p>
-                <strong>Saved Places:</strong> Users can save places to folders
-                so they can find them easily later. The app comes with two
-                default folders: Favorites and Places to Try. Users can create
-                custom folders here as well.
-              </p>
-              <p>
-                <strong>Account:</strong> Since users don’t need to sign up to
-                use the app, there is a version of the account screen for guest
-                users and a version for logged-in users. The guest version
-                gently encourages users to create an account.
-              </p>
-              <p>
-                I also created several empty state screens for when a search
-                returns no results, and for when a folder has no saved places
-                yet.
-                <a
-                  href="https://xd.adobe.com/view/9a42615c-5808-49a7-a2b2-dc4c951f3c72-cf11/"
-                  target="_blank"
-                  >View all of the screens.<span class="visually-hidden">
-                    (opens in new tab)</span
-                  ></a
-                >
-              </p>
-            </div>
-            <div class="image">
-              <picture>
-                <source
-                  srcset="img/hidden-gems/hidden-gems-6design-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/hidden-gems/hidden-gems-6design-2x.png"
-                  alt="Various final screens from Hidden Gems app."
-                />
-              </picture>
-            </div>
-            <!-- SECTION: MOCKUPS -->
-            <div class="text-content">
-              <h3>Mockups</h3>
-              <p>
-                I created a number of mockups to use throughout my case study. I
-                used a mix of iPhone and Android devices to showcase both native
-                apps.
-                <a
-                  href="https://www.behance.net/gallery/118066845/Hidden-Gems-Shop-Local-App-UI-Case-Study"
-                  target="_blank"
-                  >View all of the mockups (within the case study).<span
-                    class="visually-hidden"
-                  >
-                    (opens in new tab)</span
-                  ></a
-                >
-              </p>
-            </div>
-            <div class="image last">
-              <picture>
-                <source
-                  srcset="img/hidden-gems/hidden-gems-7mockup-onboarding-1x.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="img/hidden-gems/hidden-gems-7mockup-onboarding-2x.png"
-                  alt="Mockup of iPhones showing onboarding screens."
-                />
-              </picture>
-            </div>
-            <!-- BUTTON: VIEW CASE STUDY -->
-            <div class="case-study">
-              <a
-                href="https://www.behance.net/gallery/118066845/Hidden-Gems-Shop-Local-App-UI-Case-Study"
-                target="_blank"
-                class="button"
-                >View Case Study<span class="visually-hidden">
-                  (opens in new tab)</span
-                ></a
-              >
-            </div>
-            <!-- SECTION: CONCLUSION -->
-            <div class="text-content">
-              <h2>Conclusion</h2>
-              <p>
-                Designing my first native app was an exciting challenge. My main
-                goal for this project was to follow the OS guidelines and still
-                bring my vision to life as much as possible. I achieved this by
-                experimenting, running through numerous rounds of feedback and
-                iterations, and pushing myself to take my designs right up to
-                the edge of the acceptable standards in each OS’s guidelines.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row more-projects">
-          <div class="prev-proj col-xs-6 col-sm-6">
-            <a href="space.html">Previous Project: Space</a>
-          </div>
-          <div class="next-proj col-xs-6 col-sm-6 empty">N/A</div>
-        </div>
-      </div>
-    </main>
-    <footer id="contact">
-      <div class="container">
-        <!-- FOOTER TEXT AND BUTTON -->
-        <div class="title-wrapper">
-          <div class="title">
-            <h2>
-              Let's Talk
-              <span class="highlight"></span>
-            </h2>
-          </div>
-        </div>
-        <p>
-          I’d love to chat about inclusive design or discuss the value I could
-          bring to your team, so get in touch!
-        </p>
-        <p>
-          To shoot me an email, <span id="copy">click to copy </span>my email
-          address:
-          <a
-            href=""
-            id="email"
-            class="copy-click"
-            data-tooltip-text="Click to Copy"
-            data-tooltip-text-copied="Copied!"
-            aria-labelledby="copy email"
-            >alissabodden2@gmail.com</a
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo">
+            <a href="index.html"
+            ><img src="img/logo.svg" alt="Alissa Bodden Home" /><span
+              >Alissa Bodden</span
+            ></a
           >
-        </p>
-      </div>
-      <div id="social">
-        <!-- SOCIAL LINKS -->
-        <ul>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/alissa-bodden/"
-              target="_blank"
+            <a href="files/alissa-bodden-resume-2025.pdf" target="_blank"
+              >Resume</a
             >
-              <img
-                src="img/linkedin-icon.svg"
-                alt="LinkedIn profile (opens in new tab)"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.behance.net/alissabodden" target="_blank">
-              <img
-                src="img/behance-icon.svg"
-                alt="Behance profile (opens in new tab)"
-              />
-            </a>
           </li>
         </ul>
-      </div>
-      <div id="copyright">
-        <!-- COPYRIGHT -->
-        <p>Copyright Alissa Bodden 2021</p>
-      </div>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/scripts.js"></script>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- section: intro/overview -->
+      <section class="project-section">
+        <div class="project-body image-container">
+            <img
+              src="img/home/hidden-gems/hidden-gems-hero-2400w.jpg"
+              srcset="
+                img/home/hidden-gems/hidden-gems-hero-600w       600w,
+                img/home/hidden-gems/hidden-gems-hero-1200w.jpg 1200w,
+                img/home/hidden-gems/hidden-gems-hero-2400w.jpg 2400w
+              "
+              sizes="(max-width: 600px) 100vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Mockup of 5 iPhones showing home, search, folders, and listing screens from Hidden Gems app"
+              loading="lazy"
+            />
+          </div>
+        <div class="text-container">
+          <h1>
+            Hidden Gems: Crafting a Native Mobile App to Discover Local
+            Businesses
+          </h1>
+          <div class="group-paragraphs below-h1">
+            <p>Hidden Gems is a conceptual mobile app that I created for a course project. The idea was to create a Yelp-esque directory platform aimed at helping people discover the incredible local spots in their area. Shopping local benefits the entire community, but it's not always easy to find small businesses; that's the gap I wanted to bridge.
+              </p>
+              <p>This project was my first foray into Google's Material Design guidelines and Apple's Human Interface Design guidelines. My goal was to execute my concept while working within each platform's guidelines.</p>
+          </div>
+          
+          <!-- details: role, team, timeline -->
+          <div class="group-h5-blocks">
+            <div class="h5-block">
+              <h2 class="visually-h5">My Role</h2>
+              <p>UI/UX Designer & Researcher</p>
+            </div>
+            <div class="h5-block">
+              <h2 class="visually-h5">Timeline</h2>
+              <p>January - March 2021</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section: table of contents -->
+      <section class="project-section">
+        <div class="text-container">
+          <h2 class="h2-heading with-icon">Table of Contents</h2>
+          <div class="group-h5-blocks">
+            <div class="h5-block">
+              <a href="#user-personas" class="table-of-contents-link with-icon"
+                >User Personas & Flows</a
+              >
+              <!-- <p>
+                Users found the app overwhelming and impersonal, and the app had
+                outgrown its navigation system
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a
+                href="#sketching-wireframing"
+                class="table-of-contents-link with-icon"
+                >Sketching & Wireframing</a
+              >
+              <!-- <p>
+                I designed a cleaner, more personalized experience that users
+                love, and created a robust, intuitive navigation system
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a href="#style-guide" class="table-of-contents-link with-icon"
+                >Style Guide</a
+              >
+              <!-- <p>
+                Potential concepts I explored, like circular progress bars and a
+                'For You' tab, and why they didn't work
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a href="#initial-design" class="table-of-contents-link with-icon"
+                >Initial Design</a
+              >
+              <!-- <p>
+                How I iterated on key design elements in response to user
+                testing
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a href="#redesign" class="table-of-contents-link with-icon"
+                >Redesign & Accessibility Improvements</a
+              >
+              <!-- <p>
+                Data from surveys and app analytics showed a 79% approval rate
+                for the new design, plus a 47% increase in users tapping on
+                Monthly Goals, and a 16% increase in users doing a recommended
+                workout from Home
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a href="#prototype" class="table-of-contents-link with-icon"
+                >Prototype</a
+              >
+              <!-- <p>
+                Refining the button bar and visual hierarchy based on user
+                feedback and app usage analytics
+              </p> -->
+            </div>
+            <div class="h5-block">
+              <a href="#takeaways" class="table-of-contents-link with-icon"
+                >Takeaways</a
+              >
+              <!-- <p>
+                Refining the button bar and visual hierarchy based on user
+                feedback and app usage analytics
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section: process -->
+      <section class="project-section">
+        <!-- subsection: user personas and flows -->
+        <div class="text-container">
+          <h2 class="h2-heading with-icon">Process</h2>
+          <h3 id="user-personas" class="first">Research & Ideation</h3>
+          <h4>Market & UI Research</h4>
+          <p class="below-h3-h4">
+            Before diving in to creating my app, I did research into existing apps for finding local businesses. Though there are a few apps that offer users a way to find local businesses, I couldn't find any that did exactly what I saw my app doing that have gained much traction in the market.
+          </p>
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-2research-2x.png"
+              srcset="
+                img/drizzle/drizzle-2research-1x.png  600w,
+                img/drizzle/drizzle-2research-2x.png 1200w
+              "
+              sizes="(max-width: 600px) 100vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Two user personas layered on top of each other. The top persona is for Harper, talking about how she likes to prep meals in advance"
+              loading="lazy"
+            />
+          </div>
+          <h4>User Flows</h4>
+          <p class="below-h3-h4">
+            Before I began developing screen layouts, I established the various
+            paths that a user may take when trying to accomplish their goals
+            within the app. I did a task analysis and then mapped out the user
+            flows.
+          </p>
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-3ideation-userflows-2x.png"
+              srcset="
+                img/drizzle/drizzle-3ideation-userflows-1x.png  600w,
+                img/drizzle/drizzle-3ideation-userflows-2x.png 1200w
+              "
+              sizes="(max-width: 600px) 100vw, (max-width: 1120px) 88vw, 1000px"
+              alt="User flows for two primary tasks: filtering search results, and saving recipes for later."
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- subsection: sketches and wireframes -->
+        <div class="text-container">
+          <h3 id="sketching-wireframing">From Rough Sketches to Wireframes</h3>
+          <h4>Sketches</h4>
+          <p class="below-h3-h4">
+            During the early sketching phase, I used the Crazy 8s rapid
+            sketching method to get a bunch of ideas down on paper before
+            refining them later.
+          </p>
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-3ideation-sketches-2x.png"
+              srcset="
+                img/drizzle/drizzle-3ideation-sketches-1x.png  600w,
+                img/drizzle/drizzle-3ideation-sketches-2x.png 1200w
+              "
+              sizes="(max-width: 600px) 100vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Numerous rough early sketches of the Drizzle app"
+              loading="lazy"
+            />
+          </div>
+          <h4>Wireframes</h4>
+          <div class="group-paragraphs below-h3-h4">
+            <p>
+              After creating many rough sketches, I chose the strongest layout
+              for each screen and then refined it. I turned the polished
+              sketches into a rapid prototype and did some early user testing.
+            </p>
+            <p>
+              I used insights from testing to improve the UX structure and flow
+              as I turned my sketches into low-fidelity digital wireframes.
+            </p>
+          </div>
+
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-4wireframes-2x.png"
+              srcset="
+                img/drizzle/drizzle-4wireframes-1x.png  600w,
+                img/drizzle/drizzle-4wireframes-2x.png 1200w
+              "
+              sizes="(max-width: 600px) 100vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Progression of several screens from sketch to low-fidelity wireframe"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- subsection: style guide -->
+        <div class="text-container">
+          <h3 id="testing-iteration">Going High Fidelity</h3>
+          <h4 id="style-guide">Style Guide</h4>
+          <p class="below-h3-h4">
+            I created a UI style guide for Drizzle to help me maintain
+            consistency across all screens and breakpoints.
+            <a href="files/drizzle-style-guide.pdf" target="_blank"
+              >View the full style guide document<span class="visually-hidden">
+                PDF</span
+              >.</a
+            >
+          </p>
+        </div>
+        <div class="project-body image-container">
+          <img
+            src="img/drizzle/drizzle-5styleguide-2x.png"
+            srcset="
+              img/drizzle/drizzle-5styleguide-1x.png  600w,
+              img/drizzle/drizzle-5styleguide-2x.png 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1120px) 88vw, 1000px"
+            alt="UI Elements page of style guide layered on top of several other pages from the document"
+            loading="lazy"
+          />
+        </div>
+        <div class="text-container">
+          <h4 id="initial-design">My Initial Finished Design</h4>
+          <p class="below-h3-h4">
+            Using my style guide, I applied UI styling to all of the screens.
+            This was an iterative process; I took each screen through a number
+            of changes, prompted by feedback from peers and my mentor, as I
+            developed the final designs.
+          </p>
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-initial-designs-3200w.png"
+              srcset="
+              img/drizzle/drizzle-initial-designs-400w.png   400w,
+              img/drizzle/drizzle-initial-designs-800w.png   800w,
+              img/drizzle/drizzle-initial-designs-1080w.png 1080w,
+              img/drizzle/drizzle-initial-designs-1600w.png 1600w,
+              img/drizzle/drizzle-initial-designs-2000w.png 2000w,
+              img/drizzle/drizzle-initial-designs-2600w.png 2600w,
+              img/drizzle/drizzle-initial-designs-3200w.png 3200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Mockups of Home and Recipes screens in mobile and desktop sizes"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- section: redesign -->
+      <section class="project-section">
+        <div class="text-container">
+          <h2 id="redesign" class="h2-heading with-icon">Redesign</h2>
+          <h3 class="first">Accessibility & Visual Design Improvements</h3>
+          <div class="group-paragraphs">
+            <p class="below-h3-h4">
+              I created Drizzle before I knew anything about inclusive design.
+              As I prepared my portfolio, I went back to Drizzle and realized
+              that the color contrast needed some work. I tried to tweak the
+              colors a bit, but it was not enough; the design needed extensive
+              changes.
+            </p>
+            <p>
+              Looking at Drizzle with fresh eyes and a few more projects under
+              my belt, I saw several opportunities to improve the product's UI in a myriad of ways.
+              I increased the margins, gutters, and general spacing and made
+              other changes to refine the layout.
+            </p>
+            
+          </div>
+          <a class="button-primary" href="https://www.figma.com/design/68DFzp1kzE6OCSmnKUWhDo/Drizzle-Case-Study-Assets?node-id=2-112&t=bQafKZENyZxE1AQ6-1"
+          target="_blank">View Before & After Mockups with Annotations</a
+          >
+          <div class="project-body image-container">
+            <img
+              src="img/drizzle/drizzle-redesign-before-after-3200w.png"
+              srcset="
+              img/drizzle/drizzle-redesign-before-after-400w.png   400w,
+              img/drizzle/drizzle-redesign-before-after-800w.png   800w,
+              img/drizzle/drizzle-redesign-before-after-1080w.png 1080w,
+              img/drizzle/drizzle-redesign-before-after-1600w.png 1600w,
+              img/drizzle/drizzle-redesign-before-after-2000w.png 2000w,
+              img/drizzle/drizzle-redesign-before-after-2600w.png 2600w,
+              img/drizzle/drizzle-redesign-before-after-3200w.png 3200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1120px) 88vw, 1000px"
+              alt="Original mobile home screen design and redesigned screen side by side"
+              loading="lazy"
+            />
+
+            
+          </div>
+          <h3 id="prototype">Prototype</h3>
+          <div class="iframe-gparent">
+            <div class="prototype-embed">
+              <iframe
+                title="Interactive mobile prototype of Drizzle web app"
+                class="responsive-iframe"
+                src="https://xd.adobe.com/embed/7535aa9c-f086-454b-b661-5d3fbadc93cb-2066/"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="text-container">
+          <h2 id="redesign" class="h2-heading with-icon">Reflections</h2>
+          <div class="group-paragraphs below-h2">
+            <p>
+              My biggest takeaway from this project is that designing for
+              accessibility doesn't mean disregarding the visual aesthetic. It
+              means opening my mind, seeing things differently, and being even
+              more creative when thinking about solving the problem. It also
+              means being willing to let go of my initial ideas of what the
+              “perfect UI” looks like.
+            </p>
+            <p>
+              Before I started the redesign, I loved my color palette, and the
+              idea of changing it was a little painful. Comparing the before and
+              after, I can confidently say that the updated UI is more visually
+              engaging.
+            </p>
+          </div>
+          <a class="button-primary" href="https://www.behance.net/gallery/119675371/Drizzle-Sauce-Recipe-Web-App-UIUX-Case-Study"
+          target="_blank">View the Visual Case Study on Behance</a
+        >
+        </div>
+        
+      </section>
+    </main>
+
+    <site-footer></site-footer>
+
+    <script>
+        // Hamburger menu functionality
+        document.addEventListener("DOMContentLoaded", function () {
+          const hamburger = document.querySelector(".hamburger");
+          const navLinks = document.querySelector(".nav-links");
+  
+          hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+          });
+        });
+      </script>
   </body>
 </html>
