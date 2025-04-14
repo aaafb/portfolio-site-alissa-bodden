@@ -628,6 +628,10 @@ ol.core-principles {
         font-size: 2rem;
     }
 
+    .body-secondary {
+        font-size: 0.88rem;
+    }
+
     /* Show hamburger menu */
     .hamburger {
         display: flex;
@@ -678,6 +682,47 @@ ol.core-principles {
         gap: var(--space-5);
     }
 }
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: var(--space-4) 1.5rem 0;
+    }
+    
+    .text-container {
+        padding: 0 1.5rem;
+    }
+
+    .large-metric {
+        font: var(--text-heading-3);
+    }
+
+    .large-metric .material-symbols-outlined {
+        font-size: 2rem;
+        top: -0.25rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .navbar {
+        padding: var(--space-4) 1.5rem 0;
+    }
+    
+    .text-container {
+        padding: 0 1.5rem;
+    }
+
+    .large-metric {
+        font: var(--text-heading-4);
+    }
+
+    .large-metric .material-symbols-outlined {
+        font-size: 1.4rem;
+        top: -0.15rem;
+    }
+
+}
+
 
 @media only screen and (min-width: 480px) {
     /* EMBEDDED PROTOTYPES */

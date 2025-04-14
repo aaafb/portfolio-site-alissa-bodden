@@ -52,3 +52,21 @@
         gap: var(--space-5);
     }
 }
+
+@media screen and (max-width: 480px) {
+    
+    .home-about-hero .text-container {
+        padding: 0 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .text-container.home {
+        padding: 0 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .home.image-container {
+        margin-top: 3rem;
+    }
+}
+
