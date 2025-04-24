@@ -125,6 +125,7 @@ body {
     margin-top: var(--space-8);
     font-style: italic;
     color: var(--color-neutral-700);
+    line-height: 140%;
 }
 
 ul {
@@ -291,7 +292,7 @@ h4 .material-symbols-outlined {
 
 
 /* =================================
-   SPACING for Elements Sitting Below A Header
+   SPACING for Elements Sitting Below A Header or Component
    ================================= */
 
 .below-h1 {
@@ -308,6 +309,10 @@ h4 .material-symbols-outlined {
 
 .below-h5 {
     margin-top: var(--space-7);
+}
+
+.below-metric-block {
+    margin-top: var(--space-5);
 }
 
 
@@ -466,13 +471,14 @@ h4 .material-symbols-outlined {
     display: flex;
     flex-direction: column;
     gap: var(--space-9);
-    width: 32%;
+    flex: 1;
     text-align: center;
 }
 
 .group-metric-blocks {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 2%;
     margin: var(--space-6) auto 0;
     width: 100%;
